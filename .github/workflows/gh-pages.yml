@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - docs  # Set a branch name to trigger deployment
+      - add-docs  # Set a branch name to trigger deployment
   pull_request:
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/docs' }}
+        if: ${{ github.ref == 'refs/heads/add-docs' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
