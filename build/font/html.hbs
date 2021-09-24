@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }}</title>
+
+  <style>
+    .icons {
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .icon {
+      background-color: transparent;
+      border-radius: .25rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .label {
+      font-family: {{ name }};
+    }
+
+    .label {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      font-size: .625rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+
+  <link rel="stylesheet" href="{{ name }}.css">
+</head>
+<body class="text-center">
+
+<h1>{{ name }}</h1>
+
+<div class="icons">
+{{# each codepoints }}
+    <div class="icon">
+      <{{ ../tag }} class="{{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
+    <div class="label">{{ @key }}</div>
+  </div>
+{{/ each }}
+</div>
+
+</body>
+</html>
