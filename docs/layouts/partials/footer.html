@@ -1,0 +1,48 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="brand col-12 col-sm-12 col-md-6">
+                <div class="logo">
+                    <a class="no-underline" href="{{ .Site.Home.Permalink | absLangURL }}">
+                        <img src="/assets/images/logo-s-light.png" width="30" alt="QWeather Logo" />
+                        <h3>{{ .Site.Title }}</h3>
+                    </a>
+                </div>
+                <div class="about">
+                    <ul>
+                        <li>{{ with .Site.GetPage "/about" }}<a href="{{ .Permalink | absLangURL }}">{{ .Title }}{{ end }}</a> · <a href="{{ .Site.Params.blog }}" target="_blank" rel="noopener noreferrer">{{ i18n "blog" }}</a> · <a href="{{.Site.Params.repo}}" target="_blank" rel="noopener noreferrer">{{ i18n "ghrepo" }}</a></li>
+                        <li><a href="{{ .Site.Params.qw }}" target="_blank" rel="license noopener noreferrer">&copy; QWeather</a> · <a href="{{ .Site.Params.mit }}" target="_blank" rel="license noopener noreferrer">{{ i18n "mit" }}</a> · <a href="{{ .Site.Params.cc }}" target="_blank" rel="license noopener noreferrer">{{ i18n "ccby" }}</a></li>
+                        <li><a href="{{ .Site.Params.icp.link }}" target="_blank" rel="noopener noreferrer">{{.Site.Params.icp.number}}</a></li>
+                    </ul>
+                </div>
+                <div class="select-language">
+                    <label>Language:</label>
+                    <select id="change-language" onchange="if (this.value) window.location.href=this.value">
+                        {{- range .AllTranslations }}
+                        <option value="{{ .Permalink }}"{{ if eq $.Site.Language.LanguageName .Language.LanguageName  }} selected="selected"{{ end }}>{{ .Language.LanguageName }}</option>
+                        {{- end }}
+                    </select>
+                </div>
+            </div>
+            <div class="more-products col-12 col-sm-12 col-md-6">
+                <h3>{{ i18n "moreproduct"}}</h3>
+                <div class="row">
+                    {{- range .Site.Menus.footer }}
+                    <div class="col-4">
+                        <ul>
+                            {{- range .Children }}
+                            <li><a href="{{.URL}}" target="_blank" rel="noopener noreferrer">{{.Name}}</a></li>
+                            {{- with .Params }}
+                            <li>{{ .mp_name }}
+                                <img src="{{ .mp_qr }}" alt="" width="60">
+                            </li>
+                            {{- end }}
+                            {{- end }}
+                        </ul>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

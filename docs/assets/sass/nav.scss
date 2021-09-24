@@ -1,0 +1,90 @@
+.main-nav {
+  background-color: #f9f9fa;
+  min-height: 50px;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  li {
+    display: block;
+    float: left;
+  }
+  .sitename {
+    margin-left: 0;
+    margin-right: 0;
+
+    a {
+      float: left;
+      // font-size: 20px;
+      // margin-left: -15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 1;
+      color: #000;
+
+      img {
+        height: 30px;
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: $font-size;
+        // line-height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .menu, .second-menu {
+    a {
+      display: block;
+      line-height: 20px;
+      padding: 15px 0;
+      color: #000;
+      font-weight: 700;
+      margin-right: 15px;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    li.active>a {
+      color: #000;
+      border-bottom: 2px solid;
+      padding-bottom: 5px;
+    }
+    .backdev {
+        font-size: 14px;
+        color: $link-color;
+        border: 2px solid $link-color;
+        padding: 4px 8px;
+        border-radius: 10px;
+        font-weight: 700;
+        margin: 9px 0;
+        &:hover,
+        &:focus {
+          background-color: $link-color;
+          color: #fff;
+        }
+    }
+    .backdev>span:lang(en) {
+      font-family: $code-font-family;
+    }
+  }
+}
+
+// responsive
+@media (max-width: 767px) {
+  .main-nav {
+    .menu {
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}

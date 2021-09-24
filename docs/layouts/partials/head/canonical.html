@@ -1,0 +1,5 @@
+<!-- canonical and hreflang for current page -->
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{.Language}}" href="{{ .Permalink }}" />
+{{- end }}

@@ -1,0 +1,50 @@
+{{ define "main" }}
+<main class="homepage">
+    <div class="container">
+        <div class="hero">
+            <div class="row">
+                <div class="headline order-2 order-lg-1 col-12  col-lg-6 align-self-center">
+                    <h1>{{T "home_headline"}}</h1>
+                    <div class="desc">
+                        {{T "home_desc" | markdownify }} 
+                    </div>
+                </div>
+                <div class="banner order-1 order-lg-2 col-12  col-lg-6">
+                    <img src="/assets/images/qweather-icons-hero.png" alt="" width="540">
+                </div>
+            </div>
+        </div>
+        <div class="install">
+            <div class="row">
+                <div class="install-item col-12 col-md-4">
+                    <h2>NPM</h2>
+                    {{ highlight "npm i qweather-icon" "sh" ""}}
+                </div>
+                <div class="install-item col-12 col-md-4">
+                    <h2>{{ T "iconfont"}}</h2>
+                    {{- $cdnSnippet := printf `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@%s/font/qweather-icons.css">` .Site.Params.ver }}
+                    {{ highlight $cdnSnippet "html" "" }}
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>{{ T "download"}}</h2>
+                    <a class="btn btn-hp-download" href="https://github.com/qwd/Icons/releases/download/v{{ .Site.Params.ver }}/QWeather-Icons-{{ .Site.Params.ver }}.zip" target="_blank" rel="noopener noreferrer">&#8595;&nbsp;{{ T "download" }} - v{{ .Site.Params.ver }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="feat">
+            {{- $currentPage := . -}}
+            {{- range .Site.Data.homefeat  }}
+            <div class="feat-item row justify-content-center">
+                <div class="item-icon col-3 col-md-2">
+                    <img src="{{.link}}" alt="" width="120">
+                </div>
+                <div class="item-content col-9 col-md-7 align-self-center">
+                    <h2>{{ index .name $currentPage.Language.Lang }}</h2>
+                    <p>{{ index .desc $currentPage.Language.Lang | markdownify }}</p>
+                </div>
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</main>
+{{ end }}

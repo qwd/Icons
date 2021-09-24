@@ -1,0 +1,32 @@
+- id: ghrepo
+  translation: "Github repo"
+- id: blog
+  translation: "Blog"
+- id: mit
+  translation: "MIT License"
+- id: ccby
+  translation: "CC BY 4.0"
+- id: moreproduct
+  translation: "More products for QWeather"
+- id: dev
+  translation: "dev.qweather"
+- id: latest_ver
+  translation: "Currently"
+- id: download
+  translation: "Download"
+- id: icon_code
+  translation: "QWeather Icon Code"
+- id: dl_desc
+  translation: "Download SVG image to use or edit"
+- id: iconfont
+  translation: "Icon Font"
+- id: if_desc
+  translation: "Using [QWeather iconfont](/usage/icon-font)? Just copy and paste it directly"
+- id: html_desc
+  translation: "Copy the following code into your project"
+- id: home_headline
+  translation: "QWeather Icons && Fonts"
+- id: home_desc
+  translation: "Open source, beautiful weather icons and fonts, for [QWeather API/SDK](https://dev.qweather.com/en) and all developers."
+- id: permalink
+  translation: "Permalink"

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="main-content container">
+    <section class="article-headline">
+        <h1>{{ .Title}}</h1>
+        <div class="summary">
+            {{ .Description | markdownify }}
+        </div>
+    </section>
+    <section class="doc-content">
+        {{ partial "icon-gallery" . }}
+        {{ partial "icon-details" . }}
+    </section>
+</article>
+{{ end }}

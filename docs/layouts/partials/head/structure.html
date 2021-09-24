@@ -1,0 +1,34 @@
+<!-- ogp -->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:locale" content="{{ .Language }}" />
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ .Lang }}" />
+{{- end }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:image" content="{{ .Params.images | default .Site.Params.images | absURL }}" />    
+<meta property="og:description" content="{{ .Description | default .Site.Params.description  | markdownify | plainify }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<!-- JSON-LD -->
+{{`<script type="application/ld+json">` | safeHTML }}
+    {
+        "@context": "https://schema.org",
+        "@type": "{{ if .IsPage }}article{{ else }}website{{ end }}",
+        "headline": "{{.Title}}",
+        {{- if .IsPage }}
+        "dateModified":"{{ .Lastmod.Format "2006-01-02T15:04+0800" | safeHTML }}",
+        {{- end }}
+        "description": "{{ .Description | default .Site.Params.description  | markdownify | plainify }}",    
+        "url":"{{ .Permalink }}",
+        "inLanguage": "{{ .Lang }}",
+        "image" : "{{ .Params.images | default .Site.Params.images | absURL }}",    
+        "publisher":{
+            "@type":"Organization",
+            "name": "{{ .Site.Params.copyright }}",
+            "logo":{
+                "@type":"ImageObject",
+                "url": "{{ .Site.Params.logo }}"
+            }
+        }
+    }
+{{ "</script>" | safeHTML }}

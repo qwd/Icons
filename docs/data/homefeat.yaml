@@ -1,0 +1,25 @@
+- name: 
+    zh: 适配和风天气代码
+    en: For QWeather API/SDK
+  desc: 
+    zh: |-
+     图标和图标文字按照和风天气数据中的代码命名，你可以轻松的将这些图标在你的产品中应用。
+    en: Icons are named according to the codes in the QWeather data, and you can easily apply these icons in your products.
+  link: /assets/images/hp-for-qw.png
+- name: 
+    zh: 免费开源
+    en: Free & Open Source
+  desc: 
+    zh: |-
+     和风天气图标采用MIT开源许可及CC-BY-4.0知识共享许可，你可以用于任何目的，甚至商业行为。访问我们的[Github仓库](https://github.com/qwd/Icons)获取源代码。
+    en: QWeather Icons is licensed under the MIT and CC-BY-4.0, you can use it for any purpose, even commercial. Visit our [Github repo](https://github.com/qwd/Icons) for the source code.
+  link: /assets/images/hp-os.png
+- name: 
+    zh: 广泛支持
+    en: Variety
+  desc: 
+    zh: |-
+     和风天气图标采用SVG格式，你可以各种方式去使用，包括嵌入、图标字体、图片、CSS等。了解更多[使用方式](/usage/)。
+    en: |-
+     QWeather Icons are in SVG format, so you can use them in various ways: embedding, icon fonts, images, CSS. Learn more about [Usage](/en/usage/).
+  link: /assets/images/hp-svg.png

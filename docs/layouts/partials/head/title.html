@@ -1,0 +1,3 @@
+<!-- title and description -->
+<title>{{ if .IsHome }}{{ .Site.Title }} ~ {{ .Site.Params.description | safeHTML }}{{ else }}{{.Title}} | {{.Site.Title}}{{ end }}</title>
+<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description | safeHTML }}{{else}}{{.Description}}{{end}}" />
