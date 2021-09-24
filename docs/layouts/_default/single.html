@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="main-content container">
+    <section class="article-headline">
+        <h1>{{ .Title}}</h1>
+        <div class="summary">
+            {{ .Description | markdownify }}
+        </div>
+    </section>
+    <section class="doc-content">
+        {{ .Content | replaceRE "(<h[2-3] id=\"(.+)\".*>)(.*)(</h[1-6]>)" `${1}${3}<a href="#${2}" class="anchor-link small">#</a>${4}` | safeHTML }}
+    </section>
+</article>
+{{ end }}

@@ -1,0 +1,13 @@
+<div class="icon-gallery row row-cols-3 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+  {{ $icons_list := resources.Get "icons-list.json" | transform.Unmarshal }}
+  {{- range $icons_list }}
+  <div class="col">
+    <a id="icon-{{.icon_code}}" class="icon-group text-center no-underline" href="#{{.icon_name | anchorize }}">
+      <i class="qi-{{.icon_code}} icon-item"></i>
+      <div class="icon-name">
+        {{ .icon_name | replaceRE "-" " " | humanize }}
+      </div>
+    </a>
+  </div>
+  {{- end }}
+</div>

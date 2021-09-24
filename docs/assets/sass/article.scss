@@ -1,0 +1,94 @@
+// main-content 
+.main-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h2,
+  h3,
+  h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  li {
+    line-height: $line-height;
+  }
+
+  .anchor-link {
+    margin-left: 5px;
+    color: #dadada;
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  .article-headline {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    h1 {
+      margin-bottom: 20px;
+    }
+    .summary {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .doc-content, .icons-content {
+    .icon-gallery {
+      margin-bottom: 40px;
+      .icon-group {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        color: $color-black;
+        .icon-item {
+          display: block;
+          font-size: 30px;
+          background-color: #fafafa;
+          border-radius: 10px;
+          padding: 15px 10px;
+          margin-bottom: 10px;
+        }
+      }
+      .icon-group:hover, .icon-group:active, .icon-group:target {
+        color: $link-color;
+      }
+    }
+    .icon-details {
+      margin-bottom: 60px;
+      .top {
+        padding-top: 9px;
+      }
+      h4 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+      .icon-title {
+        margin-top: 0;
+        font-size: 3rem;
+      }
+      .icon-demo {
+        font-size: 150px;
+        background-color: #fdfdfd;
+        background-image: radial-gradient(circle, #ddd 1px, rgba(0,0,0,0) 1px);
+        background-size: 1rem 1rem;
+        padding: 40px;
+      }
+    }
+
+  }
+}
+
+// 40x styly
+.page-404 {
+  margin-top: 60px;
+  margin-bottom: auto;
+}

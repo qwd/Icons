@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Language }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-itunes-app" content="app-id=1461458147, app-argument=weather" />
+{{ partial "head/title" . }}
+{{ partial "head/style" . }}
+{{ partial "head/favicons" . }}
+{{- if isset .Params "no_sitemap" }}
+<meta name="robots" content="noindex">
+{{- else }}
+{{ partial "head/canonical" . }}
+{{ partial "head/structure" . }}
+{{- end }}
+{{ partial "head/gtm" . }}
+</head>
+<body>
+    {{ partial "nav" . }}
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "footer" . }}
+</body>
+</html>

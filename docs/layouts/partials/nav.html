@@ -1,0 +1,31 @@
+<nav class="main-nav {{- if .IsHome }} no-bg{{ end }}">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sitename d-flex justify-content-center justify-content-md-start col-md-auto col-12">
+                <a href="{{ .Site.Home.Permalink | absLangURL }}" class="no-underline">
+                    <img src="/assets/images/logo-s-dark.png" alt="{{ .Site.Title }}" ><span>{{.Site.Title}}</span>
+                </a>
+            </div>
+            <div class="menu d-flex justify-content-center justify-content-md-start flex-md-grow-1 col-12 col-md-auto">
+                <ul>
+                    {{- $currentPage := . }}
+                    {{- range .Site.Menus.main -}}
+                    {{- $menu_url := .URL | relLangURL -}}
+                    {{- $page_url := $currentPage.RelPermalink | relLangURL }}
+                    <li {{- if eq $menu_url $page_url }} class="active"{{- end -}}><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                    {{- end }}
+                    <li class="d-sm-block d-md-none"><a class="backdev no-underline" href="{{ $.Site.Params.dev }}" target="_blank" rel="noopener noreferrer">{{ T "dev" }}</a></li>
+                </ul>
+            </div>
+            <div class="second-menu col-md-auto d-none d-sm-none d-md-block">
+                <ul>
+                    <li>
+                        <a class="backdev no-underline" href="{{ $.Site.Params.dev }}" target="_blank" rel="noopener noreferrer">&#8678; <span>{{ T "dev"}}</span></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    

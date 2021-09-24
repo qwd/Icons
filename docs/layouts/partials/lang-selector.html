@@ -1,0 +1,5 @@
+<ul>
+    {{- range .AllTranslations }}
+    <li {{ if eq $.Site.Language.LanguageName .Language.LanguageName  }} class="active"{{ end }}><a href="{{ .Permalink }}">{{ .Language.Params.LangShortName }}</a></li>
+    {{- end }}
+</ul>

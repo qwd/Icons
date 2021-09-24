@@ -1,0 +1,36 @@
+{{- $icons_list := resources.Get "icons-list.json" | transform.Unmarshal }}
+{{- range $icons_list }}
+{{- $svgLocalPath := printf "/icons/%s.svg" .icon_code }}
+{{- $svgPubPath := path.Join "/assets/" $svgLocalPath }}
+{{- $fontSnippet := printf `<i class="qi-%s"></i>` .icon_name -}}
+{{- $fontSnippetByCode := printf `<i class="qi-%s"></i>` .icon_code -}}
+{{- $IconCodeOnly := .icon_code | replaceRE "-fill" "" }}
+<div class="icon-details icon-details-{{.icon_code}}">
+    <div class="top go-right small"><a href="#top">&#8679;top</a></div>
+    <h2 id={{.icon_name | anchorize }} class="icon-title">{{.icon_name | humanize }} <a href="#{{.icon_name | anchorize }}" class="anchor-link small" title="{{ T "permalink"}}">#</a></h2>
+    <p>{{ T "icon_code" }}: <code>{{ $IconCodeOnly }}</code></p>
+    <div class="icon-demo text-center">
+        <i class="qi qi-{{.icon_code}}"></i>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <h4>{{ T "download" }}</h4>
+            <p>{{ T "dl_desc" }}</p>
+            <a href="{{$svgPubPath}}" class="btn btn-download">{{ T "download" }} SVG</a>
+        </div>
+        <div class="col-12 col-md-4">
+            <h4>{{ T "iconfont" }}</h4>
+            <p>{{ T "if_desc" | markdownify }}</p>
+            {{ highlight $fontSnippet "html" "" }}
+            {{ highlight $fontSnippetByCode "html" "" }}
+        </div>
+        <div class="col-12 col-md-4">
+            <h4>HTML</h4>
+            <p>{{ T "html_desc" }}</p>
+            {{ $htmlSvg := readFile $svgLocalPath | chomp | safeHTML }}
+            {{ highlight $htmlSvg "html" "" }}
+        </div>
+    </div>
+</div>
+{{- end }}
+
