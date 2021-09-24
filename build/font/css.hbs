@@ -1,0 +1,28 @@
+/*!
+* QWeather Icons (https://icons.qweather.com)
+* Copyright QWeather 和风天气 (https://www.qweather.com)
+* License:  Code for MIT, Icons for CC BY 4.0
+*/
+
+@font-face {
+  font-family: "{{ name }}";
+  src: {{{ fontSrc }}};
+}
+
+[class^="{{prefix}}-"]::before,
+[class*=" {{prefix}}-"]::before {
+  display: inline-block;
+  font-family: "{{ name }}" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+{{# each codepoints }}
+.{{ ../prefix }}-{{ @key }}::before { content: "\\{{ codepoint this }}"; }
+{{/ each }}

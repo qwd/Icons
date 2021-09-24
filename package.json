@@ -1,0 +1,58 @@
+{
+  "name": "qweather-icons",
+  "version": "1.0.0",
+  "description": "Official open source SVG icon library for qweather.com",
+  "author": "qweather.com",
+  "license": "MIT",
+  "homepage": "https://icons.qweather.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwd/Icons.git"
+  },
+  "keywords": [
+    "qweather",
+    "icons"
+  ],
+  "scripts": {
+    "icons": "npm run icons-main && npm run icons-font",
+    "icons-main": "node build/build-svgs.js",
+    "icons-zip": "cross-env-shell \"rm -rf qweather-icons-$npm_package_version && cp -r icons/ qweather-icons-$npm_package_version && cp qweather-icons.svg qweather-icons-$npm_package_version && cp -r font/ qweather-icons-$npm_package_version && zip -r9 qweather-icons-$npm_package_version.zip qweather-icons-$npm_package_version && rm -rf qweather-icons-$npm_package_version\"",
+    "icons-font": "fantasticon && node build/build-alias.js",
+    "publish": "npm-run-all icons icons-zip",
+    "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm-run-all icons",
+    "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
+    "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
+    "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
+    "test:vnu": "node build/vnu-jar.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "fantasticon": "^1.2.2",
+    "find-unused-sass-variables": "^3.1.0",
+    "hugo-bin": "^0.75.0",
+    "linkinator": "^2.14.0",
+    "lockfile-lint": "^4.6.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.3",
+    "stylelint": "^13.13.1",
+    "svg-sprite": "^1.5.2",
+    "svgo": "^2.3.1",
+    "vnu-jar": "21.6.11"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "icons/*.svg",
+    "qweather-icons.svg",
+    "font",
+    "!.DS_Store"
+  ]
+}

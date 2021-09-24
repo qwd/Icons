@@ -1,0 +1,530 @@
+[
+  {
+    "icon_code": "100",
+    "icon_name": "sunny"
+  },
+  {
+    "icon_code": "100-fill",
+    "icon_name": "sunny-fill"
+  },
+  {
+    "icon_code": "101",
+    "icon_name": "cloudy"
+  },
+  {
+    "icon_code": "101-fill",
+    "icon_name": "cloudy-fill"
+  },
+  {
+    "icon_code": "102",
+    "icon_name": "few-clouds"
+  },
+  {
+    "icon_code": "102-fill",
+    "icon_name": "few-clouds-fill"
+  },
+  {
+    "icon_code": "103",
+    "icon_name": "partly-cloudy"
+  },
+  {
+    "icon_code": "103-fill",
+    "icon_name": "partly-cloudy-fill"
+  },
+  {
+    "icon_code": "104",
+    "icon_name": "overcast"
+  },
+  {
+    "icon_code": "104-fill",
+    "icon_name": "overcast-fill"
+  },
+  {
+    "icon_code": "150",
+    "icon_name": "clear-night"
+  },
+  {
+    "icon_code": "150-fill",
+    "icon_name": "clear-night-fill"
+  },
+  {
+    "icon_code": "151",
+    "icon_name": "cloudy-night"
+  },
+  {
+    "icon_code": "151-fill",
+    "icon_name": "cloudy-night-fill"
+  },
+  {
+    "icon_code": "152",
+    "icon_name": "few-clouds-night"
+  },
+  {
+    "icon_code": "152-fill",
+    "icon_name": "few-clouds-night-fill"
+  },
+  {
+    "icon_code": "153",
+    "icon_name": "partly-cloudy-night"
+  },
+  {
+    "icon_code": "153-fill",
+    "icon_name": "partly-cloudy-night-fill"
+  },
+  {
+    "icon_code": "300",
+    "icon_name": "shower-rain"
+  },
+  {
+    "icon_code": "300-fill",
+    "icon_name": "shower-rain-fill"
+  },
+  {
+    "icon_code": "301",
+    "icon_name": "heavy-shower-rain"
+  },
+  {
+    "icon_code": "301-fill",
+    "icon_name": "heavy-shower-rain-fill"
+  },
+  {
+    "icon_code": "302",
+    "icon_name": "thundershower"
+  },
+  {
+    "icon_code": "302-fill",
+    "icon_name": "thundershower-fill"
+  },
+  {
+    "icon_code": "303",
+    "icon_name": "heavy-thunderstorm"
+  },
+  {
+    "icon_code": "303-fill",
+    "icon_name": "heavy-thunderstorm-fill"
+  },
+  {
+    "icon_code": "304",
+    "icon_name": "thundershower-with-hail"
+  },
+  {
+    "icon_code": "304-fill",
+    "icon_name": "thundershower-with-hail-fill"
+  },
+  {
+    "icon_code": "305",
+    "icon_name": "light-rain"
+  },
+  {
+    "icon_code": "305-fill",
+    "icon_name": "light-rain-fill"
+  },
+  {
+    "icon_code": "306",
+    "icon_name": "moderate-rain"
+  },
+  {
+    "icon_code": "306-fill",
+    "icon_name": "moderate-rain-fill"
+  },
+  {
+    "icon_code": "307",
+    "icon_name": "heavy-rain"
+  },
+  {
+    "icon_code": "307-fill",
+    "icon_name": "heavy-rain-fill"
+  },
+  {
+    "icon_code": "308",
+    "icon_name": "extreme-rain"
+  },
+  {
+    "icon_code": "308-fill",
+    "icon_name": "extreme-rain-fill"
+  },
+  {
+    "icon_code": "309",
+    "icon_name": "drizzle-rain"
+  },
+  {
+    "icon_code": "309-fill",
+    "icon_name": "drizzle-rain-fill"
+  },
+  {
+    "icon_code": "310",
+    "icon_name": "storm"
+  },
+  {
+    "icon_code": "310-fill",
+    "icon_name": "storm-fill"
+  },
+  {
+    "icon_code": "311",
+    "icon_name": "heavy-storm"
+  },
+  {
+    "icon_code": "311-fill",
+    "icon_name": "heavy-storm-fill"
+  },
+  {
+    "icon_code": "312",
+    "icon_name": "severe-storm"
+  },
+  {
+    "icon_code": "312-fill",
+    "icon_name": "severe-storm-fill"
+  },
+  {
+    "icon_code": "313",
+    "icon_name": "freezing-rain"
+  },
+  {
+    "icon_code": "313-fill",
+    "icon_name": "freezing-rain-fill"
+  },
+  {
+    "icon_code": "314",
+    "icon_name": "light-to-moderate-rain"
+  },
+  {
+    "icon_code": "314-fill",
+    "icon_name": "light-to-moderate-rain-fill"
+  },
+  {
+    "icon_code": "315",
+    "icon_name": "moderate-to-heavy-rain"
+  },
+  {
+    "icon_code": "315-fill",
+    "icon_name": "moderate-to-heavy-rain-fill"
+  },
+  {
+    "icon_code": "316",
+    "icon_name": "heavy-rain-to-storm"
+  },
+  {
+    "icon_code": "316-fill",
+    "icon_name": "heavy-rain-to-storm-fill"
+  },
+  {
+    "icon_code": "317",
+    "icon_name": "storm-to-heavy-storm"
+  },
+  {
+    "icon_code": "317-fill",
+    "icon_name": "storm-to-heavy-storm-fill"
+  },
+  {
+    "icon_code": "318",
+    "icon_name": "heavy-to-severe-storm"
+  },
+  {
+    "icon_code": "318-fill",
+    "icon_name": "heavy-to-severe-storm-fill"
+  },
+  {
+    "icon_code": "350",
+    "icon_name": "shower-rain-night"
+  },
+  {
+    "icon_code": "350-fill",
+    "icon_name": "shower-rain-night-fill"
+  },
+  {
+    "icon_code": "351",
+    "icon_name": "heavy-shower-rain-night"
+  },
+  {
+    "icon_code": "351-fill",
+    "icon_name": "heavy-shower-rain-night-fill"
+  },
+  {
+    "icon_code": "399",
+    "icon_name": "rain"
+  },
+  {
+    "icon_code": "399-fill",
+    "icon_name": "rain-fill"
+  },
+  {
+    "icon_code": "400",
+    "icon_name": "light-snow"
+  },
+  {
+    "icon_code": "400-fill",
+    "icon_name": "light-snow-fill"
+  },
+  {
+    "icon_code": "401",
+    "icon_name": "moderate-snow"
+  },
+  {
+    "icon_code": "401-fill",
+    "icon_name": "moderate-snow-fill"
+  },
+  {
+    "icon_code": "402",
+    "icon_name": "heavy-snow"
+  },
+  {
+    "icon_code": "402-fill",
+    "icon_name": "heavy-snow-fill"
+  },
+  {
+    "icon_code": "403",
+    "icon_name": "snowstorm"
+  },
+  {
+    "icon_code": "403-fill",
+    "icon_name": "snowstorm-fill"
+  },
+  {
+    "icon_code": "404",
+    "icon_name": "sleet"
+  },
+  {
+    "icon_code": "404-fill",
+    "icon_name": "sleet-fill"
+  },
+  {
+    "icon_code": "405",
+    "icon_name": "rain-and-snow"
+  },
+  {
+    "icon_code": "405-fill",
+    "icon_name": "rain-and-snow-fill"
+  },
+  {
+    "icon_code": "406",
+    "icon_name": "shower-snow"
+  },
+  {
+    "icon_code": "406-fill",
+    "icon_name": "shower-snow-fill"
+  },
+  {
+    "icon_code": "407",
+    "icon_name": "snow-flurry"
+  },
+  {
+    "icon_code": "407-fill",
+    "icon_name": "snow-flurry-fill"
+  },
+  {
+    "icon_code": "408",
+    "icon_name": "light-to-moderate-snow"
+  },
+  {
+    "icon_code": "408-fill",
+    "icon_name": "light-to-moderate-snow-fill"
+  },
+  {
+    "icon_code": "409",
+    "icon_name": "moderate-to-heavy-snow"
+  },
+  {
+    "icon_code": "409-fill",
+    "icon_name": "moderate-to-heavy-snow-fill"
+  },
+  {
+    "icon_code": "410",
+    "icon_name": "heavy-snow-to-snowstorm"
+  },
+  {
+    "icon_code": "410-fill",
+    "icon_name": "heavy-snow-to-snowstorm-fill"
+  },
+  {
+    "icon_code": "456",
+    "icon_name": "shower-snow-night"
+  },
+  {
+    "icon_code": "456-fill",
+    "icon_name": "shower-snow-night-fill"
+  },
+  {
+    "icon_code": "457",
+    "icon_name": "snow-flurry-night"
+  },
+  {
+    "icon_code": "457-fill",
+    "icon_name": "snow-flurry-night-fill"
+  },
+  {
+    "icon_code": "499",
+    "icon_name": "snow"
+  },
+  {
+    "icon_code": "499-fill",
+    "icon_name": "snow-fill"
+  },
+  {
+    "icon_code": "500",
+    "icon_name": "mist"
+  },
+  {
+    "icon_code": "500-fill",
+    "icon_name": "mist-fill"
+  },
+  {
+    "icon_code": "501",
+    "icon_name": "foggy"
+  },
+  {
+    "icon_code": "501-fill",
+    "icon_name": "foggy-fill"
+  },
+  {
+    "icon_code": "502",
+    "icon_name": "haze"
+  },
+  {
+    "icon_code": "502-fill",
+    "icon_name": "haze-fill"
+  },
+  {
+    "icon_code": "503",
+    "icon_name": "sand"
+  },
+  {
+    "icon_code": "503-fill",
+    "icon_name": "sand-fill"
+  },
+  {
+    "icon_code": "504",
+    "icon_name": "dust"
+  },
+  {
+    "icon_code": "504-fill",
+    "icon_name": "dust-fill"
+  },
+  {
+    "icon_code": "507",
+    "icon_name": "duststorm"
+  },
+  {
+    "icon_code": "507-fill",
+    "icon_name": "duststorm-fill"
+  },
+  {
+    "icon_code": "508",
+    "icon_name": "sandstorm"
+  },
+  {
+    "icon_code": "508-fill",
+    "icon_name": "sandstorm-fill"
+  },
+  {
+    "icon_code": "509",
+    "icon_name": "dense-fog"
+  },
+  {
+    "icon_code": "509-fill",
+    "icon_name": "dense-fog-fill"
+  },
+  {
+    "icon_code": "510",
+    "icon_name": "strong-fog"
+  },
+  {
+    "icon_code": "510-fill",
+    "icon_name": "strong-fog-fill"
+  },
+  {
+    "icon_code": "511",
+    "icon_name": "moderate-haze"
+  },
+  {
+    "icon_code": "511-fill",
+    "icon_name": "moderate-haze-fill"
+  },
+  {
+    "icon_code": "512",
+    "icon_name": "heavy-haze"
+  },
+  {
+    "icon_code": "512-fill",
+    "icon_name": "heavy-haze-fill"
+  },
+  {
+    "icon_code": "513",
+    "icon_name": "severe-haze"
+  },
+  {
+    "icon_code": "513-fill",
+    "icon_name": "severe-haze-fill"
+  },
+  {
+    "icon_code": "514",
+    "icon_name": "heavy-fog"
+  },
+  {
+    "icon_code": "514-fill",
+    "icon_name": "heavy-fog-fill"
+  },
+  {
+    "icon_code": "515",
+    "icon_name": "extra-heavy-fog"
+  },
+  {
+    "icon_code": "515-fill",
+    "icon_name": "extra-heavy-fog-fill"
+  },
+  {
+    "icon_code": "800",
+    "icon_name": "new-moon"
+  },
+  {
+    "icon_code": "801",
+    "icon_name": "waxing-crescent"
+  },
+  {
+    "icon_code": "802",
+    "icon_name": "first-quarter"
+  },
+  {
+    "icon_code": "803",
+    "icon_name": "waxing-gibbous"
+  },
+  {
+    "icon_code": "804",
+    "icon_name": "full-moon"
+  },
+  {
+    "icon_code": "805",
+    "icon_name": "waning-gibbous"
+  },
+  {
+    "icon_code": "806",
+    "icon_name": "last-quarter"
+  },
+  {
+    "icon_code": "807",
+    "icon_name": "waning-crescent"
+  },
+  {
+    "icon_code": "900",
+    "icon_name": "hot"
+  },
+  {
+    "icon_code": "900-fill",
+    "icon_name": "hot-fill"
+  },
+  {
+    "icon_code": "901",
+    "icon_name": "cold"
+  },
+  {
+    "icon_code": "901-fill",
+    "icon_name": "cold-fill"
+  },
+  {
+    "icon_code": "999",
+    "icon_name": "unknown"
+  },
+  {
+    "icon_code": "999-fill",
+    "icon_name": "unknown-fill"
+  }
+]
