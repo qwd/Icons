@@ -1,0 +1,10 @@
+User-agent: *
+Sitemap: https://icons.qweather.com/sitemap.xml
+Disallow: /404.html
+Disallow: /en/404.html
+Disallow: /403.html
+Disallow: /en/403.html
+Disallow: /bk/*
+Disallow: /test/*
+Disallow: /redirects*
+Disallow: /redirect/*
