@@ -16,7 +16,7 @@ npm i qweather-icons
 如果你需要使用图标文字，通过CDN @jsDelivr导入和风天气图标的样式表即可。了解[如何使用和风天气图标文字](/usage/#icon-font)。
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@1.5.0/font/qweather-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@{{< param ver >}}/font/qweather-icons.css">
 ```
 
 ## 下载 {#download}

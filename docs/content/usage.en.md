@@ -54,7 +54,7 @@ If you have referenced the QWeather Icons font, you can also use it like this:
 
 ## Download
 
-If you need to modify QWeather Icons, or want to use these icons elsewhere, just download all the icons locally to create more personalized icons and export them to various formats you like, such as .png/.jpg and etc.
+If you need to modify QWeather Icons, or want to use these icons elsewhere, just [download all the icons](https://github.com/qwd/Icons/releases/latest) locally to create more personalized icons and export them to various formats you like, such as .png/.jpg and etc.
 
 
 
