@@ -14,7 +14,7 @@ npm i qweather-icons
 
 No need to install and download, import the QWeather Icons stylesheet via CDN @jsDelivr and use it instantly.
 
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@{{< param ver >}}/font/qweather-icons.css">
 ```
 
