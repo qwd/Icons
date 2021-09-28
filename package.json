@@ -1,6 +1,6 @@
 {
   "name": "qweather-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official open source SVG icon library for qweather.com",
   "author": "qweather.com",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "scripts": {
     "icons": "npm run icons-main && npm run icons-font",
     "icons-main": "node build/build-svgs.js",
-    "icons-zip": "cross-env-shell \"rm -rf qweather-icons-$npm_package_version && cp -r icons/ qweather-icons-$npm_package_version && cp qweather-icons.svg qweather-icons-$npm_package_version && cp -r font/ qweather-icons-$npm_package_version && zip -r9 qweather-icons-$npm_package_version.zip qweather-icons-$npm_package_version && rm -rf qweather-icons-$npm_package_version\"",
+    "icons-zip": "cross-env-shell \"rm -rf qweather-icons-$npm_package_version && cp -r icons/ qweather-icons-$npm_package_version && cp -r font/ qweather-icons-$npm_package_version && zip -r9 qweather-icons-$npm_package_version.zip qweather-icons-$npm_package_version && rm -rf qweather-icons-$npm_package_version\"",
     "icons-font": "fantasticon && node build/build-alias.js",
     "publish": "npm-run-all icons icons-zip",
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm-run-all icons",
