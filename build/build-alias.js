@@ -6,7 +6,7 @@ let generateFontsOption = require('../fantasticonrc')
 function iconTrans(key) {
     let name = ''
     iconWords.forEach((item, index) => {
-        if (parseInt(item.icon_code) === parseInt(key)) {
+        if (item.icon_code == key) {
             name = item.icon_name
         }
     })
