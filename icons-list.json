@@ -805,7 +805,7 @@
   },
   {
     "icon_code": "1606",
-    "icon_name": "special-announcement-on-flooding-in-the-northern-new-territories"
+    "icon_name": "flooding-in-the-northern-new-territories"
   },
   {
     "icon_code": "1607",
@@ -885,6 +885,6 @@
   },
   {
     "icon_code": "9999",
-    "icon_name": "other"
+    "icon_name": "warning-default"
   }
 ]

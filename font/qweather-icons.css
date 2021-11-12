@@ -381,7 +381,7 @@ url("./fonts/qweather-icons.ttf?6f3002707c50c5ebabadf80f467656a8") format("truet
 .qi-landslip::before { content: "\f189"; }
 .qi-tropical-cyclone::before { content: "\f18a"; }
 .qi-fire-danger::before { content: "\f18b"; }
-.qi-special-announcement-on-flooding-in-the-northern-new-territories::before { content: "\f18c"; }
+.qi-flooding-in-the-northern-new-territories::before { content: "\f18c"; }
 .qi-cold-weather::before { content: "\f18d"; }
 .qi-wind::before { content: "\f18e"; }
 .qi-snow-ice::before { content: "\f18f"; }
@@ -400,7 +400,7 @@ url("./fonts/qweather-icons.ttf?6f3002707c50c5ebabadf80f467656a8") format("truet
 .qi-hailstorm::before { content: "\f19d"; }
 .qi-sea-area-warning::before { content: "\f19e"; }
 .qi-fishermen-warning::before { content: "\f19f"; }
-.qi-other::before { content: "\f1a0"; }
+.qi-warning-default::before { content: "\f1a0"; }
 .qi-sunny-fill::before { content: "\f1a1"; }
 .qi-cloudy-fill::before { content: "\f1a2"; }
 .qi-few-clouds-fill::before { content: "\f1a3"; }
