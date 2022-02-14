@@ -51,3 +51,6 @@ _site/
 # Misc
 *.tmp
 *.bak
+
+# other
+package-lock.json
