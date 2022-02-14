@@ -884,6 +884,50 @@
     "icon_name": "fishermen-warning"
   },
   {
+    "icon_code": "2019",
+    "icon_name": "low-humidity"
+  },
+  {
+    "icon_code": "2020",
+    "icon_name": "accumulated-rain"
+  },
+  {
+    "icon_code": "2021",
+    "icon_name": "hazardous-surf-warning"
+  },
+  {
+    "icon_code": "2022",
+    "icon_name": "marine-wind-warning"
+  },
+  {
+    "icon_code": "2023",
+    "icon_name": "road-weather-alert"
+  },
+  {
+    "icon_code": "2024",
+    "icon_name": "thunder-rain"
+  },
+  {
+    "icon_code": "2025",
+    "icon_name": "thunder-rain-and-fog"
+  },
+  {
+    "icon_code": "2026",
+    "icon_name": "damaging-winds"
+  },
+  {
+    "icon_code": "2027",
+    "icon_name": "veld-fire-conditions"
+  },
+  {
+    "icon_code": "2028",
+    "icon_name": "weather-advisory"
+  },
+  {
+    "icon_code": "9998",
+    "icon_name": "severe-weather-warning"
+  },
+  {
     "icon_code": "9999",
     "icon_name": "warning-default"
   }
