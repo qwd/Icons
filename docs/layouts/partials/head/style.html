@@ -1,4 +1,4 @@
 <!-- main style -->
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
 <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
-<link rel="stylesheet" href="/assets/font/qweather-icons.css">
+<link rel="stylesheet" href="/assets/font/qweather-icons.css?{{ now.Unix }}">
