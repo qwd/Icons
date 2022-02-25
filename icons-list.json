@@ -553,7 +553,7 @@
   },
   {
     "icon_code": "1007",
-    "icon_name": "sandstorm"
+    "icon_name": "sandstorm-warning"
   },
   {
     "icon_code": "1008",
@@ -593,7 +593,7 @@
   },
   {
     "icon_code": "1017",
-    "icon_name": "heavy-fog"
+    "icon_name": "heavy-fog-warning"
   },
   {
     "icon_code": "1018",
@@ -601,7 +601,7 @@
   },
   {
     "icon_code": "1019",
-    "icon_name": "haze"
+    "icon_name": "haze-warning"
   },
   {
     "icon_code": "1020",
@@ -657,11 +657,11 @@
   },
   {
     "icon_code": "1033",
-    "icon_name": "heavy-snow"
+    "icon_name": "heavy-snow-warning"
   },
   {
     "icon_code": "1034",
-    "icon_name": "cold"
+    "icon_name": "cold-warning"
   },
   {
     "icon_code": "1035",
@@ -833,7 +833,7 @@
   },
   {
     "icon_code": "2006",
-    "icon_name": "rain"
+    "icon_name": "rain-warning"
   },
   {
     "icon_code": "2007",
@@ -882,6 +882,50 @@
   {
     "icon_code": "2018",
     "icon_name": "fishermen-warning"
+  },
+  {
+    "icon_code": "2019",
+    "icon_name": "low-humidity"
+  },
+  {
+    "icon_code": "2020",
+    "icon_name": "accumulated-rain"
+  },
+  {
+    "icon_code": "2021",
+    "icon_name": "hazardous-surf-warning"
+  },
+  {
+    "icon_code": "2022",
+    "icon_name": "marine-wind-warning"
+  },
+  {
+    "icon_code": "2023",
+    "icon_name": "road-weather-alert"
+  },
+  {
+    "icon_code": "2024",
+    "icon_name": "thunder-rain"
+  },
+  {
+    "icon_code": "2025",
+    "icon_name": "thunder-rain-and-fog"
+  },
+  {
+    "icon_code": "2026",
+    "icon_name": "damaging-winds"
+  },
+  {
+    "icon_code": "2027",
+    "icon_name": "veld-fire-conditions"
+  },
+  {
+    "icon_code": "2028",
+    "icon_name": "weather-advisory"
+  },
+  {
+    "icon_code": "9998",
+    "icon_name": "severe-weather-warning"
   },
   {
     "icon_code": "9999",
