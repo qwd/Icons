@@ -553,7 +553,7 @@
   },
   {
     "icon_code": "1007",
-    "icon_name": "sandstorm"
+    "icon_name": "sandstorm-warning"
   },
   {
     "icon_code": "1008",
@@ -593,7 +593,7 @@
   },
   {
     "icon_code": "1017",
-    "icon_name": "heavy-fog"
+    "icon_name": "heavy-fog-warning"
   },
   {
     "icon_code": "1018",
@@ -601,7 +601,7 @@
   },
   {
     "icon_code": "1019",
-    "icon_name": "haze"
+    "icon_name": "haze-warning"
   },
   {
     "icon_code": "1020",
@@ -657,11 +657,11 @@
   },
   {
     "icon_code": "1033",
-    "icon_name": "heavy-snow"
+    "icon_name": "heavy-snow-warning"
   },
   {
     "icon_code": "1034",
-    "icon_name": "cold"
+    "icon_name": "cold-warning"
   },
   {
     "icon_code": "1035",
@@ -833,7 +833,7 @@
   },
   {
     "icon_code": "2006",
-    "icon_name": "rain"
+    "icon_name": "rain-warning"
   },
   {
     "icon_code": "2007",
