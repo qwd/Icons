@@ -764,12 +764,116 @@
     "icon_name": "continuous-low-temperature"
   },
   {
+    "icon_code": "1060",
+    "icon_name": "low-visibility"
+  },
+  {
     "icon_code": "1061",
     "icon_name": "strong-dust"
   },
   {
+    "icon_code": "1062",
+    "icon_name": "gale-at-sea"
+  },
+  {
+    "icon_code": "1063",
+    "icon_name": "short-duration-heavy-shower-rain"
+  },
+  {
     "icon_code": "1064",
     "icon_name": "short-lived-heavy-shower-rain"
+  },
+  {
+    "icon_code": "1065",
+    "icon_name": "sea-fog"
+  },
+  {
+    "icon_code": "1066",
+    "icon_name": "heat-stroke-conditions"
+  },
+  {
+    "icon_code": "1067",
+    "icon_name": "heavy-pollution-weather"
+  },
+  {
+    "icon_code": "1068",
+    "icon_name": "co-poisoning-weather-conditions"
+  },
+  {
+    "icon_code": "1069",
+    "icon_name": "respiratory-disease-weather-wonditions"
+  },
+  {
+    "icon_code": "1071",
+    "icon_name": "intestinal-disease-weather-wonditions"
+  },
+  {
+    "icon_code": "1072",
+    "icon_name": "cardiovascular-disease-weather-wonditions"
+  },
+  {
+    "icon_code": "1073",
+    "icon_name": "flooding-weather-risk"
+  },
+  {
+    "icon_code": "1074",
+    "icon_name": "heavy-pollution-weather-conditions"
+  },
+  {
+    "icon_code": "1075",
+    "icon_name": "urban-flooding-weather-risk"
+  },
+  {
+    "icon_code": "1076",
+    "icon_name": "flooding-weather-risk"
+  },
+  {
+    "icon_code": "1077",
+    "icon_name": "wildfire-weather-risk"
+  },
+  {
+    "icon_code": "1078",
+    "icon_name": "meteorological-drought"
+  },
+  {
+    "icon_code": "1079",
+    "icon_name": "agricultural-weather-risk"
+  },
+  {
+    "icon_code": "1080",
+    "icon_name": "strong-monsoon"
+  },
+  {
+    "icon_code": "1081",
+    "icon_name": "ice-accretion-on-wire"
+  },
+  {
+    "icon_code": "1082",
+    "icon_name": "stroke-weather-risk"
+  },
+  {
+    "icon_code": "1084",
+    "icon_name": "wildfire-grassland-risk"
+  },
+  {
+    "icon_code": "1085",
+    "icon_name": "thunderstorm-and-strong-winds"
+  },
+  {
+    "icon_code": "1086",
+    "icon_name": "low-temperature-freeze"
+  },
+  {
+    "icon_code": "1087",
+    "icon_name": "low-temperature-damage"
+  },
+  {
+    "icon_code": "1088",
+    "icon_name": "national-agricultural-meteorological-risk"
+  },
+  {
+    "icon_code": "1089",
+    "icon_name": "dry-hot-wind-risk-for-winter-wheat"
   },
   {
     "icon_code": "1101",
@@ -810,6 +914,18 @@
   {
     "icon_code": "1607",
     "icon_name": "cold-weather"
+  },
+  {
+    "icon_code": "1701",
+    "icon_name": "cold-surge-advisory"
+  },
+  {
+    "icon_code": "1702",
+    "icon_name": "Wind"
+  },
+  {
+    "icon_code": "1703",
+    "icon_name": "rain"
   },
   {
     "icon_code": "2001",
