@@ -2,32 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://icons.qweather.com/install/</loc>
-    <lastmod>2021-09-26T18:52:52+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://icons.qweather.com/en/install/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://icons.qweather.com/install/"
-                />
-  </url><url>
-    <loc>https://icons.qweather.com/usage/</loc>
-    <lastmod>2021-09-26T18:52:52+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://icons.qweather.com/en/usage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://icons.qweather.com/usage/"
-                />
-  </url><url>
     <loc>https://icons.qweather.com/about/</loc>
     <lastmod>2021-09-24T20:06:53+08:00</lastmod>
     <xhtml:link
@@ -53,6 +27,19 @@
                 href="https://icons.qweather.com/"
                 />
   </url><url>
+    <loc>https://icons.qweather.com/usage/</loc>
+    <lastmod>2021-09-26T18:52:52+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://icons.qweather.com/en/usage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://icons.qweather.com/usage/"
+                />
+  </url><url>
     <loc>https://icons.qweather.com/icons/</loc>
     <lastmod>2021-09-24T20:06:53+08:00</lastmod>
     <xhtml:link
@@ -64,6 +51,19 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://icons.qweather.com/icons/"
+                />
+  </url><url>
+    <loc>https://icons.qweather.com/install/</loc>
+    <lastmod>2021-09-26T18:52:52+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://icons.qweather.com/en/install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://icons.qweather.com/install/"
                 />
   </url><url>
     <loc>https://icons.qweather.com/404.html</loc>
