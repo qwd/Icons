@@ -47,6 +47,7 @@ _site/
 # hugo
 /resources/
 /public/
+.hugo_build.lock
 
 # Misc
 *.tmp
