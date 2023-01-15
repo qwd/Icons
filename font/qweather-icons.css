@@ -322,7 +322,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-heavy-to-severe-storm::before { content: "\f11c"; }
 .qi-shower-rain-night::before { content: "\f11d"; }
 .qi-heavy-shower-rain-night::before { content: "\f11e"; }
-.qi-rain::before { content: "\f1aa"; }
+.qi-rain::before { content: "\f11f"; }
 .qi-light-snow::before { content: "\f120"; }
 .qi-moderate-snow::before { content: "\f121"; }
 .qi-heavy-snow::before { content: "\f122"; }
@@ -336,7 +336,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-heavy-snow-to-snowstorm::before { content: "\f12a"; }
 .qi-shower-snow-night::before { content: "\f12b"; }
 .qi-snow-flurry-night::before { content: "\f12c"; }
-.qi-snow::before { content: "\f1c7"; }
+.qi-snow::before { content: "\f12d"; }
 .qi-mist::before { content: "\f12e"; }
 .qi-foggy::before { content: "\f12f"; }
 .qi-haze::before { content: "\f130"; }
@@ -372,7 +372,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-low-temperature-freeze::before { content: "\f19a"; }
 .qi-high-temperature::before { content: "\f14f"; }
 .qi-heat-wave::before { content: "\f150"; }
-.qi-dry-hot-air::before { content: "\f151"; }
+.qi-dry-hot-wind::before { content: "\f151"; }
 .qi-downburst::before { content: "\f152"; }
 .qi-avalanche::before { content: "\f153"; }
 .qi-lightning::before { content: "\f154"; }
@@ -384,7 +384,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-thunder-gust::before { content: "\f15a"; }
 .qi-road-icing::before { content: "\f15b"; }
 .qi-drought::before { content: "\f15c"; }
-.qi-gale-at-sea::before { content: "\f184"; }
+.qi-gale-at-sea::before { content: "\f15d"; }
 .qi-heat-stroke::before { content: "\f15e"; }
 .qi-wildfire::before { content: "\f15f"; }
 .qi-grassland-fire::before { content: "\f160"; }
@@ -414,7 +414,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-severe-cold::before { content: "\f178"; }
 .qi-sand-dust::before { content: "\f179"; }
 .qi-sea-thunderstorms::before { content: "\f17a"; }
-.qi-sea-fog::before { content: "\f187"; }
+.qi-sea-fog::before { content: "\f17b"; }
 .qi-sea-thunder::before { content: "\f17c"; }
 .qi-sea-typhoon::before { content: "\f17d"; }
 .qi-low-temperature::before { content: "\f17e"; }
@@ -423,17 +423,20 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-continuous-low-temperature::before { content: "\f181"; }
 .qi-low-visibility::before { content: "\f182"; }
 .qi-strong-dust::before { content: "\f183"; }
+.qi-gale-in-sea-area::before { content: "\f184"; }
 .qi-short-duration-heavy-shower-rain::before { content: "\f185"; }
 .qi-short-lived-heavy-shower-rain::before { content: "\f186"; }
+.qi-sea-area-fog::before { content: "\f187"; }
 .qi-heat-stroke-conditions::before { content: "\f188"; }
 .qi-heavy-pollution-weather::before { content: "\f189"; }
 .qi-co-poisoning-weather-conditions::before { content: "\f18a"; }
 .qi-respiratory-disease-weather-wonditions::before { content: "\f18b"; }
 .qi-intestinal-disease-weather-wonditions::before { content: "\f18c"; }
 .qi-cardiovascular-disease-weather-wonditions::before { content: "\f18d"; }
-.qi-flooding-weather-risk::before { content: "\f191"; }
+.qi-flooding-weather-risk::before { content: "\f18e"; }
 .qi-heavy-pollution-weather-conditions::before { content: "\f18f"; }
 .qi-urban-flooding-weather-risk::before { content: "\f190"; }
+.qi-flooding-weather-risk-2::before { content: "\f191"; }
 .qi-wildfire-weather-risk::before { content: "\f192"; }
 .qi-meteorological-drought::before { content: "\f193"; }
 .qi-agricultural-weather-risk::before { content: "\f194"; }
@@ -456,7 +459,8 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-flooding-in-the-northern-new-territories::before { content: "\f1a6"; }
 .qi-cold-weather::before { content: "\f1a7"; }
 .qi-cold-surge-advisory::before { content: "\f1a8"; }
-.qi-Wind::before { content: "\f1a9"; }
+.qi-Strong Wind Advisory::before { content: "\f1a9"; }
+.qi-Rainfall Advisory::before { content: "\f1aa"; }
 .qi-wind::before { content: "\f1ab"; }
 .qi-snow-ice::before { content: "\f1ac"; }
 .qi-fog::before { content: "\f1ad"; }
@@ -485,6 +489,7 @@ url("./fonts/qweather-icons.ttf?b0a043b1425273a7b786322ce04aa957") format("truet
 .qi-damaging-winds::before { content: "\f1c4"; }
 .qi-veld-fire-conditions::before { content: "\f1c5"; }
 .qi-weather-advisory::before { content: "\f1c6"; }
+.qi-snow-warning::before { content: "\f1c7"; }
 .qi-zonda-wind::before { content: "\f1c8"; }
 .qi-severe-weather-warning::before { content: "\f1ca"; }
 .qi-warning-default::before { content: "\f1cb"; }
