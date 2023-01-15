@@ -1040,11 +1040,32 @@
     "icon_name": "weather-advisory"
   },
   {
+    "icon_code": "2052",
+    "icon_name": "snow"
+  },
+  {
+    "icon_code": "2053",
+    "icon_name": "zonda-wind"
+  },
+  {
+    "icon_code": "2054",
+    "icon_name": "storm"
+  },
+  {
     "icon_code": "9998",
     "icon_name": "severe-weather-warning"
   },
   {
     "icon_code": "9999",
     "icon_name": "warning-default"
+  },
+  {
+    "icon_code": "qweather",
+    "icon_name": "qweather"
+  },
+  {
+    "icon_code": "qweather-fill",
+    "icon_name": "qweather-fill"
   }
+
 ]
