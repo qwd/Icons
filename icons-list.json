@@ -569,7 +569,7 @@
   },
   {
     "icon_code": "1011",
-    "icon_name": "dry-hot-air"
+    "icon_name": "dry-hot-wind"
   },
   {
     "icon_code": "1012",
@@ -773,7 +773,7 @@
   },
   {
     "icon_code": "1062",
-    "icon_name": "gale-at-sea"
+    "icon_name": "gale-in-sea-area"
   },
   {
     "icon_code": "1063",
@@ -785,7 +785,7 @@
   },
   {
     "icon_code": "1065",
-    "icon_name": "sea-fog"
+    "icon_name": "sea-area-fog"
   },
   {
     "icon_code": "1066",
@@ -825,7 +825,7 @@
   },
   {
     "icon_code": "1076",
-    "icon_name": "flooding-weather-risk"
+    "icon_name": "flooding-weather-risk-2"
   },
   {
     "icon_code": "1077",
@@ -921,11 +921,11 @@
   },
   {
     "icon_code": "1702",
-    "icon_name": "Wind"
+    "icon_name": "Strong Wind Advisory"
   },
   {
     "icon_code": "1703",
-    "icon_name": "rain"
+    "icon_name": "Rainfall Advisory"
   },
   {
     "icon_code": "2001",
@@ -1041,7 +1041,7 @@
   },
   {
     "icon_code": "2052",
-    "icon_name": "snow"
+    "icon_name": "snow-warning"
   },
   {
     "icon_code": "2053",
