@@ -921,15 +921,15 @@
   },
   {
     "icon_code": "1702",
-    "icon_name": "Strong Wind Advisory"
+    "icon_name": "strong-wind-advisory"
   },
   {
     "icon_code": "1703",
-    "icon_name": "Rainfall Advisory"
+    "icon_name": "rainfall-advisory"
   },
   {
     "icon_code": "2001",
-    "icon_name": "wind"
+    "icon_name": "wind-warning"
   },
   {
     "icon_code": "2002",
