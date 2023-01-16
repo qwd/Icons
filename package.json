@@ -1,8 +1,8 @@
 {
   "name": "qweather-icons",
-  "version": "1.2.0",
-  "description": "Official open source SVG icon library for qweather.com",
-  "author": "qweather.com",
+  "version": "1.3.0",
+  "description": "Official open source SVG icon and font library for dev.qweather.com",
+  "author": "dev.qweather.com",
   "license": "MIT",
   "homepage": "https://icons.qweather.com",
   "repository": {
