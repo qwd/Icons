@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-itunes-app" content="app-id=1461458147, app-argument=weather" />
 
-<title>页面未找到 Page Not Found | 和风天气图标</title>
-<meta name="description" content="" />
+<title>自定义 | 和风天气图标</title>
+<meta name="description" content="QWeather Icons 项目可以帮助你创建自定义图标和图标字体。" />
 
 <link rel="stylesheet" href="/sass/main.min.b6614683a2db543a832e9249b7423b982111fdd318f1a34c56abbf05b9570387.css">
 <link rel="stylesheet" href="/assets/font/qweather-icons.css?1674019218">
@@ -19,7 +19,41 @@
 <link rel="manifest" href="/assets/favicon/site.webmanifest">
 <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#1a2226">
-<meta name="robots" content="noindex">
+
+<link rel="canonical" href="https://icons.qweather.com/customize/">
+<link rel="alternate" hreflang="zh" href="https://icons.qweather.com/customize/" />
+<link rel="alternate" hreflang="en" href="https://icons.qweather.com/en/customize/" />
+
+<meta property="og:title" content="自定义" />
+<meta property="og:locale" content="zh" />
+<meta property="og:locale:alternate" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://icons.qweather.com/assets/images/qweather-icons-hero.jpg" />    
+<meta property="og:description" content="QWeather Icons 项目可以帮助你创建自定义图标和图标字体。" />
+<meta property="og:url" content="https://icons.qweather.com/customize/" />
+<meta property="og:site_name" content="和风天气图标" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "article",
+        "headline": "自定义",
+        "dateModified":"2023-01-18T13:19+0800",
+        "description": "QWeather Icons 项目可以帮助你创建自定义图标和图标字体。",    
+        "url":"https://icons.qweather.com/customize/",
+        "inLanguage": "zh",
+        "image" : "https://icons.qweather.com/assets/images/qweather-icons-hero.jpg",    
+        "publisher":{
+            "@type":"Organization",
+            "name": "QWeather",
+            "logo":{
+                "@type":"ImageObject",
+                "url": "https://cdn.qweather.com/media/qw-logo-s-dark-800.png"
+            }
+        }
+    }
+</script>
+
 
 <meta name="google-site-verification" content="WFu5M6w9XiYrf3hgUBLxCA1Jrgb_CWTzXTPycVIqngg" />
 <meta name="msvalidate.01" content="EDFBFE217D2B905D82BE1D5A1BC9AB28" />
@@ -47,7 +81,7 @@
                     <li><a href="/">首页</a></li>
                     <li><a href="/install/">安装</a></li>
                     <li><a href="/usage/">使用</a></li>
-                    <li><a href="/customize/">自定义</a></li>
+                    <li class="active"><a href="/customize/">自定义</a></li>
                     <li><a href="/icons/">图标预览</a></li>
                     <li class="d-sm-block d-md-none"><a class="backdev no-underline" href="https://dev.qweather.com" target="_blank" rel="noopener noreferrer">和风天气开发平台</a></li>
                 </ul>
@@ -65,12 +99,44 @@
 </nav>
     
     
-<main class="main-content text-center page-404">
-    <h1 id="404">404</h1>
-<h2 id="页面未找到">页面未找到</h2>
-<h2 id="page-not-found">Page Not Found</h2>
+<article class="main-content container">
+    <section class="article-headline">
+        <h1>自定义</h1>
+        <div class="summary">
+            QWeather Icons 项目可以帮助你创建自定义图标和图标字体。
+        </div>
+    </section>
+    <section class="doc-content">
+        <p>各花入各眼，你可能希望修改图标的颜色，或者修改一些图标样式以更加适配你的设计风格，这里将介绍如何使用和风天气项目创建你的自定义图标和字体。</p>
+<h2 id="edit-icons-and-fonts">编辑图标和字体<a href="#edit-icons-and-fonts" class="anchor-link small">#</a></h2>
+<p>👉 <a href="https://www.figma.com/community/file/1196353857920331062">在Figma中获取所有设计文件</a></p>
+<p>你可以对这些图标修改颜色或调整样式，然后导出新的SVG或其他格式的图片。</p>
+<p>如果需要创建新的字体，你必须：</p>
+<ul>
+<li>导出SVG格式的图标</li>
+<li>SVG图片必须进行<strong>Flatten</strong>和<strong>Outline stroke</strong>操作</li>
+<li>确保SVG图片的<code>fill-rule</code>的值<strong>不是</strong><code>evenodd</code>。如果你是在Figma中进行的编辑，推荐使用<a href="https://www.figma.com/community/plugin/771155994770327940">Fill Rule Editor</a>这个插件来修正。</li>
+</ul>
+<p>当完成上述图标和字体的重新设计后，参考下方<a href="#run-qweather-icons">运行QWeather Icons</a>，可以对SVG图标进行压缩和优化（我们使用<a href="https://github.com/svg/svgo">SVGO</a>）并创建字体。</p>
+<h2 id="run-qweather-icons">运行 QWeather Icons<a href="#run-qweather-icons" class="anchor-link small">#</a></h2>
+<p>QWeather Icons项目将帮助你优化SVG图标和创建新的字体。</p>
+<h4 id="1-安装nodejs">1. 安装Node.js</h4>
+<p>请访问 <a href="https://nodejs.org">https://nodejs.org</a> 下载并安装Node.js，我们在v14和v18版本测试通过。</p>
+<h4 id="2-下载项目">2. 下载项目</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git clone https://github.com/qwd/Icons.git
+</span></span></code></pre></div><h4 id="3-导入自定义svg">3. 导入自定义SVG</h4>
+<p>将你修改后的所有SVG粘贴到<code>/icons</code>目录下并替换原文件。</p>
+<p>如果有新增/删除/重命名的图标，你需要编辑<code>icons-list.json</code>文件。</p>
+<h4 id="4-安装依赖">4. 安装依赖</h4>
+<p>进入项目目录，安装依赖库（这可能会需要一些时间，取决于你的网络环境，或者尝试更改npm源）：</p>
+<pre tabindex="0"><code>npm install
+</code></pre><h4 id="5-运行">5. 运行</h4>
+<pre tabindex="0"><code>npm run icons
+</code></pre><p>稍等片刻，所有SVG图标在<code>/icons</code>目录生成，字体文件在<code>/font</code>目录下生成，你也可以打开<code>/font/demo.html</code>查看效果。</p>
+<p>搞定 🎉</p>
 
-</main>
+    </section>
+</article>
 
     <footer class="footer">
     <div class="container">
@@ -92,8 +158,8 @@
                 <div class="select-language">
                     <label>Language:</label>
                     <select id="change-language" onchange="if (this.value) window.location.href=this.value">
-                        <option value="https://icons.qweather.com/404.html" selected="selected">中文</option>
-                        <option value="https://icons.qweather.com/en/404.html">English</option>
+                        <option value="https://icons.qweather.com/customize/" selected="selected">中文</option>
+                        <option value="https://icons.qweather.com/en/customize/">English</option>
                     </select>
                 </div>
             </div>

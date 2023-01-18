@@ -9,7 +9,7 @@
 <meta name="description" content="QWeather Icons use SVG format, so it is very easy to use and modification." />
 
 <link rel="stylesheet" href="/sass/main.min.b6614683a2db543a832e9249b7423b982111fdd318f1a34c56abbf05b9570387.css">
-<link rel="stylesheet" href="/assets/font/qweather-icons.css?1673856694">
+<link rel="stylesheet" href="/assets/font/qweather-icons.css?1674019219">
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -38,7 +38,7 @@
         "@context": "https://schema.org",
         "@type": "article",
         "headline": "Usage",
-        "dateModified":"2021-09-26T18:52+0800",
+        "dateModified":"2023-01-18T13:19+0800",
         "description": "QWeather Icons use SVG format, so it is very easy to use and modification.",    
         "url":"https://icons.qweather.com/en/usage/",
         "inLanguage": "en",
@@ -81,6 +81,7 @@
                     <li><a href="/en/">Home</a></li>
                     <li><a href="/en/install/">Install</a></li>
                     <li class="active"><a href="/en/usage/">Usage</a></li>
+                    <li><a href="/en/customize/">Customize</a></li>
                     <li><a href="/en/icons/">Icons</a></li>
                     <li class="d-sm-block d-md-none"><a class="backdev no-underline" href="https://dev.qweather.com/en/" target="_blank" rel="noopener noreferrer">dev.qweather</a></li>
                 </ul>
@@ -107,23 +108,34 @@
     </section>
     <section class="doc-content">
         <blockquote>
-<p>For <a href="https://dev.qweather.com/docs/">QWeather developers</a>, the icon name or style name is the same as the <code>icon</code> field in the Weather API/SDK, so you just need to match the icon with the same name.</p>
-<p><strong>Example:</strong> the API returns <code>&quot;icon&quot;: &quot;301&quot;</code>, then you just need to use the image <code>301.svg</code> or the icon font <code>&lt;i class=&quot;qi-301&quot;&gt;&lt;/i&gt;</code>.</p>
+<p>For <a href="https://dev.qweather.com/en/">QWeather developers</a>, the icon name or style name is the same as the <code>icon</code> in weather data or <code>warning.type</code> in warning data, so you can simply map the icons to the weather conditions.</p>
+<p><strong>Example:</strong> <code>now.icon = 301</code> corresponds <strong>301.svg</strong> or <code>&lt;i class=&quot;qi-301&quot;&gt;&lt;/i&gt;</code>, <code>warning.type = 1010</code> corresponds <strong>1010.svg</strong> or <code>&lt;i class=&quot;qi-1010&quot;&gt;&lt;/i&gt;</code>. For the icons code and name used in QWeather Develop Service, please refer to <a href="https://dev.qweather.com/docs/resource/icons/">Icon info</a>.</p>
 </blockquote>
 <h2 id="embedded">Embedded<a href="#embedded" class="anchor-link small">#</a></h2>
-<p>Use the <code>svg</code> element to embed the icon into your HTML.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-301&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M7.012 14.985a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM3.959 14a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zm6.028 0a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM5.207 1.904h.007a.5.5 0 0 0 .493-.506L5.695.494a.5.5 0 0 0-.5-.494h-.007a.5.5 0 0 0-.493.506l.012.905a.5.5 0 0 0 .5.493zm-2.892.946a.5.5 0 1 0 .698-.716l-.648-.63a.5.5 0 1 0-.697.715zm-.179 2.203a.5.5 0 0 0-.5-.493h-.007l-.905.011a.5.5 0 0 0 .007 1h.007l.904-.011a.5.5 0 0 0 .494-.507zm5.638-2.12a.5.5 0 0 0 .359-.151l.63-.648a.5.5 0 0 0-.716-.698l-.631.648a.5.5 0 0 0 .358.849z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M12.028 5.579a2.927 2.927 0 0 0-.37.037 4.364 4.364 0 0 0-7.316 0 2.926 2.926 0 0 0-.37-.037 2.972 2.972 0 1 0 1.16 5.709 4.302 4.302 0 0 0 5.735 0 2.972 2.972 0 1 0 1.16-5.71zm0 4.944a1.959 1.959 0 0 1-.77-.156 1 1 0 0 0-1.05.168 3.303 3.303 0 0 1-4.417 0 1 1 0 0 0-1.05-.168 1.972 1.972 0 1 1-.769-3.788 1.077 1.077 0 0 1 .15.017l.095.012a1 1 0 0 0 .962-.444 3.364 3.364 0 0 1 5.642 0 1 1 0 0 0 .962.444l.095-.012a1.08 1.08 0 0 1 .15-.017 1.972 1.972 0 1 1 0 3.944zM2.482 5.315A3.53 3.53 0 0 1 3.5 5.027a1.831 1.831 0 0 1 1.81-1.603 1.81 1.81 0 0 1 .553.095 4.933 4.933 0 0 1 1.281-.405A2.82 2.82 0 0 0 2.476 5.26c0 .02.006.037.006.056z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="img-element">img element<a href="#img-element" class="anchor-link small">#</a></h2>
-<p>SVG can also be treated as a normal image, just insert the image in the HTML using the <code>img</code> element as usual.</p>
+<p>Use the <code>&lt;svg&gt;</code> element to embed the icon into your HTML.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-307-fill&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M1 12.5a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2ZM5 15a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm4.293.707A1 1 0 0 1 9 15c0-.5.555-1.395 1-2 .445.605 1 1.5 1 2a1 1 0 0 1-1.707.707ZM13 12.5a1 1 0 0 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm-1.273-4.283A4.99 4.99 0 0 1 7.9 10a4.988 4.988 0 0 1-3.773-1.719 3 3 0 1 1-.586-5.732A4.998 4.998 0 0 1 7.9 0a4.999 4.999 0 0 1 4.38 2.587 3 3 0 1 1-.553 5.63Z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="img-element">&lt;img&gt; element<a href="#img-element" class="anchor-link small">#</a></h2>
+<p>SVG can also be treated as a normal image, just insert the image in the HTML using the <code>&lt;img&gt;</code> element as usual.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/some/path/301.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;QWeather&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="icon-font">Icon font<a href="#icon-font" class="anchor-link small">#</a></h2>
-<p>QWeather Icons provides icon fonts that you can use like any other icon font when you introduce the stylesheet <a href="/install/#cdn">using CDN</a> or import it in your local project.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-301&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<p>QWeather Icons provides icon fonts, and just like using other icon fonts, you can import font styles using <a href="/install/#cdn">CDN</a> or <a href="https://github.com/qwd/Icons/releases/latest/">locally</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- import font style --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/qweather-icons@1.3.0/font/qweather-icons.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- try &#34;heavy rain&#34; and &#34;cold&#34; icons --&gt;</span>
+</span></span><span class="line"><span class="cl">        It&#39;s raining <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-307&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> and cold <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-cold&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="css">CSS<a href="#css" class="anchor-link small">#</a></h2>
 <p>You can add SVG to your CSS, please note that the svg color needs to be <code>%23</code> instead of <code>#</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">someClass</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; fill=&#39;%23066ff5&#39; class=&#34;qi-102-fill&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path d=&#34;M8 3a4.99 4.99 0 0 0-4.18 2.267 3.345 3.345 0 0 0-.423-.042 3.397 3.397 0 1 0 1.326 6.524 4.917 4.917 0 0 0 6.554 0 3.397 3.397 0 1 0 1.326-6.524 3.345 3.345 0 0 0-.423.042A4.99 4.99 0 0 0 8 3z&#34;/&gt;&lt;/svg&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; fill=&#39;%23FF843F&#39; class=&#34;qi-100-fill&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path d=&#34;M8.005 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm.004-.997a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5ZM3.766 4.255a.498.498 0 0 1-.353-.147l-1.062-1.06a.5.5 0 0 1 .707-.707L4.122 3.4a.5.5 0 0 1-.355.854v.001ZM2.004 8.493h-1.5a.5.5 0 1 1 0-1h1.5a.5.5 0 1 1 0 1Zm.691 5.303a.5.5 0 0 1-.354-.854l1.062-1.06a.5.5 0 0 1 .708.707l-1.063 1.06a.497.497 0 0 1-.353.147Zm5.301 2.201a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5Zm5.304-2.191a.496.496 0 0 1-.353-.147l-1.06-1.06a.5.5 0 1 1 .706-.707l1.06 1.06a.5.5 0 0 1-.353.854Zm2.203-5.299h-1.5a.5.5 0 0 1 0-1h1.5a.5.5 0 1 1 0 1ZM12.25 4.265a.5.5 0 0 1-.354-.854l1.06-1.06a.5.5 0 1 1 .708.707l-1.06 1.06a.498.498 0 0 1-.354.147Z&#34;/&gt;&lt;/svg&gt;&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>If you have referenced the QWeather Icons font, you can also use it like this:</p>
@@ -131,8 +143,8 @@
 </span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;qweather-icons&#34;</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;\f110&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span></code></pre></div><h2 id="download">Download<a href="#download" class="anchor-link small">#</a></h2>
-<p>If you need to modify QWeather Icons, or want to use these icons elsewhere, just <a href="https://github.com/qwd/Icons/releases/latest">download all the icons</a> locally to create more personalized icons and export them to various formats you like, such as .png/.jpg and etc.</p>
+</span></span></code></pre></div><h2 id="customize">Customize<a href="#customize" class="anchor-link small">#</a></h2>
+<p>SVG is a vector graphic, so you can freely edit its style, or when you have created new designs, you can compress these icons and create icon font with QWeather Icons project. See <a href="/en/customize/">Customize</a> to learn more.</p>
 
     </section>
 </article>

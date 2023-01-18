@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-itunes-app" content="app-id=1461458147, app-argument=weather" />
 
-<title>Page Not Found | QWeather Icons</title>
-<meta name="description" content="" />
+<title>Customize | QWeather Icons</title>
+<meta name="description" content="QWeather Icons project helps you create customized icons and icon fonts." />
 
 <link rel="stylesheet" href="/sass/main.min.b6614683a2db543a832e9249b7423b982111fdd318f1a34c56abbf05b9570387.css">
 <link rel="stylesheet" href="/assets/font/qweather-icons.css?1674019219">
@@ -19,7 +19,41 @@
 <link rel="manifest" href="/assets/favicon/site.webmanifest">
 <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#1a2226">
-<meta name="robots" content="noindex">
+
+<link rel="canonical" href="https://icons.qweather.com/en/customize/">
+<link rel="alternate" hreflang="zh" href="https://icons.qweather.com/customize/" />
+<link rel="alternate" hreflang="en" href="https://icons.qweather.com/en/customize/" />
+
+<meta property="og:title" content="Customize" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="zh" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://icons.qweather.com/assets/images/qweather-icons-hero.jpg" />    
+<meta property="og:description" content="QWeather Icons project helps you create customized icons and icon fonts." />
+<meta property="og:url" content="https://icons.qweather.com/en/customize/" />
+<meta property="og:site_name" content="QWeather Icons" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "article",
+        "headline": "Customize",
+        "dateModified":"2023-01-18T13:19+0800",
+        "description": "QWeather Icons project helps you create customized icons and icon fonts.",    
+        "url":"https://icons.qweather.com/en/customize/",
+        "inLanguage": "en",
+        "image" : "https://icons.qweather.com/assets/images/qweather-icons-hero.jpg",    
+        "publisher":{
+            "@type":"Organization",
+            "name": "QWeather",
+            "logo":{
+                "@type":"ImageObject",
+                "url": "https://cdn.qweather.com/media/qw-logo-s-dark-800.png"
+            }
+        }
+    }
+</script>
+
 
 <meta name="google-site-verification" content="WFu5M6w9XiYrf3hgUBLxCA1Jrgb_CWTzXTPycVIqngg" />
 <meta name="msvalidate.01" content="EDFBFE217D2B905D82BE1D5A1BC9AB28" />
@@ -47,7 +81,7 @@
                     <li><a href="/en/">Home</a></li>
                     <li><a href="/en/install/">Install</a></li>
                     <li><a href="/en/usage/">Usage</a></li>
-                    <li><a href="/en/customize/">Customize</a></li>
+                    <li class="active"><a href="/en/customize/">Customize</a></li>
                     <li><a href="/en/icons/">Icons</a></li>
                     <li class="d-sm-block d-md-none"><a class="backdev no-underline" href="https://dev.qweather.com/en/" target="_blank" rel="noopener noreferrer">dev.qweather</a></li>
                 </ul>
@@ -65,12 +99,44 @@
 </nav>
     
     
-<main class="main-content text-center page-404">
-    <h1 id="404">404</h1>
-<h2 id="页面未找到">页面未找到</h2>
-<h2 id="page-not-found">Page Not Found</h2>
+<article class="main-content container">
+    <section class="article-headline">
+        <h1>Customize</h1>
+        <div class="summary">
+            QWeather Icons project helps you create customized icons and icon fonts.
+        </div>
+    </section>
+    <section class="doc-content">
+        <p>You may want to change the icons color or redesign the icons to better fit your project style. Here&rsquo;s how to create your customized icons and fonts using the QWeather Icons project.</p>
+<h2 id="edit-icons-and-fonts">Edit Icons and Fonts<a href="#edit-icons-and-fonts" class="anchor-link small">#</a></h2>
+<p>👉 <a href="https://www.figma.com/community/file/1196353857920331062">Get all design resources in Figma</a></p>
+<p>You can change the color or redesign these icons, and then export new images in SVG or other formats.</p>
+<p>If you need to create new fonts, you must:</p>
+<ul>
+<li>Export the icons in SVG format.</li>
+<li>SVGs must be <strong>Flatten</strong> and <strong>Outline stroke</strong></li>
+<li>Make sure the value of <code>fill-rule</code> for SVGs <strong>IS NOT</strong> <code>evenodd</code>. If you are editing in Figma, it is recommended to use <a href="https://www.figma.com/community/plugin/771155994770327940">Fill Rule Editor</a> to fix it.</li>
+</ul>
+<p>Once your icons and fonts are redesigned, go to <a href="#run-qweather-icons">Run QWeather Icons</a> below to optimize the SVGs (we use <a href="https://github.com/svg/svgo">SVGO</a>) and create the icon fonts.</p>
+<h2 id="run-qweather-icons">Run QWeather Icons<a href="#run-qweather-icons" class="anchor-link small">#</a></h2>
+<p>The QWeather Icons project will help you optimize SVGs and create new icon fonts.</p>
+<h4 id="1-install-nodejs">1. Install Node.js</h4>
+<p><a href="https://nodejs.org">Download and install Node.js</a>, we tested in v14 and v18. Typically, other versions are supported as well.</p>
+<h4 id="2-download-source-code-for-qweather-icons">2. Download source code for QWeather Icons</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git clone https://github.com/qwd/Icons.git
+</span></span></code></pre></div><h4 id="3-import-customized-svgs">3. Import customized SVGs</h4>
+<p>Paste all your customized SVGs into the <code>/icons</code> and replace the original SVGs.</p>
+<p>If there are new/deleted/renamed SVGs, you need to edit the <code>icons-list.json</code> file.</p>
+<h4 id="4-install-dependencies">4. Install Dependencies</h4>
+<p>Go into the project directory and install the dependencies (this may take some time depending on your network environment):</p>
+<pre tabindex="0"><code>npm install
+</code></pre><h4 id="5-run">5. Run</h4>
+<pre tabindex="0"><code>npm run icons
+</code></pre><p>Wait a moment, all SVGs are generated in <code>/icons</code>, and fonts are generated in <code>/font</code>, you can also open <code>/font/demo.html</code> to see the demo.</p>
+<p>Done 🎉</p>
 
-</main>
+    </section>
+</article>
 
     <footer class="footer">
     <div class="container">
@@ -92,8 +158,8 @@
                 <div class="select-language">
                     <label>Language:</label>
                     <select id="change-language" onchange="if (this.value) window.location.href=this.value">
-                        <option value="https://icons.qweather.com/404.html">中文</option>
-                        <option value="https://icons.qweather.com/en/404.html" selected="selected">English</option>
+                        <option value="https://icons.qweather.com/customize/">中文</option>
+                        <option value="https://icons.qweather.com/en/customize/" selected="selected">English</option>
                     </select>
                 </div>
             </div>

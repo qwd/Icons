@@ -6,10 +6,10 @@
 <meta name="apple-itunes-app" content="app-id=1461458147, app-argument=weather" />
 
 <title>使用 | 和风天气图标</title>
-<meta name="description" content="和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以svg标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。" />
+<meta name="description" content="和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以\&lt;SVG&gt;标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。" />
 
 <link rel="stylesheet" href="/sass/main.min.b6614683a2db543a832e9249b7423b982111fdd318f1a34c56abbf05b9570387.css">
-<link rel="stylesheet" href="/assets/font/qweather-icons.css?1673856694">
+<link rel="stylesheet" href="/assets/font/qweather-icons.css?1674019218">
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -29,7 +29,7 @@
 <meta property="og:locale:alternate" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://icons.qweather.com/assets/images/qweather-icons-hero.jpg" />    
-<meta property="og:description" content="和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以svg标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。" />
+<meta property="og:description" content="和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以&amp;lt;SVG&amp;gt;标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。" />
 <meta property="og:url" content="https://icons.qweather.com/usage/" />
 <meta property="og:site_name" content="和风天气图标" />
 
@@ -38,8 +38,8 @@
         "@context": "https://schema.org",
         "@type": "article",
         "headline": "使用",
-        "dateModified":"2021-09-26T18:52+0800",
-        "description": "和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以svg标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。",    
+        "dateModified":"2023-01-18T13:19+0800",
+        "description": "和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以&amp;lt;SVG&amp;gt;标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。",    
         "url":"https://icons.qweather.com/usage/",
         "inLanguage": "zh",
         "image" : "https://icons.qweather.com/assets/images/qweather-icons-hero.jpg",    
@@ -81,6 +81,7 @@
                     <li><a href="/">首页</a></li>
                     <li><a href="/install/">安装</a></li>
                     <li class="active"><a href="/usage/">使用</a></li>
+                    <li><a href="/customize/">自定义</a></li>
                     <li><a href="/icons/">图标预览</a></li>
                     <li class="d-sm-block d-md-none"><a class="backdev no-underline" href="https://dev.qweather.com" target="_blank" rel="noopener noreferrer">和风天气开发平台</a></li>
                 </ul>
@@ -102,28 +103,39 @@
     <section class="article-headline">
         <h1>使用</h1>
         <div class="summary">
-            和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以svg标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。
+            和风天气图标使用SVG格式，因此你可以通过多种方式进行使用，包括使用图标字体、以&lt;SVG&gt;标签嵌入网页或当作图片处理，当然你也可以下载到本地进行再创作。
         </div>
     </section>
     <section class="doc-content">
         <blockquote>
-<p>对于<a href="https://dev.qweather.com/docs/">和风天气API/SDK的开发者</a>来说，图标名称或样式名称与天气API/SDK中的<code>icon</code>字段是一样的，因此当你通过API/SDK获得天气icon时，只需要匹配上对应的图标即可。</p>
-<p>例如，API返回<code>&quot;icon&quot;:&quot;301&quot;</code>，那么你只需要使用<code>301.svg</code>这张图片或者<code>&lt;i class=&quot;qi-301&quot;&gt;&lt;/i&gt;</code>这个图标字体。</p>
+<p>对于<a href="https://dev.qweather.com/">和风天气的开发者</a>来说，图标的文件名与天气数据中的<code>icon</code>或预警数据中的<code>warning.type</code>字段的返回值是一样的，因此你可以非常简单的将天气状况与图标进行匹配。</p>
+<p><strong>例如:</strong> <code>now.icon = 301</code>对应<strong>301.svg</strong> 或<code>&lt;i class=&quot;qi-301&quot;&gt;&lt;/i&gt;</code>，<code>warning.type = 1010</code>对应<strong>1010.svg</strong> 或<code>&lt;i class=&quot;qi-1010&quot;&gt;&lt;/i&gt;</code>。关于和风天气开发服务中使用的图标代码和名称，请参考<a href="https://dev.qweather.com/docs/resource/icons/">图标信息</a>。</p>
 </blockquote>
 <h2 id="embedded">嵌入<a href="#embedded" class="anchor-link small">#</a></h2>
-<p>使用<code>svg</code>标签将图标嵌入到你的网站中。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-301&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M7.012 14.985a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM3.959 14a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zm6.028 0a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM5.207 1.904h.007a.5.5 0 0 0 .493-.506L5.695.494a.5.5 0 0 0-.5-.494h-.007a.5.5 0 0 0-.493.506l.012.905a.5.5 0 0 0 .5.493zm-2.892.946a.5.5 0 1 0 .698-.716l-.648-.63a.5.5 0 1 0-.697.715zm-.179 2.203a.5.5 0 0 0-.5-.493h-.007l-.905.011a.5.5 0 0 0 .007 1h.007l.904-.011a.5.5 0 0 0 .494-.507zm5.638-2.12a.5.5 0 0 0 .359-.151l.63-.648a.5.5 0 0 0-.716-.698l-.631.648a.5.5 0 0 0 .358.849z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M12.028 5.579a2.927 2.927 0 0 0-.37.037 4.364 4.364 0 0 0-7.316 0 2.926 2.926 0 0 0-.37-.037 2.972 2.972 0 1 0 1.16 5.709 4.302 4.302 0 0 0 5.735 0 2.972 2.972 0 1 0 1.16-5.71zm0 4.944a1.959 1.959 0 0 1-.77-.156 1 1 0 0 0-1.05.168 3.303 3.303 0 0 1-4.417 0 1 1 0 0 0-1.05-.168 1.972 1.972 0 1 1-.769-3.788 1.077 1.077 0 0 1 .15.017l.095.012a1 1 0 0 0 .962-.444 3.364 3.364 0 0 1 5.642 0 1 1 0 0 0 .962.444l.095-.012a1.08 1.08 0 0 1 .15-.017 1.972 1.972 0 1 1 0 3.944zM2.482 5.315A3.53 3.53 0 0 1 3.5 5.027a1.831 1.831 0 0 1 1.81-1.603 1.81 1.81 0 0 1 .553.095 4.933 4.933 0 0 1 1.281-.405A2.82 2.82 0 0 0 2.476 5.26c0 .02.006.037.006.056z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+<p>使用<code>&lt;svg&gt;</code>标签将图标嵌入到你的网站中。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-307-fill&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M1 12.5a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2ZM5 15a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm4.293.707A1 1 0 0 1 9 15c0-.5.555-1.395 1-2 .445.605 1 1.5 1 2a1 1 0 0 1-1.707.707ZM13 12.5a1 1 0 0 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm-1.273-4.283A4.99 4.99 0 0 1 7.9 10a4.988 4.988 0 0 1-3.773-1.719 3 3 0 1 1-.586-5.732A4.998 4.998 0 0 1 7.9 0a4.999 4.999 0 0 1 4.38 2.587 3 3 0 1 1-.553 5.63Z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="img-element">使用图片<a href="#img-element" class="anchor-link small">#</a></h2>
-<p>SVG格式的图标也可以被视为一张普通图片，就像平时一样在网页中使用<code>img</code>标签插入图片。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/some/path/301.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;QWeather&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span><span class="p">&gt;</span>
+<p>SVG格式的图标也可以被视为一张普通图片，就像平时一样在网页中使用<code>&lt;img&gt;</code>标签插入图片。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/some/path/301.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;QWeather Icons&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="icon-font">图标字体<a href="#icon-font" class="anchor-link small">#</a></h2>
-<p>和风天气图标提供了图标字体，当你<a href="/install/#cdn">使用CDN</a>引入样式表或者在本地项目中导入后，你就可以像使用其他图标字体一样使用。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-301&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<p>和风天气图标提供了图标字体，像使用其他图标字体一样，你可以使用<a href="/install/#cdn">CDN</a>或在<a href="https://github.com/qwd/Icons/releases/latest/">本地</a>导入字体样式。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 引入字体样式 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/qweather-icons@1.3.0/font/qweather-icons.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 试试大雨和寒冷 --&gt;</span>
+</span></span><span class="line"><span class="cl">        It&#39;s raining <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-307&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> and cold <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;qi-cold&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="css">CSS<a href="#css" class="anchor-link small">#</a></h2>
-<p>你可以将SVG加入到你的CSS中，请注意svg的颜色需要用<code>%23</code>代替<code>#</code></p>
+<p>你可以将SVG加入到你的CSS中，请注意SVG的颜色需要用<code>%23</code>代替<code>#</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">someClass</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; fill=&#39;%23066ff5&#39; class=&#34;qi-102-fill&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path d=&#34;M8 3a4.99 4.99 0 0 0-4.18 2.267 3.345 3.345 0 0 0-.423-.042 3.397 3.397 0 1 0 1.326 6.524 4.917 4.917 0 0 0 6.554 0 3.397 3.397 0 1 0 1.326-6.524 3.345 3.345 0 0 0-.423.042A4.99 4.99 0 0 0 8 3z&#34;/&gt;&lt;/svg&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;16&#34; height=&#34;16&#34; fill=&#39;%23FF843F&#39; class=&#34;qi-100-fill&#34; viewBox=&#34;0 0 16 16&#34;&gt;&lt;path d=&#34;M8.005 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm.004-.997a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5ZM3.766 4.255a.498.498 0 0 1-.353-.147l-1.062-1.06a.5.5 0 0 1 .707-.707L4.122 3.4a.5.5 0 0 1-.355.854v.001ZM2.004 8.493h-1.5a.5.5 0 1 1 0-1h1.5a.5.5 0 1 1 0 1Zm.691 5.303a.5.5 0 0 1-.354-.854l1.062-1.06a.5.5 0 0 1 .708.707l-1.063 1.06a.497.497 0 0 1-.353.147Zm5.301 2.201a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5Zm5.304-2.191a.496.496 0 0 1-.353-.147l-1.06-1.06a.5.5 0 1 1 .706-.707l1.06 1.06a.5.5 0 0 1-.353.854Zm2.203-5.299h-1.5a.5.5 0 0 1 0-1h1.5a.5.5 0 1 1 0 1ZM12.25 4.265a.5.5 0 0 1-.354-.854l1.06-1.06a.5.5 0 1 1 .708.707l-1.06 1.06a.498.498 0 0 1-.354.147Z&#34;/&gt;&lt;/svg&gt;&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>如果你已经引用了和风天气图标字体，你还可以这样使用：</p>
@@ -131,8 +143,8 @@
 </span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;qweather-icons&#34;</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;\f110&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span></code></pre></div><h2 id="下载">下载<a href="#下载" class="anchor-link small">#</a></h2>
-<p>如果你需要修改和风天气图标，或者想使用这些图标在其他地方，你当然可以<a href="https://github.com/qwd/Icons/releases/latest">下载最新版本的全部图标</a>到本地，打造更加个性化的图标，并可以导出为各种你喜欢的格式，比如.png/.jpg等等。</p>
+</span></span></code></pre></div><h2 id="自定义">自定义<a href="#自定义" class="anchor-link small">#</a></h2>
+<p>SVG是一种矢量图形，因此你可以自由的编辑它的样式，或者当你完成新的设计后，可以通过和风天气图标项目将这些图标进行压缩和创建字体文件。关于更多自定义的说明，请参考<a href="/customize/">自定义文档</a>。</p>
 
     </section>
 </article>
