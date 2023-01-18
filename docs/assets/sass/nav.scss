@@ -60,15 +60,15 @@
     }
     .backdev {
         font-size: 14px;
-        color: $link-color;
-        border: 2px solid $link-color;
+        color: $color-link;
+        border: 2px solid $color-link;
         padding: 4px 8px;
         border-radius: 10px;
         font-weight: 700;
         margin: 9px 0;
         &:hover,
         &:focus {
-          background-color: $link-color;
+          background-color: $color-link;
           color: #fff;
         }
     }

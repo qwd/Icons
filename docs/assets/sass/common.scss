@@ -43,7 +43,7 @@ body {
   font-size: $font-size;
   // padding-top: 50px;
   background-color: $bg-color;
-  color: $font-color;
+  color: $color-font;
   margin-bottom: 294px;
 }
 
@@ -173,9 +173,9 @@ pre {
 }
 
 code {
-  background-color: $code-bg-color;
+  background-color: $color-code-bg;
   padding: 1px 4px;
-  color: $font-color;
+  color: $color-font;
   margin: 0 .1rem;
   font-size: 1.4rem;
   border-radius: 4px;
@@ -184,13 +184,14 @@ code {
 pre {
   display: block;
   padding: 15px;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  background-color: $code-bg-color;
-  overflow-x: auto;
+  margin: 0 0 10px;
+  background-color: $color-pre-bg;
+  border-radius: 8px;
+  overflow: auto;
 
   code {
     padding: 0;
+    background-color: inherit;
     // white-space: pre-wrap;
   }
 
@@ -245,39 +246,33 @@ pre {
 
 // blockquote
 blockquote {
-  display: block;
-  padding: 15px 0;
+  padding: 15px;
   margin: 20px 0;
-  font-size: 1.4rem;
-  color: #004085;
-  background-color: #edf7fe;
+  color: $color-grey;
+  background-color: $color-light-blue;
   border-radius: 8px;
-  border: 1px solid #bde2fb;
+  border: 1px solid #abf0ff;
 
   & p:last-child,
   & ul:last-child,
   & ol:last-child {
     margin-bottom: 0;
   }
-
-  p {
-    padding: 0 30px;
-  }
 }
 
 // link
 a {
-  color: $link-color;
+  color: $color-link;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    color: $link-color;
+    color: $color-link;
   }
 
   &:active,
   &:focus {
-    color: $link-color;
+    color: $color-link;
   }
 }
 
@@ -355,7 +350,7 @@ a {
 }
 
 .btn-download {
-  background-color: $link-color;
+  background-color: $color-link;
   padding: 15px 20px;
   color: #f0f0f0;
   border: none;
@@ -384,14 +379,14 @@ a {
 
 .btn-line {
   background-color: transparent;
-  color: $link-color;
-  border: 1px solid $link-color;
+  color: $color-link;
+  border: 1px solid $color-link;
 
   &:hover,
   &:focus {
     color: $color-light;
-    background-color: $link-color;
-    border: 1px solid $link-color;
+    background-color: $color-link;
+    border: 1px solid $color-link;
     text-decoration: none;
   }
 }
