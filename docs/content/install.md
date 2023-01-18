@@ -1,6 +1,6 @@
 ---
 title: 下载和安装
-description: 你可以使用多种方式下载和安装和风天气图标（QWeather Icons），包括npm、CDN、打包下载甚至下载源代码。
+description: 你可以使用多种方式下载和安装和风天气图标（QWeather Icons），包括npm、CDN、下载源代码或复制设计原稿。
 ---
 
 ## npm
@@ -21,14 +21,12 @@ npm i qweather-icons
 
 ## 下载 {#download}
 
-打包下载我们的SVG图标、图标字体和样式表，你可以在本地修改或使用。
+[下载图标和字体](https://github.com/qwd/Icons/releases/latest/)
 
-[下载和风天气图标](https://github.com/qwd/Icons/releases/latest/)
+## 设计稿 {#design-resources}
+
+和风天气图标的所有设计文件已经发布在[Figma](https://www.figma.com/community/file/1196353857920331062)，你可以复制或编辑这些图标。图标采用[知识共享署名4.0许可](https://creativecommons.org/licenses/by/4.0/deed.zh)。
 
 ## 源代码 {#source-code}
 
-和风天气图标托管在[Github](https://github.com/qwd/Icons)，你可以方便的获取源代码。
-
-```git
-git clone https://github.com/qwd/Icons.git
-```
+访问[Github 仓库](https://github.com/qwd/Icons)，和风天气图标项目的源代码采用[MIT许可](https://github.com/qwd/Icons/blob/main/LICENSE)。
