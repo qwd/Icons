@@ -68,9 +68,12 @@ languages:
       - name: 使用
         url: /usage/
         weight: 3
+      - name: 自定义
+        url: /customize/
+        weight: 4
       - name: 图标预览
         url: /icons/
-        weight: 4
+        weight: 5
       footer:
       - name: dev
         weight: 1
@@ -136,9 +139,12 @@ languages:
       - name: Usage
         url: /usage/
         weight: 3
+      - name: Customize
+        url: /customize/
+        weight: 4
       - name: Icons
         url: /icons/
-        weight: 4
+        weight: 5
       footer:
       - name: dev
         weight: 1
