@@ -1,4 +1,7 @@
 .homepage {
+    .container {
+        max-width: 960px;
+    }
     .hero {
         padding-top: 20px;
         margin-bottom: 60px;
@@ -9,10 +12,7 @@
                 margin-bottom: 20px;
             }
             .ver {
-                display: inline-block;
-                margin-bottom: 10px;
-                padding-bottom: 5px;
-                border-bottom: 1px dotted #000;
+                font-family: $code-font-family;
             }
             .desc {
                 font-size: 2rem;
@@ -42,6 +42,9 @@
             background-color: $color-link;
             color: #f0f0f0;
             width: 100%;
+        }
+        svg {
+            vertical-align: middle;
         }
 
     }
@@ -82,16 +85,6 @@
                 img {
                     width: 400px;
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .homepage {
-        .install{
-            .install-item {
-                margin-bottom: 20px;
             }
         }
     }

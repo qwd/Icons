@@ -30,3 +30,5 @@
   translation: "Open source, beautiful weather icons and fonts, for [QWeather API/SDK](https://dev.qweather.com/en) and all developers."
 - id: permalink
   translation: "Permalink"
+- id: design-resources
+  translation: "Design Resources"

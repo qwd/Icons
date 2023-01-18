@@ -292,6 +292,37 @@ a {
   }
 }
 
+.btn-link {
+  border-radius: 5px;
+  color: $color-white;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.btn-link-blue {
+  background-color: $color-link;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $color-white;
+    background-color: $color-link;
+    text-decoration: none !important;
+  }
+}
+
+.btn-link-dark {
+  background-color: $color-dark;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $color-white;
+    background-color: $color-dark;
+    text-decoration: none !important;
+  }
+}
+
 // label
 .label {
   display: inline;
