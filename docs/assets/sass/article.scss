@@ -2,6 +2,7 @@
 .main-content {
   padding-top: 40px;
   padding-bottom: 40px;
+  max-width: 960px;
   h2,
   h3,
   h4 {
@@ -24,7 +25,7 @@
     margin-left: 5px;
     color: #dadada;
     &:hover {
-      color: $link-color;
+      color: $color-link;
     }
   }
 
@@ -59,7 +60,7 @@
         }
       }
       .icon-group:hover, .icon-group:active, .icon-group:target {
-        color: $link-color;
+        color: $color-link;
       }
     }
     .icon-details {

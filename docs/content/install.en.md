@@ -20,15 +20,12 @@ No need to install and download, import the QWeather Icons stylesheet via CDN @j
 
 ## Download
 
-Download our SVG icons, icon fonts and stylesheets that you can modify or use locally.
+[Download SVG icons and fonts](https://github.com/qwd/Icons/releases/latest/) 
 
+## Design Resources
 
-[Download QWeather Icons](https://github.com/qwd/Icons/releases/latest/)
+All design files for QWeather Icons have been published in [Figma](https://www.figma.com/community/file/1196353857920331062) and you can copy or edit these icons. Design files are licensed under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0).
 
 ## Source Code
 
-QWeather Icons is licensed under MIT and hosted on Github, you can easily access the source code.
-
-```git
-git clone https://github.com/qwd/Icons.git
-```
+See our [Github repo](https://github.com/qwd/Icons). QWeather Icons is licensed under MIT.

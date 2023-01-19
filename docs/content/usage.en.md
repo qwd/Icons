@@ -3,21 +3,21 @@ title: Usage
 description: QWeather Icons use SVG format, so it is very easy to use and modification.
 ---
 
-> For [QWeather developers](https://dev.qweather.com/docs/), the icon name or style name is the same as the `icon` field in the Weather API/SDK, so you just need to match the icon with the same name.
+> For [QWeather developers](https://dev.qweather.com/en/), the icon name or style name is the same as the `icon` in weather data or `warning.type` in warning data, so you can simply map the icons to the weather conditions.
 > 
-> **Example:** the API returns `"icon": "301"`, then you just need to use the image `301.svg` or the icon font `<i class="qi-301"></i>`.
+> **Example:** `now.icon = 301` corresponds **301.svg** or `<i class="qi-301"></i>`, `warning.type = 1010` corresponds **1010.svg** or `<i class="qi-1010"></i>`. For the icons code and name used in QWeather Develop Service, please refer to [Icon info](https://dev.qweather.com/docs/resource/icons/).
 
 ## Embedded {#embedded}
 
-Use the `svg` element to embed the icon into your HTML.
+Use the `<svg>` element to embed the icon into your HTML.
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-301" viewBox="0 0 16 16"><path d="M7.012 14.985a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM3.959 14a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zm6.028 0a1 1 0 0 0 2 0 6.605 6.605 0 0 0-1-2 6.605 6.605 0 0 0-1 2zM5.207 1.904h.007a.5.5 0 0 0 .493-.506L5.695.494a.5.5 0 0 0-.5-.494h-.007a.5.5 0 0 0-.493.506l.012.905a.5.5 0 0 0 .5.493zm-2.892.946a.5.5 0 1 0 .698-.716l-.648-.63a.5.5 0 1 0-.697.715zm-.179 2.203a.5.5 0 0 0-.5-.493h-.007l-.905.011a.5.5 0 0 0 .007 1h.007l.904-.011a.5.5 0 0 0 .494-.507zm5.638-2.12a.5.5 0 0 0 .359-.151l.63-.648a.5.5 0 0 0-.716-.698l-.631.648a.5.5 0 0 0 .358.849z"/><path d="M12.028 5.579a2.927 2.927 0 0 0-.37.037 4.364 4.364 0 0 0-7.316 0 2.926 2.926 0 0 0-.37-.037 2.972 2.972 0 1 0 1.16 5.709 4.302 4.302 0 0 0 5.735 0 2.972 2.972 0 1 0 1.16-5.71zm0 4.944a1.959 1.959 0 0 1-.77-.156 1 1 0 0 0-1.05.168 3.303 3.303 0 0 1-4.417 0 1 1 0 0 0-1.05-.168 1.972 1.972 0 1 1-.769-3.788 1.077 1.077 0 0 1 .15.017l.095.012a1 1 0 0 0 .962-.444 3.364 3.364 0 0 1 5.642 0 1 1 0 0 0 .962.444l.095-.012a1.08 1.08 0 0 1 .15-.017 1.972 1.972 0 1 1 0 3.944zM2.482 5.315A3.53 3.53 0 0 1 3.5 5.027a1.831 1.831 0 0 1 1.81-1.603 1.81 1.81 0 0 1 .553.095 4.933 4.933 0 0 1 1.281-.405A2.82 2.82 0 0 0 2.476 5.26c0 .02.006.037.006.056z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="qi-307-fill" viewBox="0 0 16 16"><path d="M1 12.5a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2ZM5 15a1 1 0 1 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm4.293.707A1 1 0 0 1 9 15c0-.5.555-1.395 1-2 .445.605 1 1.5 1 2a1 1 0 0 1-1.707.707ZM13 12.5a1 1 0 0 0 2 0c0-.5-.555-1.395-1-2-.445.605-1 1.5-1 2Zm-1.273-4.283A4.99 4.99 0 0 1 7.9 10a4.988 4.988 0 0 1-3.773-1.719 3 3 0 1 1-.586-5.732A4.998 4.998 0 0 1 7.9 0a4.999 4.999 0 0 1 4.38 2.587 3 3 0 1 1-.553 5.63Z"/></svg>
 ```
 
-## img element {#img-element}
+## \<img> element {#img-element}
 
-SVG can also be treated as a normal image, just insert the image in the HTML using the `img` element as usual.
+SVG can also be treated as a normal image, just insert the image in the HTML using the `<img>` element as usual.
 
 ```html
 <img src="/some/path/301.svg" alt="QWeather" width="32" height="32">
@@ -25,10 +25,22 @@ SVG can also be treated as a normal image, just insert the image in the HTML usi
 
 ## Icon font {#icon-font}
 
-QWeather Icons provides icon fonts that you can use like any other icon font when you introduce the stylesheet [using CDN](/install/#cdn) or import it in your local project.
+QWeather Icons provides icon fonts, and just like using other icon fonts, you can import font styles using [CDN](/install/#cdn) or [locally](https://github.com/qwd/Icons/releases/latest/).
+
 
 ```html
-<i class="qi-301"></i>
+<html>
+<head>
+    <!-- import font style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@1.3.0/font/qweather-icons.css">
+</head>
+<body>
+    <div>
+        <!-- try "heavy rain" and "cold" icons -->
+        It's raining <i class="qi-307"></i> and cold <i class="qi-cold"></i>
+    </div>
+</body>
+</html>
 ```
 
 ## CSS
@@ -38,7 +50,7 @@ You can add SVG to your CSS, please note that the svg color needs to be `%23` in
 ```css
 .someClass::after {
   content: "";
-  background-image: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill='%23066ff5' class="qi-102-fill" viewBox="0 0 16 16"><path d="M8 3a4.99 4.99 0 0 0-4.18 2.267 3.345 3.345 0 0 0-.423-.042 3.397 3.397 0 1 0 1.326 6.524 4.917 4.917 0 0 0 6.554 0 3.397 3.397 0 1 0 1.326-6.524 3.345 3.345 0 0 0-.423.042A4.99 4.99 0 0 0 8 3z"/></svg>");
+  background-image: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill='%23FF843F' class="qi-100-fill" viewBox="0 0 16 16"><path d="M8.005 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm.004-.997a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5ZM3.766 4.255a.498.498 0 0 1-.353-.147l-1.062-1.06a.5.5 0 0 1 .707-.707L4.122 3.4a.5.5 0 0 1-.355.854v.001ZM2.004 8.493h-1.5a.5.5 0 1 1 0-1h1.5a.5.5 0 1 1 0 1Zm.691 5.303a.5.5 0 0 1-.354-.854l1.062-1.06a.5.5 0 0 1 .708.707l-1.063 1.06a.497.497 0 0 1-.353.147Zm5.301 2.201a.5.5 0 0 1-.5-.5v-1.5a.5.5 0 0 1 1 0v1.5a.5.5 0 0 1-.5.5Zm5.304-2.191a.496.496 0 0 1-.353-.147l-1.06-1.06a.5.5 0 1 1 .706-.707l1.06 1.06a.5.5 0 0 1-.353.854Zm2.203-5.299h-1.5a.5.5 0 0 1 0-1h1.5a.5.5 0 1 1 0 1ZM12.25 4.265a.5.5 0 0 1-.354-.854l1.06-1.06a.5.5 0 1 1 .708.707l-1.06 1.06a.498.498 0 0 1-.354.147Z"/></svg>");
   background-repeat: no-repeat;
 }
 ```
@@ -52,9 +64,9 @@ If you have referenced the QWeather Icons font, you can also use it like this:
   }
 ```
 
-## Download
+## Customize
 
-If you need to modify QWeather Icons, or want to use these icons elsewhere, just [download all the icons](https://github.com/qwd/Icons/releases/latest) locally to create more personalized icons and export them to various formats you like, such as .png/.jpg and etc.
+SVG is a vector graphic, so you can freely edit its style, or when you have created new designs, you can compress these icons and create icon font with QWeather Icons project. See [Customize](/en/customize/) to learn more.
 
 
 
