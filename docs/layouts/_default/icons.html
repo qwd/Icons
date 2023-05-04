@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article class="main-content container">
-    <section class="article-headline">
+<article class="main-content container max-w-[960px] py-10">
+    <section class="article-headline mb-5 border-b border-slate-300">
         <h1>{{ .Title}}</h1>
-        <div class="summary">
+        <div class="summary text-lg mb-5">
             {{ .Description | markdownify }}
         </div>
     </section>

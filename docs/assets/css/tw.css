@@ -1,0 +1,69 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "syntax.css";
+
+@layer base {
+    html {
+        @apply relative min-h-full;
+    }
+    article a {
+        @apply text-linkblue no-underline;
+    }
+    
+    article a:hover {
+        @apply text-linkblue underline;
+    }
+    p {
+        @apply leading-[28px] mb-2.5;
+    }
+}
+
+@layer utilities {
+    .doc-content ul li {
+        @apply list-disc mt-2.5;
+    }
+    .doc-content ol li {
+        @apply list-decimal mt-2.5;
+    }
+    .doc-content ul, .post-content ol {
+        @apply pl-10 my-[15px];
+    }
+    .doc img {
+        @apply mb-2.5;
+    }
+    code, pre {
+        @apply font-mono text-sm;
+    }
+    code {
+        @apply bg-[#ecedf2] py-px px-1 mx-px rounded;
+    }
+    
+    pre {
+        @apply block p-[15px] mb-2.5 bg-[#f3f4f5] overflow-x-auto rounded-lg;
+    }
+    
+    pre code {
+        @apply p-0 bg-inherit;
+    }
+    h1,h2,h3,h4,h5 {
+        @apply font-bold my-5;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+
+
+}

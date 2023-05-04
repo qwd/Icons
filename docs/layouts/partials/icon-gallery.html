@@ -1,9 +1,9 @@
-<div class="icon-gallery row row-cols-3 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+<div class="icon-gallery flex flex-wrap mb-10 -mx-3">
   {{ $icons_list := resources.Get "icons-list.json" | transform.Unmarshal }}
   {{- range $icons_list }}
-  <div class="col">
-    <a id="icon-{{.icon_code}}" class="icon-group text-center no-underline" href="#{{.icon_name | anchorize }}">
-      <i class="qi-{{.icon_code}} icon-item"></i>
+  <div class="w-1/3 lg:w-1/6 md:w-1/5 sm:w-1/4 px-3">
+    <a id="icon-{{.icon_code}}" class="block mb-5 text-sm text-center no-underline text-black hover:no-underline" href="#{{.icon_name | anchorize }}">
+      <i class="qi-{{.icon_code}} block text-3xl bg-gray-200 rounded-lg py-4 px-3 mb-3"></i>
       <div class="icon-name">
         {{ .icon_name | replaceRE "-" " " | humanize | truncate 40 }}
       </div>
