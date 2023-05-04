@@ -13,13 +13,20 @@
     "qweather",
     "icons"
   ],
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "scripts": {
     "icons": "npm run icons-main && npm run icons-font",
     "icons-main": "node build/build-svgs.js",
-    "icons-zip": "cross-env-shell \"rm -rf Qweather-Icons-$npm_package_version && mkdir Qweather-Icons-$npm_package_version &&  cp -r icons/ Qweather-Icons-$npm_package_version/icons && cp -r font/ Qweather-Icons-$npm_package_version/font && cp LICENSE Qweather-Icons-$npm_package_version && cp README.md Qweather-Icons-$npm_package_version && zip -r9 Qweather-Icons-$npm_package_version.zip Qweather-Icons-$npm_package_version && rm -rf Qweather-Icons-$npm_package_version\"",
+    "icons-zip": "cross-env-shell \"rm -rf QWeather-Icons-$npm_package_version && mkdir QWeather-Icons-$npm_package_version &&  cp -r icons/ QWeather-Icons-$npm_package_version/icons && cp -r font/ QWeather-Icons-$npm_package_version/font && cp LICENSE QWeather-Icons-$npm_package_version && cp README.md QWeather-Icons-$npm_package_version && zip -r9 QWeather-Icons-$npm_package_version.zip QWeather-Icons-$npm_package_version && rm -rf QWeather-Icons-$npm_package_version\"",
     "icons-font": "fantasticon && node build/build-alias.js",
-    "docs-build": "hugo --cleanDestinationDir",
-    "docs": "hugo server",
+    "docs-build:docs": "hugo --cleanDestinationDir",
+    "docs-build:css": "npx tailwindcss -i ./docs/assets/css/tw.css -o ./docs/assets/css/style.css -m",
+    "docs-build": "npm run docs-build:css && npm run docs-build:docs",
+    "docs-server:css": "npx tailwindcss -i ./docs/assets/css/tw.css -o ./docs/assets/css/style.css -w",
+    "docs-server:docs": "hugo server",
+    "docs": "npm run docs-server:css && npm run docs-server:docs",
     "publish": "npm-run-all icons icons-zip",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
@@ -44,6 +51,7 @@
     "stylelint": "^14.16.1",
     "svg-sprite": "^3.0.0-alpha1",
     "svgo": "^2.8.0",
+    "tailwindcss": "^3.3.2",
     "vnu-jar": "21.6.11"
   },
   "engines": {
