@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        linkblue: '#066ff5',
+        linkblue: '#0085ff',
       },
     },
   },
