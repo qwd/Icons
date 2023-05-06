@@ -26,7 +26,7 @@
     "docs-build": "npm run docs-build:css && npm run docs-build:docs",
     "docs-server:css": "npx tailwindcss -i ./docs/assets/css/tw.css -o ./docs/assets/css/style.css -w",
     "docs-server:docs": "hugo server",
-    "docs": "npm run docs-server:css && npm run docs-server:docs",
+    "docs": "run-p docs-server:*",
     "publish": "npm-run-all icons icons-zip",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
