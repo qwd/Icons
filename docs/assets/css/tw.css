@@ -32,6 +32,13 @@
     .nav-3rd-icon {
         @apply md:block hidden py-[15px] text-sm;
     }
+    blockquote {
+        @apply block p-4 my-5 text-gray-500 bg-[#f0fcff] rounded-lg border border-[#abf0ff];
+    }
+
+    blockquote p, blockquote ul, blockquote ol {
+        @apply last:mb-0;
+    }
 }
 
 @layer utilities {
