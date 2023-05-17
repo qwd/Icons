@@ -19,6 +19,21 @@
     }
 }
 
+@layer components {
+    .flex-grid {
+        @apply flex flex-wrap -mx-3;
+    }
+    .col-gap {
+        @apply px-3;
+    }
+    .nav-link {
+        @apply text-slate-300 hover:text-white;
+    }
+    .nav-3rd-icon {
+        @apply md:block hidden py-[15px] text-sm;
+    }
+}
+
 @layer utilities {
     .doc-content ul li {
         @apply list-disc mt-2.5;
@@ -29,9 +44,7 @@
     .doc-content ul, .post-content ol {
         @apply pl-10 my-[15px];
     }
-    .doc img {
-        @apply mb-2.5;
-    }
+
     code, pre {
         @apply font-mono text-sm;
     }
@@ -47,7 +60,7 @@
         @apply p-0 bg-inherit;
     }
     h1,h2,h3,h4,h5 {
-        @apply font-bold my-5;
+        @apply font-bold my-5 text-black;
     }
     h1 {
         font-size: 30px;
@@ -64,6 +77,4 @@
     h4 {
         font-size: 18px;
     }
-
-
 }

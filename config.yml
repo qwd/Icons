@@ -23,11 +23,11 @@ params:
   ver: "1.3.1"
   qw: "https://www.qweather.com"
   dev: "https://dev.qweather.com"
-  widget: "https://widget.qweather.com"
   map: "https://map.qweather.com"
   blog: "https://blog.qweather.com"
   github: "https://github.com/qwd"
   repo: "https://github.com/qwd/Icons"
+  figma: "https://www.figma.com/community/file/1196353857920331062"
   icp:
     number: "京ICP备15048401号-11"
     link: "https://beian.miit.gov.cn"
@@ -59,21 +59,15 @@ languages:
     weight: 1
     menu:
       main:
-      - name: 首页
-        url: /
-        weight: 1
       - name: 安装
         url: /install/
-        weight: 2
+        weight: 1
       - name: 使用
         url: /usage/
-        weight: 3
+        weight: 2
       - name: 自定义
         url: /customize/
-        weight: 4
-      - name: 图标预览
-        url: /icons/
-        weight: 5
+        weight: 3
       footer:
       - name: dev
         weight: 1
@@ -130,21 +124,15 @@ languages:
     cc: "https://creativecommons.org/licenses/by/4.0/"
     menu:
       main:
-      - name: Home
-        url: /
-        weight: 1
       - name: Install
         url: /install/
-        weight: 2
+        weight: 1
       - name: Usage
         url: /usage/
-        weight: 3
+        weight: 2
       - name: Customize
         url: /customize/
-        weight: 4
-      - name: Icons
-        url: /icons/
-        weight: 5
+        weight: 3
       footer:
       - name: dev
         weight: 1
