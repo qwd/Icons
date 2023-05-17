@@ -6,10 +6,6 @@ on:
       - main
     paths:
       - 'docs/**'
-      - 'font/**'
-      - 'icons/**'
-      - config.yml
-      - icons-list.json
   workflow_dispatch:
 
 jobs:
