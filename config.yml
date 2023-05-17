@@ -28,6 +28,7 @@ params:
   github: "https://github.com/qwd"
   repo: "https://github.com/qwd/Icons"
   figma: "https://www.figma.com/community/file/1196353857920331062"
+  app: "https://www.qweather.com/app/"
   icp:
     number: "京ICP备15048401号-11"
     link: "https://beian.miit.gov.cn"

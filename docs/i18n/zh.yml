@@ -5,9 +5,9 @@
 - id: mit
   translation: "MIT许可"
 - id: ccby
-  translation: "知识共享署名4.0许可"
+  translation: "知识共享署名4.0"
 - id: moreproduct
-  translation: "更多来自和风天气的产品"
+  translation: "更多产品"
 - id: dev
   translation: "和风天气开发平台"
 - id: latest_ver
@@ -25,11 +25,18 @@
 - id: html_desc
   translation: "复制下列代码到你的项目中"
 - id: home_headline
-  translation: "和风天气图标&&字体"
+  translation: "和风天气图标"
 - id: home_desc
   translation: "开源、漂亮的天气图标与图标字体，完美适配和风天气API/SDK，当然也可以用于任何其他项目。"
 - id: permalink
-  translation: "固定连接"
+  translation: "固定链接"
 - id: design-resources
   translation: "设计资源"
-
+- id: open-figma
+  translation: "在Figma打开"
+- id: weather-service
+  translation: "在线天气"
+- id: weather-map
+  translation: "天气地图"
+- id: latest
+  translation: "最新版本"

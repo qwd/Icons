@@ -9,7 +9,7 @@
 - id: moreproduct
   translation: "More products for QWeather"
 - id: dev
-  translation: "dev.qweather"
+  translation: "QWeather Develop Service"
 - id: latest_ver
   translation: "Currently"
 - id: download
@@ -25,10 +25,18 @@
 - id: html_desc
   translation: "Copy the following code into your project"
 - id: home_headline
-  translation: "QWeather Icons && Fonts"
+  translation: "QWeather Icons"
 - id: home_desc
   translation: "Open source, beautiful weather icons and fonts, for [QWeather API/SDK](https://dev.qweather.com/en) and all developers."
 - id: permalink
   translation: "Permalink"
 - id: design-resources
   translation: "Design Resources"
+- id: open-figma
+  translation: "Open in Figma"
+- id: weather-service
+  translation: "Weather Forecast"
+- id: weather-map
+  translation: "Weather Maps"
+- id: latest
+  translation: "Latest"
