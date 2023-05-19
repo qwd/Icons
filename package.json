@@ -24,7 +24,6 @@
     "docs-build": "hugo --cleanDestinationDir",
     "docs": "hugo server",
     "build-all": "run-s icons icons-zip docs-build",
-    "publish": "npm-run-all icons icons-zip",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
