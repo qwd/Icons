@@ -13,13 +13,17 @@
     "qweather",
     "icons"
   ],
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "scripts": {
     "icons": "npm run icons-main && npm run icons-font",
     "icons-main": "node build/build-svgs.js",
-    "icons-zip": "cross-env-shell \"rm -rf Qweather-Icons-$npm_package_version && mkdir Qweather-Icons-$npm_package_version &&  cp -r icons/ Qweather-Icons-$npm_package_version/icons && cp -r font/ Qweather-Icons-$npm_package_version/font && cp LICENSE Qweather-Icons-$npm_package_version && cp README.md Qweather-Icons-$npm_package_version && zip -r9 Qweather-Icons-$npm_package_version.zip Qweather-Icons-$npm_package_version && rm -rf Qweather-Icons-$npm_package_version\"",
+    "icons-zip": "cross-env-shell \"rm -rf QWeather-Icons-$npm_package_version && mkdir QWeather-Icons-$npm_package_version &&  cp -r icons/ QWeather-Icons-$npm_package_version/icons && cp -r font/ QWeather-Icons-$npm_package_version/font && cp LICENSE QWeather-Icons-$npm_package_version && cp README.md QWeather-Icons-$npm_package_version && zip -r9 QWeather-Icons-$npm_package_version.zip QWeather-Icons-$npm_package_version && rm -rf QWeather-Icons-$npm_package_version\"",
     "icons-font": "fantasticon && node build/build-alias.js",
     "docs-build": "hugo --cleanDestinationDir",
     "docs": "hugo server",
+    "build-all": "run-s icons icons-zip docs-build",
     "publish": "npm-run-all icons icons-zip",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
@@ -51,7 +55,6 @@
   },
   "files": [
     "icons/*.svg",
-    "qweather-icons.svg",
     "font",
     "!.DS_Store"
   ]
