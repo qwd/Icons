@@ -50,7 +50,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   depoly:
-    needs: release
+    needs: publish
     runs-on: ubuntu-22.04
     permissions:
       contents: write
@@ -65,4 +65,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
