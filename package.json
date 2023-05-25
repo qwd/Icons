@@ -27,6 +27,7 @@
     "docs-server:css": "npx tailwindcss -i ./docs/assets/css/tw.css -o ./docs/assets/css/style.css -w",
     "docs-server:docs": "hugo server",
     "docs": "run-p docs-server:*",
+    "build-all": "run-s icons icons-zip docs-build",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
