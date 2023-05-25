@@ -1,0 +1,67 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v[1-9]+.[0-9]+.[0-9]+"
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '18'
+      - name: Install node dependencies
+        run: npm install
+      - name: Build everything
+        run: npm run build-all
+      - name: ENV variables for version number
+        run: LATEST_VER=`jq -r .version package.json` && echo "LATEST_VER=$LATEST_VER" >> $GITHUB_ENV
+      - name: Setup release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with: 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: QWeather-Icons-${{ env.LATEST_VER }}.zip
+          body_path: CHANGELOG.txt
+      - name: Upload docs
+        uses: actions/upload-artifact@v3
+        with:
+            name: qi-docs
+            path: public/
+  publish:
+    needs: release
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '18'
+          registry-url: "https://registry.npmjs.org"
+      - name: Publish on npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  depoly:
+    needs: publish
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: qi-docs
+          path: public
+      - name: Deploy docs to Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

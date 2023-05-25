@@ -1,6 +1,6 @@
 {
   "name": "qweather-icons",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Open source weather SVG icons and fonts, for QWeather and all developers",
   "author": "QWeather",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "docs-server:css": "npx tailwindcss -i ./docs/assets/css/tw.css -o ./docs/assets/css/style.css -w",
     "docs-server:docs": "hugo server",
     "docs": "run-p docs-server:*",
-    "publish": "npm-run-all icons icons-zip",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
@@ -59,7 +58,6 @@
   },
   "files": [
     "icons/*.svg",
-    "qweather-icons.svg",
     "font",
     "!.DS_Store"
   ]

@@ -1,0 +1,11 @@
+## 🛠 问题修复
+
+- 503-fill 缺失dot形状 #38
+- 504 even odd 问题 #39
+- 150-fill/152-fill/2013 outline stroke  #44 
+
+## 🛠 Bug fixes
+
+- dot break in 503-fill #38
+- even odd issue in 504 #39
+- outline stroke for 150-fill/152-fill/2013 #44 
