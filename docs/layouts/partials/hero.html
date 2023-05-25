@@ -1,0 +1,41 @@
+<div class="mb-5 text-2xl leading-none text-white">
+    <span class="inline-block qi-cloudy mr-4 bg-amber-500 p-1 rounded"></span>
+    <span class="qi-clear-night inline-block mr-4 bg-violet-400 p-1 rounded"></span>
+    <span class="qi-rain inline-block bg-[#00d1ff] p-1 rounded mr-4"></span>
+    <span class="qi-snow inline-block bg-[#83AAC0] p-1 rounded"></span>
+    {{/* <span class="font-['qweather-icons'] text-linkblue">&#xF102; &#xF106; &#xF11f; &#xF12d;</span> */}}
+</div>
+<div class="hero-text text-2xl mb-5 leading-9 tracking-wide text-gray-600">
+    <span class="text-black font-bold">{{ .Site.Title }}</span> {{T "home_hero_desc" | markdownify }}
+</div>
+<div class="hero-text text-2xl mb-5 leading-9 tracking-wide">
+    {{T "home_hero_docs" | markdownify }}
+</div>
+
+<div class="install flex-grid">
+    <div class="npm w-full md:w-1/2 px-3 mb-3">
+        {{ highlight "npm i qweather-icons" "sh" ""}}
+    </div>
+    <div class="cdn w-full md:w-1/2 px-3 mb-3 text-base">
+        {{- $cdnSnippet := printf `<link href="https://cdn.jsdelivr.net/npm/qweather-icons@%s/font/qweather-icons.css" rel="stylesheet">` .Site.Params.ver }}
+        {{ highlight $cdnSnippet "html" "" }}
+    </div>
+    <div class="figma w-full md:w-1/2 px-3 mb-3 md:mb-0">
+        <a class="flex items-center justify-center p-3 rounded-lg border border-stone-700 hover:text-white hover:bg-stone-700" href="{{ .Site.Params.figma }}" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66663 10C6.66663 8.17784 8.1438 6.70062 9.96602 6.70062C11.7882 6.70062 13.2654 8.17784 13.2654 10C13.2654 11.8222 11.7882 13.2994 9.96602 13.2994C8.1438 13.2994 6.66663 11.8222 6.66663 10Z" fill="#1ABCFE" />
+                <path d="M0.0678711 16.5988C0.0678711 14.7766 1.54506 13.2994 3.36727 13.2994H6.66667V16.5988C6.66667 18.421 5.18949 19.8982 3.36727 19.8982C1.54506 19.8982 0.0678711 18.421 0.0678711 16.5988Z" fill="#0ACF83" />
+                <path d="M6.66663 0.101807V6.70058H9.96602C11.7882 6.70058 13.2654 5.22341 13.2654 3.4012C13.2654 1.579 11.7882 0.101807 9.96602 0.101807H6.66663Z" fill="#FF7262" />
+                <path d="M0.0678711 3.4012C0.0678711 5.22341 1.54506 6.70058 3.36727 6.70058H6.66667V0.101807H3.36727C1.54506 0.101807 0.0678711 1.579 0.0678711 3.4012Z" fill="#F24E1E" />
+                <path d="M0.0678711 10C0.0678711 11.8222 1.54506 13.2994 3.36727 13.2994H6.66667V6.70062H3.36727C1.54506 6.70062 0.0678711 8.17784 0.0678711 10Z" fill="#A259FF" />
+            </svg>
+            &nbsp;&nbsp;{{ T "open-figma" }}
+        </a>
+    </div>
+    <div class="download w-full md:w-1/2 px-3">
+        <a class="block text-center p-3 rounded-lg border border-stone-700 hover:text-white hover:bg-stone-700"
+            href="https://github.com/qwd/Icons/releases/download/v{{ .Site.Params.ver }}/QWeather-Icons-{{ .Site.Params.ver }}.zip" target="_blank" rel="noopener noreferrer">
+            {{ T "download" }} .zip
+        </a>
+    </div>
+</div>

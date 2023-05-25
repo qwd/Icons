@@ -26,8 +26,10 @@
   translation: "复制下列代码到你的项目中"
 - id: home_headline
   translation: "和风天气图标"
-- id: home_desc
-  translation: "开源、漂亮的天气图标与图标字体，完美适配和风天气API/SDK，当然也可以用于任何其他项目。"
+- id: home_hero_desc
+  translation: "是一个开源、漂亮的天气图标库，支持SVG和Web Font，兼容[和风天气API](https://dev.qweather.com/)，适用于任何需要天气图标的项目。"
+- id: home_hero_docs
+  translation: "你可以用多种方式集成和使用图标，查看[安装](/install/)、[使用](/usage/)和[自定义](/customize/)文档。"
 - id: permalink
   translation: "固定链接"
 - id: design-resources

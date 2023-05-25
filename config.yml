@@ -69,51 +69,6 @@ languages:
       - name: 自定义
         url: /customize/
         weight: 3
-      footer:
-      - name: dev
-        weight: 1
-      - name: weather
-        weight: 2
-      - name: app
-        weight: 3
-      - name: Web API
-        url: https://dev.qweather.com/docs/api/
-        parent: dev
-        weight: 1
-      - name: iOS SDK
-        url: https://dev.qweather.com/docs/ios-sdk/
-        parent: dev
-        weight: 2
-      - name: Android SDK
-        url: https://dev.qweather.com/docs/android-sdk/
-        parent: dev
-        weight: 3
-      - name: 天气插件
-        url: https://widget.qweather.com/
-        parent: dev
-        weight: 4
-      - name: 天气预报
-        url: https://www.qweather.com/weather/
-        parent: weather
-        weight: -110
-      - name: 空气质量
-        url: https://www.qweather.com/air/
-        parent: weather
-        weight: 2
-      - name: 灾害预警
-        url: https://www.qweather.com/severe-weather/
-        parent: weather
-        weight: 3
-      - name: 天气地图
-        url: https://map.qweather.com/
-        parent: weather
-        weight: 4
-      - name: 下载APP
-        url: https://www.qweather.com/app/
-        parent: app
-        params:
-          mp_name: 小程序
-          mp_qr: /assets/images/mini-program-qr.jpg
   en:
     languageName: English
     weight: 2
@@ -121,7 +76,7 @@ languages:
     description: Open Source Weather Icons and Icon Font, for QWeather API/SDK and all developers.
     qw: "https://www.qweather.com/en/"
     dev: "https://dev.qweather.com/en/"
-    widget: "https://widget.qweather.com/en/"
+    app: "https://www.qweather.com/en/app/"
     cc: "https://creativecommons.org/licenses/by/4.0/"
     menu:
       main:
@@ -134,53 +89,6 @@ languages:
       - name: Customize
         url: /customize/
         weight: 3
-      footer:
-      - name: dev
-        weight: 1
-      - name: weather
-        weight: 2
-      - name: app
-        weight: 3
-      - name: Web API
-        url: https://dev.qweather.com/en/docs/api/
-        parent: dev
-        weight: -110
-      - name: iOS SDK
-        url: https://dev.qweather.com/en/docs/ios-sdk/
-        parent: dev
-        weight: 2
-      - name: Android SDK
-        url: https://dev.qweather.com/en/docs/android-sdk/
-        parent: dev
-        weight: 3
-      - name: Widget
-        url: https://widget.qweather.com/en/
-        parent: dev
-        isAbs: true
-        weight: 4
-      - name: Weather
-        url: https://www.qweather.com/en/weather/
-        parent: weather
-        weight: 1
-      - name: Air Quality
-        url: https://www.qweather.com/en/air/
-        parent: weather
-        weight: 2
-      - name: Warning
-        url: https://www.qweather.com/en/severe-weather/
-        parent: weather
-        weight: 3
-      - name: Weather Map
-        url: https://map.qweather.com/en/
-        parent: weather
-        weight: 4
-        isAbs: true
-      - name: Get APP
-        url: https://www.qweather.com/en/app/
-        parent: app
-        params:
-          mp_name: Mini Program
-          mp_qr: /assets/images/mini-program-qr.jpg
 
 
 

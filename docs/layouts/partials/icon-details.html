@@ -5,16 +5,17 @@
 {{- $fontSnippet := printf `<i class="qi-%s"></i>` .icon_name -}}
 {{- $fontSnippetByCode := printf `<i class="qi-%s"></i>` .icon_code -}}
 {{- $IconCodeOnly := .icon_code | replaceRE "-fill" "" }}
+
 <div class="icon-details-{{.icon_code}} mb-12 ">
     <div class="icon-name flex justify-between items-center mb-5">
         <h2 id={{.icon_name | anchorize }} class="text-3xl my-0">{{.icon_name | humanize }}<a href="#{{.icon_name | anchorize }}" class="ml-1 text-gray-200 hover:text-linkblue" title="{{ T "permalink"}}">#</a></h2>
         <a class="block text-sm" href="#top">&#8679; top</a>
     </div>
     <p>{{ T "icon_code" }}: <code>{{ $IconCodeOnly }}</code></p>
-    <div class="text-[150px] p-10 bg-gray-50 bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#ddd] from-[1px] to-transparent to-[1px] bg-[length:1rem_1rem] text-center">
+    <div class="text-[150px] p-5 bg-gray-50 bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#ddd] from-[1px] to-transparent to-[1px] bg-[length:1rem_1rem] text-center">
         <i class="qi qi-{{.icon_code}}"></i>
     </div>
-    <div class="flex flex-wrap -mx-3">
+    <div class="flex-grid">
         <div class="w-full md:w-1/3 px-3">
             <h4>{{ T "download" }}</h4>
             <p>{{ T "dl_desc" }}</p>

@@ -7,11 +7,11 @@
     html {
         @apply relative min-h-full;
     }
-    article a {
+    article a, .hero-text a {
         @apply text-linkblue no-underline;
     }
     
-    article a:hover {
+    article a:hover, .hero-text a:hover {
         @apply text-linkblue underline;
     }
     p {
@@ -27,7 +27,7 @@
         @apply px-3;
     }
     .nav-link {
-        @apply text-slate-300 hover:text-white;
+        @apply text-slate-500 hover:text-black;
     }
     .nav-3rd-icon {
         @apply md:block hidden py-[15px] text-sm;

@@ -26,8 +26,10 @@
   translation: "Copy the following code into your project"
 - id: home_headline
   translation: "QWeather Icons"
-- id: home_desc
-  translation: "Open source, beautiful weather icons and fonts, for [QWeather API/SDK](https://dev.qweather.com/en) and all developers."
+- id: home_hero_desc
+  translation: "is an open source, beautiful weather icon library that supports SVG and Web Font, compatible with [QWeather API](https://dev.qweather.com/en/), and also works in any project that needs weather icons."
+- id: home_hero_docs
+  translation: "You can integrate and use them in many ways, see [Install](/en/install/), [usage](/en/usage/) and [Customize](/en/customize/)."
 - id: permalink
   translation: "Permalink"
 - id: design-resources

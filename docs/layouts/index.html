@@ -1,67 +1,12 @@
 {{ define "main" }}
-<main class="homepage">
-    <div class="container">
-        <div class="hero">
-            <div class="row">
-                <div class="headline order-2 order-lg-1 col-12  col-lg-6 align-self-center">
-                    <h1>{{T "home_headline"}}</h1>
-                    <div class="desc mb-2">
-                        {{T "home_desc" | markdownify }} 
-                    </div>
-                    <div class="ver">
-                        v{{ .Site.Params.ver }}
-                    </div>
-                </div>
-                <div class="banner order-1 order-lg-2 col-12  col-lg-6">
-                    <img src="/assets/images/qweather-icons-hero.png" alt="" width="540">
-                </div>
-            </div>
-        </div>
-        <div class="install">
-            <div class="row mb-md-3">
-                <div class="install-item col-12 col-md-6 mb-4">
-                    <h2>NPM</h2>
-                    {{ highlight "npm i qweather-icons" "sh" ""}}
-                </div>
-                <div class="install-item col-12 col-md-6 mb-4">
-                    <h2>{{ T "iconfont"}}</h2>
-                    {{- $cdnSnippet := printf `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@%s/font/qweather-icons.css">` .Site.Params.ver }}
-                    {{ highlight $cdnSnippet "html" "" }}
-                </div>
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <h2>{{ T "download"}}</h2>
-                    <a class="btn-link btn-link-blue d-flex align-items-center justify-content-center py-3" href="https://github.com/qwd/Icons/releases/download/v{{ .Site.Params.ver }}/QWeather-Icons-{{ .Site.Params.ver }}.zip" target="_blank" rel="noopener noreferrer">&#8595;&nbsp;{{ T "download" }} - v{{ .Site.Params.ver }}</a>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2>{{ T "design-resources"}}</h2>
-                    <a class="btn-link btn-link-dark d-flex align-items-center justify-content-center py-3" href="https://www.figma.com/community/file/1196353857920331062" target="_blank" rel="noopener noreferrer">
-                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.66663 10C6.66663 8.17784 8.1438 6.70062 9.96602 6.70062C11.7882 6.70062 13.2654 8.17784 13.2654 10C13.2654 11.8222 11.7882 13.2994 9.96602 13.2994C8.1438 13.2994 6.66663 11.8222 6.66663 10Z" fill="#1ABCFE"/>
-                            <path d="M0.0678711 16.5988C0.0678711 14.7766 1.54506 13.2994 3.36727 13.2994H6.66667V16.5988C6.66667 18.421 5.18949 19.8982 3.36727 19.8982C1.54506 19.8982 0.0678711 18.421 0.0678711 16.5988Z" fill="#0ACF83"/>
-                            <path d="M6.66663 0.101807V6.70058H9.96602C11.7882 6.70058 13.2654 5.22341 13.2654 3.4012C13.2654 1.579 11.7882 0.101807 9.96602 0.101807H6.66663Z" fill="#FF7262"/>
-                            <path d="M0.0678711 3.4012C0.0678711 5.22341 1.54506 6.70058 3.36727 6.70058H6.66667V0.101807H3.36727C1.54506 0.101807 0.0678711 1.579 0.0678711 3.4012Z" fill="#F24E1E"/>
-                            <path d="M0.0678711 10C0.0678711 11.8222 1.54506 13.2994 3.36727 13.2994H6.66667V6.70062H3.36727C1.54506 6.70062 0.0678711 8.17784 0.0678711 10Z" fill="#A259FF"/>
-                            </svg>
-                        &nbsp;&nbsp;Figma
-                    </a>
-                </div>
-            </div>
- 
-        </div>
-        <div class="feat">
-            {{- $currentPage := . -}}
-            {{- range .Site.Data.homefeat  }}
-            <div class="feat-item row justify-content-center">
-                <div class="item-icon col-3 col-md-2">
-                    <img src="{{.link}}" alt="" width="120">
-                </div>
-                <div class="item-content col-9 col-md-7 align-self-center">
-                    <h2>{{ index .name $currentPage.Language.Lang }}</h2>
-                    <p>{{ index .desc $currentPage.Language.Lang | markdownify }}</p>
-                </div>
-            </div>
-            {{- end }}
-        </div>
+<div class="hero mb-5 py-10">
+    <div class="container md:max-w-screen-md">
+        {{ partial "hero" .}}
     </div>
-</main>
+</div>
+<article class="main-content container xl:max-w-screen-xl pb-10">
+    <section class="doc-content">
+        {{ partial "icon-gallery" . }}
+    </section>
+</article>
 {{ end }}
