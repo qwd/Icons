@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="main-content container max-w-[960px] py-10">
+<article class="main-content container xl:max-w-screen-xl py-10">
     <section class="article-headline mb-5 border-b border-slate-300">
         <h1>{{ .Title}}</h1>
         <div class="summary text-lg mb-5">
@@ -7,7 +7,13 @@
         </div>
     </section>
     <section class="doc-content">
+        {{ $last_path_name := .RelPermalink | path.Base }}
+        {{ if eq $last_path_name "icons" }}
+        {{/*  {{ partial "icon-gallery" . }}  */}}
+        {{ partial "icon-details" . }}
+        {{ else }}
         {{ .Content | replaceRE "(<h[2-3] id=\"(.+)\".*>)(.*)(</h[1-6]>)" `${1}${3}<a href="#${2}" class="ml-1 text-gray-200 hover:text-linkblue">#</a>${4}` | safeHTML }}
+        {{ end }}
     </section>
 </article>
 {{ end }}
