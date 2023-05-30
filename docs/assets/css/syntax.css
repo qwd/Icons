@@ -1,8 +1,6 @@
 /**
  * Syntax highlighting styles
  */
-// .highlight pre, .highlight pre code { background-color: $color-pre-bg }
-// .highlight pre code {color: #999;}
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #0099FF; font-style: italic } /* Comment */
 .highlight .err { color: #AA0000; background-color: #FFAAAA } /* Error */

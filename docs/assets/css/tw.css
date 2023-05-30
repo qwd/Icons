@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "syntax.css";
+
+@layer base {
+    html {
+        @apply relative min-h-full;
+    }
+    article a, .hero-text a {
+        @apply text-linkblue no-underline;
+    }
+    
+    article a:hover, .hero-text a:hover {
+        @apply text-linkblue underline;
+    }
+    p {
+        @apply leading-[28px] mb-2.5;
+    }
+}
+
+@layer components {
+    .flex-grid {
+        @apply flex flex-wrap -mx-3;
+    }
+    .col-gap {
+        @apply px-3;
+    }
+    .nav-link {
+        @apply text-slate-500 hover:text-black;
+    }
+    .nav-3rd-icon {
+        @apply md:block hidden py-[15px] text-sm;
+    }
+    blockquote {
+        @apply block p-4 my-5 text-gray-500 bg-[#f0fcff] rounded-lg border border-[#abf0ff];
+    }
+
+    blockquote p, blockquote ul, blockquote ol {
+        @apply last:mb-0;
+    }
+}
+
+@layer utilities {
+    .doc-content ul li {
+        @apply list-disc mt-2.5;
+    }
+    .doc-content ol li {
+        @apply list-decimal mt-2.5;
+    }
+    .doc-content ul, .post-content ol {
+        @apply pl-10 my-[15px];
+    }
+
+    code, pre {
+        @apply font-mono text-sm;
+    }
+    code {
+        @apply bg-[#ecedf2] py-px px-1 mx-px rounded;
+    }
+    
+    pre {
+        @apply block p-[15px] mb-2.5 bg-[#f3f4f5] overflow-x-auto rounded-lg;
+    }
+    
+    pre code {
+        @apply p-0 bg-inherit;
+    }
+    h1,h2,h3,h4,h5 {
+        @apply font-bold my-5 text-black;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    .doc-content h2, .doc-content h3, .doc-content h4 {
+        padding-top: 50px;
+        margin-top: -30px;
+    }
+}

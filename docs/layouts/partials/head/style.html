@@ -1,4 +1,8 @@
-<!-- main style -->
-{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
-<link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+{{ $styles := resources.Get "/css/style.css" | resources.Fingerprint  }}
+{{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+{{ else }}
+  {{ $styles := $styles | minify  }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ end }}
 <link rel="stylesheet" href="/assets/font/qweather-icons.css?{{ now.Unix }}">

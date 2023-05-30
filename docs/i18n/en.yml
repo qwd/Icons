@@ -9,7 +9,7 @@
 - id: moreproduct
   translation: "More products for QWeather"
 - id: dev
-  translation: "dev.qweather"
+  translation: "QWeather Develop Service"
 - id: latest_ver
   translation: "Currently"
 - id: download
@@ -25,10 +25,20 @@
 - id: html_desc
   translation: "Copy the following code into your project"
 - id: home_headline
-  translation: "QWeather Icons && Fonts"
-- id: home_desc
-  translation: "Open source, beautiful weather icons and fonts, for [QWeather API/SDK](https://dev.qweather.com/en) and all developers."
+  translation: "QWeather Icons"
+- id: home_hero_desc
+  translation: "is an open source, beautiful weather icon library that supports SVG and Web Font, compatible with [QWeather API](https://dev.qweather.com/en/), and also works in any project that needs weather icons."
+- id: home_hero_docs
+  translation: "You can integrate and use them in many ways, see [Install](/en/install/), [usage](/en/usage/) and [Customize](/en/customize/)."
 - id: permalink
   translation: "Permalink"
 - id: design-resources
   translation: "Design Resources"
+- id: open-figma
+  translation: "Open in Figma"
+- id: weather-service
+  translation: "Weather Forecast"
+- id: weather-map
+  translation: "Weather Maps"
+- id: latest
+  translation: "Latest"
