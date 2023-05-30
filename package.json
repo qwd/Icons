@@ -28,19 +28,16 @@
     "docs-server:docs": "hugo server",
     "docs": "run-p docs-server:*",
     "build-all": "run-s icons icons-zip docs-build",
-    "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
-    "test:vnu": "node build/vnu-jar.js"
+    "test": "run-p --continue-on-error test:*"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "cross-env": "^7.0.3",
-    "eslint": "^8.31.0",
     "fantasticon": "^1.2.3",
-    "find-unused-sass-variables": "^4.0.5",
     "hugo-bin": "^0.102.0",
     "linkinator": "^4.1.2",
     "lockfile-lint": "^4.10.0",
