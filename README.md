@@ -2,28 +2,72 @@
 
 [English](#qweather-icons)
 
-和风天气图标&&字体是一套开源、漂亮的天气图标与图标字体，适配[和风天气API/SDK](https://dev.qweather.com/)，当然也可以用于任何其他项目。 
+和风天气图标是一个开源、漂亮的天气图标库，支持SVG和Web Font，兼容[和风天气API](https://dev.qweather.com)，适用于任何需要天气图标的项目。 
 
 ## 下载和安装
 
 你可以通过多种方式下载和安装和风天气图标:
 
-- npm安装：`npm i qweather-icons`
-- [下载打包文件](https://github.com/qwd/Icons/releases)
+**npm**
 
-更多安装方式（例如jsDelivr）请查看[文档：安装](https://icons.qweather.com/install/)
+```bash
+npm i qweather-icons
+```
+
+**CDN**
+
+```bash
+<link href="https://cdn.jsdelivr.net/npm/qweather-icons@1.3.2/font/qweather-icons.css" rel="stylesheet">
+```
+
+或[下载.zip](https://github.com/qwd/Icons/releases)
 
 ## 如何使用
 
-如果你是[和风天气开发者](https://dev.qweather.com/)，图标和字体的命名与`icon`字段是一致的，因此你可以直接通过`icon`字段找到你需要的图标和字体。
+- 在HTML中嵌入SVG
+- 在`img`中使用
+- 通过web font加载
 
-如果你是其他开发者，你也可以将这些图标或字体用在你的项目中。
+> 如果你是[和风天气开发者](https://dev.qweather.com/)，图标和字体的命名与`icon`字段是一致的，因此你可以直接通过`icon`字段找到你需要的图标和字体。
 
-具体说的使用方式请参考[文档：使用](https://icons.qweather.com/usage/)
+具体使用方式请参考[使用文档](https://icons.qweather.com/usage/)。
 
-## 图标预览
+## 设计文件
 
-查看[文档：图标预览](https://icons.qweather.com/icons/)，你可以查看每一个图标并且单独使用或下载它们。
+所有图标的设计资源可以[在Figma中查看](https://www.figma.com/community/file/1196353857920331062)。
+
+## 开发
+
+假设你已经拥有[Node.js](https://nodejs.org)环境。克隆本项目到本地，并安装依赖。
+
+```bash
+git clone https://github.com/qwd/Icons.git
+cd Icons
+npm install
+```
+
+### 运行文档
+
+```bash
+npm run docs
+```
+
+在浏览器打开`https://localhost:1313`即可。
+
+### 创建图标
+
+```bash
+npm run icons
+```
+
+### 其他scripts
+
+请查看`package.json`。
+
+## 自定义图标
+
+参考[自定义文档](https://icons.qweather.com/customize/)。
+
 ## 灵感
 
 灵感来自[Boogstrap Icons](https://icons.getbootstrap.com/)
@@ -38,28 +82,69 @@
 
 # QWeather Icons
 
-QWeather Icons&&Fonts are open source, beautiful weather icons and iconfonts for [QWeather API/SDK](https://dev.qweather.com/en/) and can be used in any other projects. 
+QWeather Icons is an open source, beautiful weather icon library that supports SVG and Web Font, compatible with [QWeather API](https://dev.qweather.com/en/), and also works in any project that needs weather icons. 
 
-## Download and Installation
+## Install
 
-You can download and install QWeather Icons in several ways:
+**npm**
 
-- npm install: `npm i qweather-icons`
-- [Download packaged files](https://github.com/qwd/Icons/releases)
+```bash
+npm i qweather-icons
+```
 
-For more installation info (e.g. jsDelivr), see [Docs:Install](https://icons.qweather.com/en/install/).
+**CDN**
+
+```bash
+<link href="https://cdn.jsdelivr.net/npm/qweather-icons@1.3.2/font/qweather-icons.css" rel="stylesheet">
+```
+
+Or [Download .zip](https://github.com/qwd/Icons/releases)
 
 ## How to Use
 
-For [QWeather developers](https://dev.qweather.com/en/), the icons and fonts are named the same as the `icon` field, so you can find the icons and fonts you need directly through the `icon` field.
+- Embedding SVG in HTML
+- Use `img` element
+- Loading via web font
 
-For all developers, you can also use these icons or fonts in your project.
+> For [QWeather developers](https://dev.qweather.com/en/), the icons and fonts are named the same as the `icon` field, so you can find the icons and fonts you need directly through the `icon` field.
 
-See [Docs:Usage](https://icons.qweather.com/en/usage/) for more.
+See [Usage](https://icons.qweather.com/en/usage/) for more.
 
-## Icons Preview
+## Design resources
 
-See [Docs:Icons](https://icons.qweather.com/icons/), where you can view each icon and use them individually or download them.
+All design resources for icons can be found in [Figma](https://www.figma.com/community/file/1196353857920331062).
+
+## Development
+
+Assume you already have a [Node.js](https://nodejs.org) environment. Clone this project locally and install the dependencies.
+
+```bash
+git clone https://github.com/qwd/Icons.git
+cd Icons
+npm install
+```
+
+### Run docs server
+
+```bash
+npm run docs
+```
+
+Open `https://localhost:1313` in your browser.
+
+### Build icons
+
+```bash
+npm run icons
+```
+
+### Other scripts
+
+See `package.json` for more.
+
+## Customize
+
+See [Customize](https://icons.qweather.com/customize/) for more.
 
 ## Inspiration
 
