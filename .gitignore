@@ -55,3 +55,4 @@ _site/
 
 # other
 package-lock.json
+docs/assets/css/style.css
