@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?0b739470354bbda9be346e821335563c") format("woff2"),
-url("./fonts/qweather-icons.woff?0b739470354bbda9be346e821335563c") format("woff"),
-url("./fonts/qweather-icons.ttf?0b739470354bbda9be346e821335563c") format("truetype");
+  src: url("./fonts/qweather-icons.woff2?9fc2593c34e1f1ca6a423adfd8c52ae1") format("woff2"),
+url("./fonts/qweather-icons.woff?9fc2593c34e1f1ca6a423adfd8c52ae1") format("woff"),
+url("./fonts/qweather-icons.ttf?9fc2593c34e1f1ca6a423adfd8c52ae1") format("truetype");
 }
 
 [class^="qi-"]::before,
