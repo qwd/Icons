@@ -1,0 +1,30 @@
+name: Upload to OSS
+
+on:
+  workflow_run:
+    workflows: [Github Pages, Release]
+    types: [completed]
+
+env:
+  UPLOAD_DIR: ghp-for-oss
+
+jobs:
+  oss:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+            ref: 'gh-pages'
+            path: ${{ env.UPLOAD_DIR }}
+      - name: Remove dot files
+        run: rm -rf ${{ env.UPLOAD_DIR }}/.[a-zA-Z]*
+      - name: Setup ossutil
+        run: |
+          curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+          ossutil64 config -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_AK_ID }} -k ${{ secrets.OSS_AK_SECRET }}
+      - name: Upload to oss
+        run: |
+          ossutil64 rm -rf oss://${{ secrets.OSS_BUCKET }}
+          ossutil64 cp -rf ${{ env.UPLOAD_DIR }} oss://${{ secrets.OSS_BUCKET }} --disable-dir-object
