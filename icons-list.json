@@ -1066,6 +1066,745 @@
   {
     "icon_code": "qweather-fill",
     "icon_name": "qweather-fill"
+  },
+  {
+    "icon_code": "1608",
+    "icon_name": "thunderstorm"
+  },
+  {
+    "icon_code": "1609",
+    "icon_name": "rainstorm"
+  },
+  {
+    "icon_code": "1610",
+    "icon_name": "frost"
+  },
+  {
+    "icon_code": "1801",
+    "icon_name": "strong-monsoon-signal"
+  },
+  {
+    "icon_code": "1802",
+    "icon_name": "storm-surge"
+  },
+  {
+    "icon_code": "1803",
+    "icon_name": "tropical-cyclone"
+  },
+  {
+    "icon_code": "1804",
+    "icon_name": "rainstorm"
+  },
+  {
+    "icon_code": "1805",
+    "icon_name": "thunderstorm"
+  },
+  {
+    "icon_code": "2029",
+    "icon_name": "thunderstorm"
+  },
+  {
+    "icon_code": "2030",
+    "icon_name": "high-temperature"
+  },
+  {
+    "icon_code": "2031",
+    "icon_name": "low-temperature"
+  },
+  {
+    "icon_code": "2032",
+    "icon_name": "avalanches"
+  },
+  {
+    "icon_code": "2033",
+    "icon_name": "flooding"
+  },
+  {
+    "icon_code": "2050",
+    "icon_name": "rain"
+  },
+  {
+    "icon_code": "2051",
+    "icon_name": "wind"
+  },
+  {
+    "icon_code": "2070",
+    "icon_name": "dust-raising-winds"
+  },
+  {
+    "icon_code": "2071",
+    "icon_name": "strong-surface-winds"
+  },
+  {
+    "icon_code": "2072",
+    "icon_name": "hot-day"
+  },
+  {
+    "icon_code": "2073",
+    "icon_name": "warm-night"
+  },
+  {
+    "icon_code": "2074",
+    "icon_name": "cold-day"
+  },
+  {
+    "icon_code": "2075",
+    "icon_name": "thunderstorm-and-lightning"
+  },
+  {
+    "icon_code": "2076",
+    "icon_name": "hailstorm"
+  },
+  {
+    "icon_code": "2077",
+    "icon_name": "sea-area-warning"
+  },
+  {
+    "icon_code": "2078",
+    "icon_name": "fishermen-warning"
+  },
+  {
+    "icon_code": "2079",
+    "icon_name": "heavy-snow"
+  },
+  {
+    "icon_code": "2080",
+    "icon_name": "dust-storm"
+  },
+  {
+    "icon_code": "2081",
+    "icon_name": "heat-wave"
+  },
+  {
+    "icon_code": "2082",
+    "icon_name": "cold-wave"
+  },
+  {
+    "icon_code": "2083",
+    "icon_name": "fog"
+  },
+  {
+    "icon_code": "2084",
+    "icon_name": "heavy-rain"
+  },
+  {
+    "icon_code": "2085",
+    "icon_name": "ground-frost"
+  },
+  {
+    "icon_code": "2100",
+    "icon_name": "fog"
+  },
+  {
+    "icon_code": "2101",
+    "icon_name": "thunder-rain"
+  },
+  {
+    "icon_code": "2102",
+    "icon_name": "thunder-storm"
+  },
+  {
+    "icon_code": "2103",
+    "icon_name": "light-rain"
+  },
+  {
+    "icon_code": "2104",
+    "icon_name": "heavy-rain"
+  },
+  {
+    "icon_code": "2105",
+    "icon_name": "fresh-wind"
+  },
+  {
+    "icon_code": "2106",
+    "icon_name": "thunderstorm-and-dust"
+  },
+  {
+    "icon_code": "2107",
+    "icon_name": "dust"
+  },
+  {
+    "icon_code": "2108",
+    "icon_name": "high-wave"
+  },
+  {
+    "icon_code": "2109",
+    "icon_name": "frost"
+  },
+  {
+    "icon_code": "2111",
+    "icon_name": "drop-in-visibility"
+  },
+  {
+    "icon_code": "2120",
+    "icon_name": "low-humidity"
+  },
+  {
+    "icon_code": "2121",
+    "icon_name": "accumulated-rain"
+  },
+  {
+    "icon_code": "2122",
+    "icon_name": "cold-wave"
+  },
+  {
+    "icon_code": "2123",
+    "icon_name": "tornado"
+  },
+  {
+    "icon_code": "2124",
+    "icon_name": "thunderstorm"
+  },
+  {
+    "icon_code": "2125",
+    "icon_name": "hail"
+  },
+  {
+    "icon_code": "2126",
+    "icon_name": "heavy-rainfall"
+  },
+  {
+    "icon_code": "2127",
+    "icon_name": "gale"
+  },
+  {
+    "icon_code": "2128",
+    "icon_name": "heat-wave"
+  },
+  {
+    "icon_code": "2129",
+    "icon_name": "cold"
+  },
+  {
+    "icon_code": "2130",
+    "icon_name": "frost"
+  },
+  {
+    "icon_code": "2131",
+    "icon_name": "drought"
+  },
+  {
+    "icon_code": "2132",
+    "icon_name": "forest-fire"
+  },
+  {
+    "icon_code": "2133",
+    "icon_name": "heavy-snow"
+  },
+  {
+    "icon_code": "2134",
+    "icon_name": "severely-falling-temperature"
+  },
+  {
+    "icon_code": "2135",
+    "icon_name": "rainstorm"
+  },
+  {
+    "icon_code": "2150",
+    "icon_name": "wind"
+  },
+  {
+    "icon_code": "2151",
+    "icon_name": "snow-ice"
+  },
+  {
+    "icon_code": "2152",
+    "icon_name": "freeze"
+  },
+  {
+    "icon_code": "2153",
+    "icon_name": "thunderstorms"
+  },
+  {
+    "icon_code": "2154",
+    "icon_name": "fog"
+  },
+  {
+    "icon_code": "2155",
+    "icon_name": "high-temperature"
+  },
+  {
+    "icon_code": "2156",
+    "icon_name": "low-temperature"
+  },
+  {
+    "icon_code": "2157",
+    "icon_name": "coastal-event"
+  },
+  {
+    "icon_code": "2158",
+    "icon_name": "forest-fire"
+  },
+  {
+    "icon_code": "2159",
+    "icon_name": "avalanches"
+  },
+  {
+    "icon_code": "2160",
+    "icon_name": "rain"
+  },
+  {
+    "icon_code": "2161",
+    "icon_name": "flood"
+  },
+  {
+    "icon_code": "2162",
+    "icon_name": "rain-flood"
+  },
+  {
+    "icon_code": "2163",
+    "icon_name": "mudflow"
+  },
+  {
+    "icon_code": "2164",
+    "icon_name": "duststorm"
+  },
+  {
+    "icon_code": "2165",
+    "icon_name": "freezing-rain-and-icing"
+  },
+  {
+    "icon_code": "2166",
+    "icon_name": "other-dangers"
+  },
+  {
+    "icon_code": "2190",
+    "icon_name": "severe-thunderstorms"
+  },
+  {
+    "icon_code": "2191",
+    "icon_name": "damaging-winds"
+  },
+  {
+    "icon_code": "2192",
+    "icon_name": "veld-fire-conditions"
+  },
+  {
+    "icon_code": "2193",
+    "icon_name": "weather-advisory"
+  },
+  {
+    "icon_code": "2300",
+    "icon_name": "hazardous-seas-warning"
+  },
+  {
+    "icon_code": "2301",
+    "icon_name": "heavy-freezing-spray-warning"
+  },
+  {
+    "icon_code": "2302",
+    "icon_name": "red-flag-warning"
+  },
+  {
+    "icon_code": "2303",
+    "icon_name": "freeze-warning"
+  },
+  {
+    "icon_code": "2304",
+    "icon_name": "hard-freeze-warning"
+  },
+  {
+    "icon_code": "2305",
+    "icon_name": "extreme-cold-warning"
+  },
+  {
+    "icon_code": "2306",
+    "icon_name": "wind-chill-warning"
+  },
+  {
+    "icon_code": "2307",
+    "icon_name": "gale-warning"
+  },
+  {
+    "icon_code": "2308",
+    "icon_name": "excessive-heat-warning"
+  },
+  {
+    "icon_code": "2309",
+    "icon_name": "lake-effect-snow-warning"
+  },
+  {
+    "icon_code": "2311",
+    "icon_name": "blowing-dust-warning"
+  },
+  {
+    "icon_code": "2312",
+    "icon_name": "dust-storm-warning"
+  },
+  {
+    "icon_code": "2313",
+    "icon_name": "storm-warning"
+  },
+  {
+    "icon_code": "2314",
+    "icon_name": "tropical-storm-warning"
+  },
+  {
+    "icon_code": "2315",
+    "icon_name": "high-wind-warning"
+  },
+  {
+    "icon_code": "2316",
+    "icon_name": "high-surf-warning"
+  },
+  {
+    "icon_code": "2317",
+    "icon_name": "flood-warning"
+  },
+  {
+    "icon_code": "2318",
+    "icon_name": "lakeshore-flood-warning"
+  },
+  {
+    "icon_code": "2319",
+    "icon_name": "coastal-flood-warning"
+  },
+  {
+    "icon_code": "2320",
+    "icon_name": "ashfall-warning"
+  },
+  {
+    "icon_code": "2321",
+    "icon_name": "volcano-warning"
+  },
+  {
+    "icon_code": "2322",
+    "icon_name": "earthquake-warning"
+  },
+  {
+    "icon_code": "2323",
+    "icon_name": "avalanche-warning"
+  },
+  {
+    "icon_code": "2324",
+    "icon_name": "winter-storm-warning"
+  },
+  {
+    "icon_code": "2325",
+    "icon_name": "ice-storm-warning"
+  },
+  {
+    "icon_code": "2326",
+    "icon_name": "snow-squall-warning"
+  },
+  {
+    "icon_code": "2327",
+    "icon_name": "blizzard-warning"
+  },
+  {
+    "icon_code": "2328",
+    "icon_name": "special-marine-warning"
+  },
+  {
+    "icon_code": "2330",
+    "icon_name": "typhoon-warning"
+  },
+  {
+    "icon_code": "2331",
+    "icon_name": "hurricane-warning"
+  },
+  {
+    "icon_code": "2332",
+    "icon_name": "hurricane-force-wind-warning"
+  },
+  {
+    "icon_code": "2333",
+    "icon_name": "storm-surge-warning"
+  },
+  {
+    "icon_code": "2341",
+    "icon_name": "flash-flood-warning"
+  },
+  {
+    "icon_code": "2343",
+    "icon_name": "severe-thunderstorm-warning"
+  },
+  {
+    "icon_code": "2345",
+    "icon_name": "extreme-wind-warning"
+  },
+  {
+    "icon_code": "2346",
+    "icon_name": "tornado-warning"
+  },
+  {
+    "icon_code": "2348",
+    "icon_name": "tsunami-warning"
+  },
+  {
+    "icon_code": "2349",
+    "icon_name": "fire-weather-watch"
+  },
+  {
+    "icon_code": "2350",
+    "icon_name": "freeze-watch"
+  },
+  {
+    "icon_code": "2351",
+    "icon_name": "hard-freeze-watch"
+  },
+  {
+    "icon_code": "2352",
+    "icon_name": "wind-chill-watch"
+  },
+  {
+    "icon_code": "2353",
+    "icon_name": "extreme-cold-watch"
+  },
+  {
+    "icon_code": "2354",
+    "icon_name": "excessive-heat-watch"
+  },
+  {
+    "icon_code": "2355",
+    "icon_name": "high-wind-watch"
+  },
+  {
+    "icon_code": "2356",
+    "icon_name": "flood-watch"
+  },
+  {
+    "icon_code": "2357",
+    "icon_name": "lakeshore-flood-watch"
+  },
+  {
+    "icon_code": "2358",
+    "icon_name": "coastal-flood-watch"
+  },
+  {
+    "icon_code": "2359",
+    "icon_name": "heavy-freezing-spray-watch"
+  },
+  {
+    "icon_code": "2360",
+    "icon_name": "hazardous-seas-watch"
+  },
+  {
+    "icon_code": "2361",
+    "icon_name": "winter-storm-watch"
+  },
+  {
+    "icon_code": "2362",
+    "icon_name": "gale-watch"
+  },
+  {
+    "icon_code": "2363",
+    "icon_name": "avalanche-watch"
+  },
+  {
+    "icon_code": "2364",
+    "icon_name": "storm-watch"
+  },
+  {
+    "icon_code": "2365",
+    "icon_name": "tropical-storm-watch"
+  },
+  {
+    "icon_code": "2366",
+    "icon_name": "typhoon-watch"
+  },
+  {
+    "icon_code": "2367",
+    "icon_name": "hurricane-force-wind-watch"
+  },
+  {
+    "icon_code": "2368",
+    "icon_name": "hurricane-watch"
+  },
+  {
+    "icon_code": "2369",
+    "icon_name": "storm-surge-watch"
+  },
+  {
+    "icon_code": "2370",
+    "icon_name": "flash-flood-watch"
+  },
+  {
+    "icon_code": "2371",
+    "icon_name": "severe-thunderstorm-watch"
+  },
+  {
+    "icon_code": "2372",
+    "icon_name": "tornado-watch"
+  },
+  {
+    "icon_code": "2373",
+    "icon_name": "tsunami-watch"
+  },
+  {
+    "icon_code": "2374",
+    "icon_name": "air-stagnation-advisory"
+  },
+  {
+    "icon_code": "2375",
+    "icon_name": "low-water-advisory"
+  },
+  {
+    "icon_code": "2376",
+    "icon_name": "freezing-spray-advisory"
+  },
+  {
+    "icon_code": "2377",
+    "icon_name": "freezing-fog-advisory"
+  },
+  {
+    "icon_code": "2378",
+    "icon_name": "ashfall-advisory"
+  },
+  {
+    "icon_code": "2379",
+    "icon_name": "frost-advisory"
+  },
+  {
+    "icon_code": "2380",
+    "icon_name": "wind-advisory"
+  },
+  {
+    "icon_code": "2381",
+    "icon_name": "lake-wind-advisory"
+  },
+  {
+    "icon_code": "2382",
+    "icon_name": "blowing-dust-advisory"
+  },
+  {
+    "icon_code": "2383",
+    "icon_name": "dust-advisory"
+  },
+  {
+    "icon_code": "2384",
+    "icon_name": "brisk-wind-advisory"
+  },
+  {
+    "icon_code": "2385",
+    "icon_name": "small-craft-advisory"
+  },
+  {
+    "icon_code": "2386",
+    "icon_name": "small-craft-advisory-for-winds"
+  },
+  {
+    "icon_code": "2387",
+    "icon_name": "small-craft-advisory-for-rough-bar"
+  },
+  {
+    "icon_code": "2388",
+    "icon_name": "small-craft-advisory-for-hazardous-seas"
+  },
+  {
+    "icon_code": "2389",
+    "icon_name": "dense-smoke-advisory"
+  },
+  {
+    "icon_code": "2390",
+    "icon_name": "dense-fog-advisory"
+  },
+  {
+    "icon_code": "2391",
+    "icon_name": "high-surf-advisory"
+  },
+  {
+    "icon_code": "2392",
+    "icon_name": "coastal-flood-advisory"
+  },
+  {
+    "icon_code": "2393",
+    "icon_name": "lakeshore-flood-advisory"
+  },
+  {
+    "icon_code": "2394",
+    "icon_name": "hydrologic-advisory"
+  },
+  {
+    "icon_code": "2395",
+    "icon_name": "flood-advisory"
+  },
+  {
+    "icon_code": "2396",
+    "icon_name": "heat-advisory"
+  },
+  {
+    "icon_code": "2397",
+    "icon_name": "wind-chill-advisory"
+  },
+  {
+    "icon_code": "2398",
+    "icon_name": "winter-weather-advisory"
+  },
+  {
+    "icon_code": "2399",
+    "icon_name": "avalanche-advisory"
+  },
+  {
+    "icon_code": "2400",
+    "icon_name": "tsunami-advisory"
+  },
+  {
+    "icon_code": "2409",
+    "icon_name": "flood-statement"
+  },
+  {
+    "icon_code": "2411",
+    "icon_name": "hydrologic-outlook"
+  },
+  {
+    "icon_code": "2412",
+    "icon_name": "hazardous-weather-outlook"
+  },
+  {
+    "icon_code": "2413",
+    "icon_name": "air-quality-alert"
+  },
+  {
+    "icon_code": "2414",
+    "icon_name": "extreme-fire-danger"
+  },
+  {
+    "icon_code": "2415",
+    "icon_name": "marine-weather-statement"
+  },
+  {
+    "icon_code": "2416",
+    "icon_name": "special-weather-statement"
+  },
+  {
+    "icon_code": "2417",
+    "icon_name": "lakeshore-flood-statement"
+  },
+  {
+    "icon_code": "2418",
+    "icon_name": "coastal-flood-statement"
+  },
+  {
+    "icon_code": "2419",
+    "icon_name": "beach-hazards-statement"
+  },
+  {
+    "icon_code": "2420",
+    "icon_name": "rip-current-statement"
+  },
+  {
+    "icon_code": "2421",
+    "icon_name": "tropical-depression-local-statement"
+  },
+  {
+    "icon_code": "2422",
+    "icon_name": "tropical-storm-local-statement"
+  },
+  {
+    "icon_code": "2423",
+    "icon_name": "typhoon-local-statement"
+  },
+  {
+    "icon_code": "2424",
+    "icon_name": "hurricane-local-statement"
+  },
+  {
+    "icon_code": "2425",
+    "icon_name": "severe-weather-statement"
+  },
+  {
+    "icon_code": "2426",
+    "icon_name": "flash-flood-statement"
   }
-
 ]

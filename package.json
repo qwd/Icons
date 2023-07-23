@@ -1,6 +1,6 @@
 {
   "name": "qweather-icons",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "Open source weather SVG icons and fonts, for QWeather and all developers",
   "author": "QWeather",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "docs-server:docs": "hugo server",
     "docs": "run-p docs-server:*",
     "build-all": "run-s icons icons-zip docs-build",
-    "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
+    "test:linkinator": "linkinator public --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "test": "run-p --continue-on-error test:*"
   },
