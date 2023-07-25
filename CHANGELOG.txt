@@ -1,18 +1,25 @@
+## 🚀 新功能
+
+- 增加和更新200+预警图标，匹配和风天气新版本预警 #55
+- 更新更符合预警内容的预警图标 #53 #54
+
 ## 🛠 问题修复
 
-- 火焰组件的弧度与其他图案不匹配，在图标放大后差异明显。涉及到的图标：1011/1025/1026/1041/1077/1084/1601/2005/2027/900-fill/900 #49
+- 添加新图标导致原图标codepoint值的变化 #57
 
 ## 📖 文档
 
-- 新的样式 #47
-- 使用tailwindcss
+- 添加上传到OSS的action #52
 
-## 🛠 Bug fixes
+## 🚀 What's new
 
-- The fire components do not match the curvature of the other patterns, and it is very obvious when you zoom in. Icons involved: 1011/1025/1026/1041/1077/1084/1601/2005/2027/900-fill/900
+- add and update 200+ warning icons #55
+- update warning icons for more relevance #53 #54
+
+## 🛠 Bug fix
+
+- new icons cause codepoints to change #57
 
 ## 📖 Docs
 
-- New design #47
-- Switch to tailwindcss
-
+- action for upload docs to OSS #52
