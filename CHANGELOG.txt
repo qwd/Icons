@@ -3,6 +3,10 @@
 - 增加和更新200+预警图标，匹配和风天气新版本预警 #55
 - 更新更符合预警内容的预警图标 #53 #54
 
+## 🛠 问题修复
+
+- 添加新图标导致原图标codepoint值的变化 #57
+
 ## 📖 文档
 
 - 添加上传到OSS的action #52
@@ -11,6 +15,10 @@
 
 - add and update 200+ warning icons #55
 - update warning icons for more relevance #53 #54
+
+## 🛠 Bug fix
+
+- new icons cause codepoints to change #57
 
 ## 📖 Docs
 
