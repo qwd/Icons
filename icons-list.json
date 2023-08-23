@@ -876,18 +876,6 @@
     "icon_name": "dry-hot-wind-risk-for-winter-wheat"
   },
   {
-    "icon_code": "1101",
-    "icon_name": "flood"
-  },
-  {
-    "icon_code": "1302",
-    "icon_name": "mudflow"
-  },
-  {
-    "icon_code": "1402",
-    "icon_name": "storm-surge"
-  },
-  {
     "icon_code": "1601",
     "icon_name": "very-hot-weather"
   },
@@ -986,90 +974,6 @@
   {
     "icon_code": "2007",
     "icon_name": "rain-flood"
-  },
-  {
-    "icon_code": "2008",
-    "icon_name": "freezing-rain-icing"
-  },
-  {
-    "icon_code": "2009",
-    "icon_name": "ground-frost"
-  },
-  {
-    "icon_code": "2010",
-    "icon_name": "dust-raising-winds"
-  },
-  {
-    "icon_code": "2011",
-    "icon_name": "strong-surface-winds"
-  },
-  {
-    "icon_code": "2012",
-    "icon_name": "hot-day"
-  },
-  {
-    "icon_code": "2013",
-    "icon_name": "warm-night"
-  },
-  {
-    "icon_code": "2014",
-    "icon_name": "cold-day"
-  },
-  {
-    "icon_code": "2015",
-    "icon_name": "thunderstorm-and-lightning"
-  },
-  {
-    "icon_code": "2016",
-    "icon_name": "hailstorm"
-  },
-  {
-    "icon_code": "2017",
-    "icon_name": "sea-area-warning"
-  },
-  {
-    "icon_code": "2018",
-    "icon_name": "fishermen-warning"
-  },
-  {
-    "icon_code": "2019",
-    "icon_name": "low-humidity"
-  },
-  {
-    "icon_code": "2020",
-    "icon_name": "accumulated-rain"
-  },
-  {
-    "icon_code": "2021",
-    "icon_name": "hazardous-surf-warning"
-  },
-  {
-    "icon_code": "2022",
-    "icon_name": "marine-wind-warning"
-  },
-  {
-    "icon_code": "2023",
-    "icon_name": "road-weather-alert"
-  },
-  {
-    "icon_code": "2024",
-    "icon_name": "thunder-rain"
-  },
-  {
-    "icon_code": "2025",
-    "icon_name": "thunder-rain-and-fog"
-  },
-  {
-    "icon_code": "2026",
-    "icon_name": "damaging-winds"
-  },
-  {
-    "icon_code": "2027",
-    "icon_name": "veld-fire-conditions"
-  },
-  {
-    "icon_code": "2028",
-    "icon_name": "weather-advisory"
   },
   {
     "icon_code": "2029",
