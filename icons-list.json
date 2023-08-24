@@ -1396,6 +1396,78 @@
     "icon_name": "weather-advisory2"
   },
   {
+    "icon_code": "2200",
+    "icon_name": "thunderstorm6"
+  },
+  {
+    "icon_code": "2201",
+    "icon_name": "squall"
+  },
+  {
+    "icon_code": "2202",
+    "icon_name": "air-quality"
+  },
+  {
+    "icon_code": "2203",
+    "icon_name": "rainfall"
+  },
+  {
+    "icon_code": "2204",
+    "icon_name": "fog5"
+  },
+  {
+    "icon_code": "2205",
+    "icon_name": "heat"
+  },
+  {
+    "icon_code": "2207",
+    "icon_name": "wildfire2"
+  },
+  {
+    "icon_code": "2208",
+    "icon_name": "wind3"
+  },
+  {
+    "icon_code": "2209",
+    "icon_name": "freezing-rain-warning"
+  },
+  {
+    "icon_code": "2210",
+    "icon_name": "tornado3"
+  },
+  {
+    "icon_code": "2211",
+    "icon_name": "blizzard"
+  },
+  {
+    "icon_code": "2212",
+    "icon_name": "weather-warning"
+  },
+  {
+    "icon_code": "2213",
+    "icon_name": "winter-storm"
+  },
+  {
+    "icon_code": "2214",
+    "icon_name": "freezing-drizzle"
+  },
+  {
+    "icon_code": "2215",
+    "icon_name": "snowfall"
+  },
+  {
+    "icon_code": "2216",
+    "icon_name": "blowing-snow"
+  },
+  {
+    "icon_code": "2217",
+    "icon_name": "extreme-cold"
+  },
+  {
+    "icon_code": "2218",
+    "icon_name": "frost5"
+  },
+  {
     "icon_code": "2300",
     "icon_name": "hazardous-seas-warning"
   },
