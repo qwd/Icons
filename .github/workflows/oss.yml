@@ -25,6 +25,4 @@ jobs:
           curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
           ossutil64 config -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_AK_ID }} -k ${{ secrets.OSS_AK_SECRET }}
       - name: Upload to oss
-        run: |
-          ossutil64 rm -rf oss://${{ secrets.OSS_BUCKET }}
-          ossutil64 cp -rf ${{ env.UPLOAD_DIR }} oss://${{ secrets.OSS_BUCKET }} --disable-dir-object
+        run: ossutil64 sync -uf ${{ env.UPLOAD_DIR }} oss://${{ secrets.OSS_BUCKET }} --delete --disable-dir-object
