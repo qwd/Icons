@@ -876,6 +876,130 @@
     "icon_name": "dry-hot-wind-risk-for-winter-wheat"
   },
   {
+    "icon_code": "1201",
+    "icon_name": "flood"
+  },
+  {
+    "icon_code": "1202",
+    "icon_name": "urban-flooding"
+  },
+  {
+    "icon_code": "1203",
+    "icon_name": "reservoir-danger"
+  },
+  {
+    "icon_code": "1204",
+    "icon_name": "dike-danger"
+  },
+  {
+    "icon_code": "1205",
+    "icon_name": "ice-flood"
+  },
+  {
+    "icon_code": "1206",
+    "icon_name": "waterlogging2"
+  },
+  {
+    "icon_code": "1207",
+    "icon_name": "flood-and-waterlogging"
+  },
+  {
+    "icon_code": "1208",
+    "icon_name": "dry-water"
+  },
+  {
+    "icon_code": "1209",
+    "icon_name": "flood-and-flash-flood-in-small-and-medium-rivers"
+  },
+  {
+    "icon_code": "1210",
+    "icon_name": "difficulty-drinking-water-for-rural-people-and-animals"
+  },
+  {
+    "icon_code": "1211",
+    "icon_name": "flood-in-small-and-medium-rivers"
+  },
+  {
+    "icon_code": "1212",
+    "icon_name": "flood-and-drought-advisory"
+  },
+  {
+    "icon_code": "1213",
+    "icon_name": "urban-flood-risk"
+  },
+  {
+    "icon_code": "1214",
+    "icon_name": "flash-flood"
+  },
+  {
+    "icon_code": "1215",
+    "icon_name": "agricultural-drought"
+  },
+  {
+    "icon_code": "1216",
+    "icon_name": "urban-water-shortage"
+  },
+  {
+    "icon_code": "1217",
+    "icon_name": "ecological-drought"
+  },
+  {
+    "icon_code": "1218",
+    "icon_name": "disaster-risk-early-warning"
+  },
+  {
+    "icon_code": "1219",
+    "icon_name": "flash-flood-weather-risk"
+  },
+  {
+    "icon_code": "1221",
+    "icon_name": "water-conservancy-and-drought"
+  },
+  {
+    "icon_code": "1241",
+    "icon_name": "landslide"
+  },
+  {
+    "icon_code": "1242",
+    "icon_name": "debris-flows"
+  },
+  {
+    "icon_code": "1243",
+    "icon_name": "landslide-event"
+  },
+  {
+    "icon_code": "1244",
+    "icon_name": "ground-collapses"
+  },
+  {
+    "icon_code": "1245",
+    "icon_name": "ground-fissure"
+  },
+  {
+    "icon_code": "1246",
+    "icon_name": "land-subsidence"
+  },
+  {
+    "icon_code": "1247",
+    "icon_name": "volcanic-eruption"
+  },
+  {
+    "icon_code": "1248",
+    "icon_name": "geological-hazard-weather-risk"
+  },
+  {
+    "icon_code": "1249",
+    "icon_name": "geological-hazard-weather"
+  },
+  {
+    "icon_code": "1250",
+    "icon_name": "geological-hazard2"
+  },
+  {
+    "icon_code": "1251",
+    "icon_name": "geological-hazard-risk"
+  },
+  {
     "icon_code": "1601",
     "icon_name": "very-hot-weather"
   },
