@@ -37,7 +37,7 @@ QWeather Icons provides icon fonts, and just like using other icon fonts, you ca
 <body>
     <div>
         <!-- try "heavy rain" and "cold" icons -->
-        It's raining <i class="qi-307"></i> and cold <i class="qi-cold"></i>
+        It's raining <i class="qi-307"></i> and cold <i class="qi-901"></i>
     </div>
 </body>
 </html>
