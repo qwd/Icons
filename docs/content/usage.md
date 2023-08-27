@@ -36,7 +36,7 @@ SVG格式的图标也可以被视为一张普通图片，就像平时一样在�
 <body>
     <div>
         <!-- 试试大雨和寒冷 -->
-        It's raining <i class="qi-307"></i> and cold <i class="qi-cold"></i>
+        It's raining <i class="qi-307"></i> and cold <i class="qi-901"></i>
     </div>
 </body>
 </html>
