@@ -1,13 +1,13 @@
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?t=1694412389433") format("woff2"),
-  url("./fonts/qweather-icons.woff?t=1694412389433") format("woff");
+  src: url("./fonts/qweather-icons.woff2?t=1694412753405") format("woff2"),
+  url("./fonts/qweather-icons.woff?t=1694412753405") format("woff");
 }
 
 @font-face {
   font-family: "qweather-icons-fill";
-  src: url("./fonts/qweather-icons-fill.woff2?t=1694412389433") format("woff2"),
-  url("./fonts/qweather-icons-fill.woff?t=1694412389433") format("woff");
+  src: url("./fonts/qweather-icons-fill.woff2?t=1694412753405") format("woff2"),
+  url("./fonts/qweather-icons-fill.woff?t=1694412753405") format("woff");
 }
 
 [class^="qi-"], [class*=" qi-"] {
