@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "{{fontname}}";
+  src: url("./fonts/{{fontname}}.woff2?t={{timestamp}}") format("woff2"),
+  url("./fonts/{{fontname}}.woff?t={{timestamp}}") format("woff");
+}
+
+@font-face {
+  font-family: "{{fontname}}-fill";
+  src: url("./fonts/{{fontname}}-fill.woff2?t={{timestamp}}") format("woff2"),
+  url("./fonts/{{fontname}}-fill.woff?t={{timestamp}}") format("woff");
+}
+
+[class^="{{prefix}}-"], [class*=" {{prefix}}-"] {
+  display: inline-block;
+  font-family: '{{fontname}}' !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="{{prefix}}-"].fill, [class*=" {{prefix}}-"].fill {
+  font-family: '{{fontname}}-fill' !important;
+}
+
+
+{{cssString}}
