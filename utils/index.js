@@ -46,20 +46,21 @@ module.exports = async function create (options) {
   // start create icons
 
   let cssString = [];
-  let unicodeObj
+  let jsonList
 
   return createSVG(options)
-    .then((UnicodeObject) => {
-      unicodeObj = JSON.parse(JSON.stringify(UnicodeObject))
-      Object.keys(UnicodeObject).forEach(name => {
-        let _code = UnicodeObject[name];
-        cssString.push(`.${options.classNamePrefix}-${name}::before { content: "\\${_code.charCodeAt(0).toString(16)}"; }\n`);
-      });
+    .then((unicodeList) => {
+      jsonList = JSON.parse(JSON.stringify(unicodeList))
+      unicodeList.forEach(item => {
+        if (!item.code.includes(options.suffix)) {
+          cssString.push(`.${options.classNamePrefix}-${item.code}::before { content: "\\${item.unicode.charCodeAt(0).toString(16)}"; }\n`);
+        }
+      })
     })
     .then(() => createTTF(options))
     .then(() => createWOFF(options))
     .then(() => createWOFF2(options))
     .then(() => createCSS(options, cssString))
-    .then(() => createJSON(options, unicodeObj))
+    .then(() => createJSON(options, jsonList))
     .then(() => processFiles(options))
 }
