@@ -255,3 +255,48 @@ exports.createCSS = (options, cssString) => {
     prefix: options.classNamePrefix || options.fontName
   }, DIST_PATH, reNamePath);
 };
+
+/**
+ * Create icons-code json
+ */
+exports.createJSON = (options, unicodeObj) => {
+  return new Promise((resolve, reject) => {
+    let unicodeJsonPath = path.join(options.dist, `./${options.fontName}.json`)
+    let unicodeJsonList = []
+    for (let i in unicodeObj) {
+      unicodeJsonList.push({
+        code: i,
+        name: '',
+        unicode: unicodeObj[i].charCodeAt(0).toString(16)
+      })
+      // unicodeObj[i] = parseInt(unicodeObj[i].charCodeAt(0).toString(16), 16)
+    }
+    fs.writeFile(unicodeJsonPath, JSON.stringify(unicodeJsonList), (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+      resolve();
+    });
+  });
+};
+
+/**
+ * Process files
+ */
+exports.processFiles = (options) => {
+  return new Promise((resolve, reject) => {
+    let svgFilePath = path.join(options.dist, `./${options.fontName}.svg`)
+    fs.unlink(svgFilePath, (e) => {
+      if (e) {
+        reject(e)
+      }
+      let svgFilePath2 = path.join(options.dist, `./${options.fontName}-${options.suffix}.svg`)
+      fs.unlink(svgFilePath2, (e) => {
+        if (e) {
+          reject(e)
+        }
+        resolve()
+      });
+    });
+  });
+};

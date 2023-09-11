@@ -7,10 +7,10 @@ const {
   createTTF,
   createWOFF,
   createWOFF2,
-  createCSS
+  createJSON,
+  createCSS,
+  processFiles
 } = require("./utils");
-
-let unicodeObj
 
 module.exports = async function create (options) {
   if (!options) options = {};
@@ -27,6 +27,7 @@ module.exports = async function create (options) {
   options.classNamePrefix = options.classNamePrefix || options.fontName;
   options.suffix = 'fill'
 
+  // organize folders
   if (fs.existsSync(options.dist)) {
     if (fs.existsSync(options.fontsUrl)) {
       fs.readdirSync(options.fontsUrl).forEach((file) => {
@@ -42,7 +43,10 @@ module.exports = async function create (options) {
   }
   fs.mkdirSync(options.dist)
 
+  // start create icons
+
   let cssString = [];
+  let unicodeObj
 
   return createSVG(options)
     .then((UnicodeObject) => {
@@ -56,36 +60,6 @@ module.exports = async function create (options) {
     .then(() => createWOFF(options))
     .then(() => createWOFF2(options))
     .then(() => createCSS(options, cssString))
-    .then(() => {
-      return new Promise((resolve, reject) => {
-        let unicodeJson = path.join(options.dist, `./${options.fontName}.json`)
-        for (let i in unicodeObj) {
-          unicodeObj[i] = unicodeObj[i].charCodeAt(0).toString(16)
-          // unicodeObj[i] = parseInt(unicodeObj[i].charCodeAt(0).toString(16), 16)
-        }
-        fs.writeFile(unicodeJson, JSON.stringify(unicodeObj), (err, data) => {
-          if (err) {
-            return reject(err);
-          }
-          resolve();
-        });
-      });
-    })
-    .then(() => {
-      return new Promise((resolve, reject) => {
-        let svgFilePath = path.join(options.dist, `./${options.fontName}.svg`)
-        fs.unlink(svgFilePath, (e) => {
-          if (e) {
-            reject(e)
-          }
-          let svgFilePath2 = path.join(options.dist, `./${options.fontName}-${options.suffix}.svg`)
-          fs.unlink(svgFilePath2, (e) => {
-            if (e) {
-              reject(e)
-            }
-            resolve()
-          });
-        });
-      });
-    })
+    .then(() => createJSON(options, unicodeObj))
+    .then(() => processFiles(options))
 }
