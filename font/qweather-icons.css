@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?809ab8e56778bb1e55a8b84712e45cff") format("woff2"),
-url("./fonts/qweather-icons.woff?809ab8e56778bb1e55a8b84712e45cff") format("woff"),
-url("./fonts/qweather-icons.ttf?809ab8e56778bb1e55a8b84712e45cff") format("truetype");
+  src: url("./fonts/qweather-icons.woff2?c4a8eb216e1e59e6c4df464b9ee6f9be") format("woff2"),
+url("./fonts/qweather-icons.woff?c4a8eb216e1e59e6c4df464b9ee6f9be") format("woff"),
+url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truetype");
 }
 
 [class^="qi-"]::before,
@@ -213,6 +213,10 @@ url("./fonts/qweather-icons.ttf?809ab8e56778bb1e55a8b84712e45cff") format("truet
 .qi-1249::before { content: "\f2e1"; }
 .qi-1250::before { content: "\f2e2"; }
 .qi-1251::before { content: "\f2e3"; }
+.qi-1271::before { content: "\f2f6"; }
+.qi-1272::before { content: "\f2f7"; }
+.qi-1273::before { content: "\f2f8"; }
+.qi-1274::before { content: "\f2f9"; }
 .qi-1601::before { content: "\f1a1"; }
 .qi-1602::before { content: "\f1a2"; }
 .qi-1603::before { content: "\f1a3"; }
@@ -690,6 +694,10 @@ url("./fonts/qweather-icons.ttf?809ab8e56778bb1e55a8b84712e45cff") format("truet
 .qi-geological-hazard-weather::before { content: "\f2e1"; }
 .qi-geological-hazard2::before { content: "\f2e2"; }
 .qi-geological-hazard-risk::before { content: "\f2e3"; }
+.qi-air-pollution-incident::before { content: "\f2f6"; }
+.qi-heavy-air-pollution-2::before { content: "\f2f7"; }
+.qi-air-pollution::before { content: "\f2f8"; }
+.qi-heavy-pollution-weather-2::before { content: "\f2f9"; }
 .qi-very-hot-weather::before { content: "\f1a1"; }
 .qi-strong-monsoon-signal::before { content: "\f1a2"; }
 .qi-landslip::before { content: "\f1a3"; }

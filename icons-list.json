@@ -1000,6 +1000,22 @@
     "icon_name": "geological-hazard-risk"
   },
   {
+    "icon_code": "1271",
+    "icon_name": "air-pollution-incident"
+  },
+  {
+    "icon_code": "1272",
+    "icon_name": "heavy-air-pollution-2"
+  },
+  {
+    "icon_code": "1273",
+    "icon_name": "air-pollution"
+  },
+  {
+    "icon_code": "1274",
+    "icon_name": "heavy-pollution-weather-2"
+  },
+  {
     "icon_code": "1601",
     "icon_name": "very-hot-weather"
   },

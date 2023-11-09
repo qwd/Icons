@@ -1,22 +1,15 @@
 ## 🚀 新功能
 
-- 新增30+自然和地质灾害预警图标 #63
-- 新增18个加拿大预警图标 #64
-- 重新设计lakeshore flood系列
+- 新增1271-1274预警图标 #71
 
 ## 🛠 问题修复
 
-- 2396太阳与温度计间隙错误 #65
-- 移除1.4.0之后废弃的图标 #62
-
+- 重新设计一些重复的预警图标 #59
 
 ## 🚀 What's new
 
-- add 30+ natural and geologic hazard warning icons #63
-- add 18 warning icons for CA #64
-- re-design lakeshore flood series
+- add 1271-1274 warning icons #71
 
 ## 🛠 Bug fix
 
-- 2396 gap issue #65
-- remove deprecated icons since v1.4.0 #62
+- Re-design dupe icons #59
