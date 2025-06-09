@@ -2,6 +2,8 @@
 
 'use strict'
 
+// When usePathColor is true, the build svg will retain the fill attribute on the original file path
+const usePathColor = false
 const fs = require('fs').promises
 const path = require('path')
 const chalk = require('chalk')
@@ -26,6 +28,16 @@ async function processFile(file, config) {
   const basename = path.basename(file, '.svg')
 
   const originalSvg = await fs.readFile(filepath, 'utf8')
+  const $original = cheerio.load(originalSvg, { xmlMode: true })
+  const originalViewBox = $original('svg').attr('viewBox')
+  svgAttributes.viewBox = (originalViewBox && usePathColor) ? originalViewBox : '0 0 16 16'
+  const originalPathFillList = []
+  if (usePathColor) {
+    $original('svg').find('path').each((index, path) => {
+      originalPathFillList.push($original(path).attr('fill'))
+    })
+  }
+
   const optimizedSvg = await optimize(originalSvg, {
     path: filepath,
     ...config
@@ -47,6 +59,13 @@ async function processFile(file, config) {
   for (const [attribute, value] of Object.entries(svgAttributes)) {
     $svgElement.removeAttr(attribute)
     $svgElement.attr(attribute, attribute === 'class' ? `qi-${basename}` : value)
+  }
+
+  if (usePathColor && originalPathFillList.length > 0) {
+    $svgElement.find('path').each((index, path) => {
+      $(path).attr('fill', originalPathFillList[index])
+    })
+
   }
 
   const resultSvg = $svgElement.toString().replace(/\r\n?/g, '\n')
