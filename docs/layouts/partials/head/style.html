@@ -1,5 +1,5 @@
 {{ $styles := resources.Get "/css/style.css" | resources.Fingerprint  }}
-{{ if .Site.IsServer }}
+{{ if hugo.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
 {{ else }}
   {{ $styles := $styles | minify  }}

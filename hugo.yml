@@ -72,12 +72,13 @@ languages:
   en:
     languageName: English
     weight: 2
-    title: QWeather Icons
-    description: Open source, beautiful weather icon library that supports SVG and Web Font, compatible with QWeather API, and also works in any project that needs weather icons. 
-    qw: "https://www.qweather.com/en/"
-    dev: "https://dev.qweather.com/en/"
-    app: "https://www.qweather.com/en/app/"
-    cc: "https://creativecommons.org/licenses/by/4.0/"
+    params:
+      title: QWeather Icons
+      description: Open source, beautiful weather icon library that supports SVG and Web Font, compatible with QWeather API, and also works in any project that needs   weather icons. 
+      qw: "https://www.qweather.com/en/"
+      dev: "https://dev.qweather.com/en/"
+      app: "https://www.qweather.com/en/app/"
+      cc: "https://creativecommons.org/licenses/by/4.0/"
     menu:
       main:
       - name: Install
