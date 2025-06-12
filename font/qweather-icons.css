@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?c4a8eb216e1e59e6c4df464b9ee6f9be") format("woff2"),
-url("./fonts/qweather-icons.woff?c4a8eb216e1e59e6c4df464b9ee6f9be") format("woff"),
-url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truetype");
+  src: url("./fonts/qweather-icons.woff2?683382eedec19edbc7e167b16847eb27") format("woff2"),
+url("./fonts/qweather-icons.woff?683382eedec19edbc7e167b16847eb27") format("woff"),
+url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truetype");
 }
 
 [class^="qi-"]::before,
@@ -440,7 +440,25 @@ url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truet
 .qi-2424::before { content: "\f2c2"; }
 .qi-2425::before { content: "\f2c3"; }
 .qi-2426::before { content: "\f2c4"; }
-.qi-9998::before { content: "\f1ca"; }
+.qi-2501::before { content: "\f2fa"; }
+.qi-2502::before { content: "\f2fb"; }
+.qi-2521::before { content: "\f2fc"; }
+.qi-2522::before { content: "\f2fd"; }
+.qi-2523::before { content: "\f2fe"; }
+.qi-2524::before { content: "\f2ff"; }
+.qi-2525::before { content: "\f300"; }
+.qi-2526::before { content: "\f301"; }
+.qi-2527::before { content: "\f302"; }
+.qi-2528::before { content: "\f303"; }
+.qi-2529::before { content: "\f304"; }
+.qi-2530::before { content: "\f305"; }
+.qi-2531::before { content: "\f306"; }
+.qi-2532::before { content: "\f307"; }
+.qi-2550::before { content: "\f308"; }
+.qi-2551::before { content: "\f309"; }
+.qi-2552::before { content: "\f30a"; }
+.qi-2553::before { content: "\f30b"; }
+.qi-2554::before { content: "\f30c"; }
 .qi-9999::before { content: "\f1cb"; }
 .qi-100-fill::before { content: "\f1cc"; }
 .qi-101-fill::before { content: "\f1cd"; }
@@ -744,8 +762,8 @@ url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truet
 .qi-fishermen-warning2::before { content: "\f223"; }
 .qi-heavy-snow-warning2::before { content: "\f243"; }
 .qi-dust-storm::before { content: "\f225"; }
-.qi-heat-wave2::before { content: "\f226"; }
-.qi-cold-wave2::before { content: "\f227"; }
+.qi-heat-wave2::before { content: "\f304"; }
+.qi-cold-wave2::before { content: "\f305"; }
 .qi-fog2::before { content: "\f228"; }
 .qi-heavy-rain-warning::before { content: "\f229"; }
 .qi-ground-frost2::before { content: "\f22a"; }
@@ -778,7 +796,7 @@ url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truet
 .qi-wind2::before { content: "\f246"; }
 .qi-snow-ice2::before { content: "\f247"; }
 .qi-freeze2::before { content: "\f248"; }
-.qi-thunderstorms::before { content: "\f249"; }
+.qi-thunderstorms::before { content: "\f30b"; }
 .qi-fog4::before { content: "\f24a"; }
 .qi-high-temperature3::before { content: "\f24b"; }
 .qi-low-temperature3::before { content: "\f24c"; }
@@ -919,7 +937,22 @@ url("./fonts/qweather-icons.ttf?c4a8eb216e1e59e6c4df464b9ee6f9be") format("truet
 .qi-hurricane-local-statement::before { content: "\f2c2"; }
 .qi-severe-weather-statement::before { content: "\f2c3"; }
 .qi-flash-flood-statement::before { content: "\f2c4"; }
-.qi-severe-weather-warning::before { content: "\f1ca"; }
+.qi-heavy-rain2::before { content: "\f2fa"; }
+.qi-very-heavy-rain::before { content: "\f2fb"; }
+.qi-moderate-rain2::before { content: "\f2fc"; }
+.qi-light-rain2::before { content: "\f2fd"; }
+.qi-heavy-rain3::before { content: "\f2fe"; }
+.qi-light-mist::before { content: "\f2ff"; }
+.qi-raised-dust::before { content: "\f300"; }
+.qi-high-winds::before { content: "\f301"; }
+.qi-dusty-plankton::before { content: "\f302"; }
+.qi-active-winds::before { content: "\f303"; }
+.qi-fog6::before { content: "\f306"; }
+.qi-light-fog::before { content: "\f307"; }
+.qi-heavy-rain4::before { content: "\f308"; }
+.qi-strong-wind::before { content: "\f309"; }
+.qi-heavy-snow2::before { content: "\f30a"; }
+.qi-road-snowfall::before { content: "\f30c"; }
 .qi-warning-default::before { content: "\f1cb"; }
 .qi-sunny-fill::before { content: "\f1cc"; }
 .qi-cloudy-fill::before { content: "\f1cd"; }
