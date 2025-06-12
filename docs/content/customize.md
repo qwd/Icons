@@ -49,6 +49,8 @@ npm install
 
 #### 5. 运行
 
+> **提示：** 如果你更改了图标颜色，请在 **build/build-svgs.js** 中将 `const usePathColor`设置为`true`。
+
 ```
 npm run icons
 ```
