@@ -6,26 +6,57 @@ on:
       - main
     paths:
       - 'docs/**'
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
+  build:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with: 
-          node-version: '18'
+          node-version: '20'
       - name: Install node dependencies
         run: npm install
       - name: Build docs
         run: npm run docs-build
-      - name: Deploy docs to Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+
+  oss:
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      UPLOAD_DIR: ghp-for-oss
+    steps:
+      - name: Download artifacts from build
+        uses: actions/download-artifact@v4
+        with: 
+          name: github-pages
+      - name: Unpack artifacts
+        run: mkdir ${{ env.UPLOAD_DIR }} && tar -xvf artifact.tar -C ${{ env.UPLOAD_DIR }}
+      - name: Setup ossutil
+        run: |
+          curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+          ossutil64 config -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_AK_ID }} -k ${{ secrets.OSS_AK_SECRET }}
+      - name: Upload to oss
+        run: ossutil64 sync -uf ${{ env.UPLOAD_DIR }} oss://${{ secrets.OSS_BUCKET }} --delete --disable-dir-object

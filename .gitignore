@@ -52,7 +52,3 @@ _site/
 # Misc
 *.tmp
 *.bak
-
-# other
-package-lock.json
-docs/assets/css/style.css
