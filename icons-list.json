@@ -1908,8 +1908,80 @@
     "icon_name": "flash-flood-statement"
   },
   {
-    "icon_code": "9998",
-    "icon_name": "severe-weather-warning"
+    "icon_code": "2501",
+    "icon_name": "heavy-rain2"
+  },
+  {
+    "icon_code": "2502",
+    "icon_name": "very-heavy-rain"
+  },
+  {
+    "icon_code": "2521",
+    "icon_name": "moderate-rain2"
+  },
+  {
+    "icon_code": "2522",
+    "icon_name": "light-rain2"
+  },
+  {
+    "icon_code": "2523",
+    "icon_name": "heavy-rain3"
+  },
+  {
+    "icon_code": "2524",
+    "icon_name": "light-mist"
+  },
+  {
+    "icon_code": "2525",
+    "icon_name": "raised-dust"
+  },
+  {
+    "icon_code": "2526",
+    "icon_name": "high-winds"
+  },
+  {
+    "icon_code": "2527",
+    "icon_name": "dusty-plankton"
+  },
+  {
+    "icon_code": "2528",
+    "icon_name": "active-winds"
+  },
+  {
+    "icon_code": "2529",
+    "icon_name": "heat-wave2"
+  },
+  {
+    "icon_code": "2530",
+    "icon_name": "cold-wave2"
+  },
+  {
+    "icon_code": "2531",
+    "icon_name": "fog6"
+  },
+  {
+    "icon_code": "2532",
+    "icon_name": "light-fog"
+  },
+  {
+    "icon_code": "2550",
+    "icon_name": "heavy-rain4"
+  },
+  {
+    "icon_code": "2551",
+    "icon_name": "strong-wind"
+  },
+  {
+    "icon_code": "2552",
+    "icon_name": "heavy-snow2"
+  },
+  {
+    "icon_code": "2553",
+    "icon_name": "thunderstorms"
+  },
+  {
+    "icon_code": "2554",
+    "icon_name": "road-snowfall"
   },
   {
     "icon_code": "9999",
