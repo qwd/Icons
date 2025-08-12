@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?683382eedec19edbc7e167b16847eb27") format("woff2"),
-url("./fonts/qweather-icons.woff?683382eedec19edbc7e167b16847eb27") format("woff"),
-url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truetype");
+  src: url("./fonts/qweather-icons.woff2?3696017a726a77099c2617f87a3367ac") format("woff2"),
+url("./fonts/qweather-icons.woff?3696017a726a77099c2617f87a3367ac") format("woff"),
+url("./fonts/qweather-icons.ttf?3696017a726a77099c2617f87a3367ac") format("truetype");
 }
 
 [class^="qi-"]::before,
@@ -230,6 +230,13 @@ url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truet
 .qi-1701::before { content: "\f1a8"; }
 .qi-1702::before { content: "\f1a9"; }
 .qi-1703::before { content: "\f1aa"; }
+.qi-1704::before { content: "\f30d"; }
+.qi-1705::before { content: "\f30e"; }
+.qi-1706::before { content: "\f30f"; }
+.qi-1707::before { content: "\f310"; }
+.qi-1708::before { content: "\f311"; }
+.qi-1709::before { content: "\f312"; }
+.qi-1710::before { content: "\f313"; }
 .qi-1801::before { content: "\f20f"; }
 .qi-1802::before { content: "\f210"; }
 .qi-1803::before { content: "\f211"; }
@@ -312,6 +319,7 @@ url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truet
 .qi-2164::before { content: "\f254"; }
 .qi-2165::before { content: "\f255"; }
 .qi-2166::before { content: "\f256"; }
+.qi-2167::before { content: "\f314"; }
 .qi-2190::before { content: "\f257"; }
 .qi-2191::before { content: "\f258"; }
 .qi-2192::before { content: "\f259"; }
@@ -729,6 +737,13 @@ url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truet
 .qi-cold-surge-advisory::before { content: "\f1a8"; }
 .qi-strong-wind-advisory::before { content: "\f1a9"; }
 .qi-rainfall-advisory::before { content: "\f1aa"; }
+.qi-typhoon2::before { content: "\f30d"; }
+.qi-dense-fog2::before { content: "\f30e"; }
+.qi-thunderstorm7::before { content: "\f30f"; }
+.qi-heat2::before { content: "\f310"; }
+.qi-flood3::before { content: "\f311"; }
+.qi-high-water::before { content: "\f312"; }
+.qi-drought3::before { content: "\f313"; }
 .qi-strong-monsoon-signal2::before { content: "\f20f"; }
 .qi-storm-surge2::before { content: "\f210"; }
 .qi-tropical-cyclone2::before { content: "\f211"; }
@@ -809,6 +824,7 @@ url("./fonts/qweather-icons.ttf?683382eedec19edbc7e167b16847eb27") format("truet
 .qi-duststorm-warning::before { content: "\f254"; }
 .qi-freezing-rain-and-icing::before { content: "\f255"; }
 .qi-other-dangers::before { content: "\f256"; }
+.qi-low-water::before { content: "\f314"; }
 .qi-severe-thunderstorms::before { content: "\f257"; }
 .qi-damaging-winds2::before { content: "\f258"; }
 .qi-veld-fire-conditions2::before { content: "\f259"; }

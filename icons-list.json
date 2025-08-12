@@ -1068,6 +1068,34 @@
     "icon_name": "rainfall-advisory"
   },
   {
+    "icon_code": "1704",
+    "icon_name": "typhoon2"
+  },
+  {
+    "icon_code": "1705",
+    "icon_name": "dense-fog2"
+  },
+  {
+    "icon_code": "1706",
+    "icon_name": "thunderstorm7"
+  },
+  {
+    "icon_code": "1707",
+    "icon_name": "heat2"
+  },
+  {
+    "icon_code": "1708",
+    "icon_name": "flood3"
+  },
+  {
+    "icon_code": "1709",
+    "icon_name": "high-water"
+  },
+  {
+    "icon_code": "1710",
+    "icon_name": "drought3"
+  },
+  {
     "icon_code": "1801",
     "icon_name": "strong-monsoon-signal2"
   },
@@ -1394,6 +1422,10 @@
   {
     "icon_code": "2166",
     "icon_name": "other-dangers"
+  },
+  {
+    "icon_code": "2167",
+    "icon_name": "low-water"
   },
   {
     "icon_code": "2190",
