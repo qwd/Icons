@@ -59,7 +59,7 @@
     "vnu-jar": "21.6.11"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=20"
   },
   "files": [
     "icons/*.svg",
