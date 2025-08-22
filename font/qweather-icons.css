@@ -1,16 +1,16 @@
 @font-face {
   font-family: "qweather-icons";
-  src: url("./fonts/qweather-icons.woff2?t=1755593351948") format("woff2"),
-  url("./fonts/qweather-icons.woff?t=1755593351948") format("woff");
+  src: url("./fonts/qweather-icons.woff2?t=1755834259235") format("woff2"),
+  url("./fonts/qweather-icons.woff?t=1755834259235") format("woff");
 }
 
 @font-face {
   font-family: "qweather-icons-fill";
-  src: url("./fonts/qweather-icons-fill.woff2?t=1755593351948") format("woff2"),
-  url("./fonts/qweather-icons-fill.woff?t=1755593351948") format("woff");
+  src: url("./fonts/qweather-icons-fill.woff2?t=1755834259235") format("woff2"),
+  url("./fonts/qweather-icons-fill.woff?t=1755834259235") format("woff");
 }
 
-[class^="qi-"], [class*=" qi-"] {
+[class^="qi-"], [class*=" qi-"], .qweather-icons {
   display: inline-block;
   font-family: 'qweather-icons' !important;
   font-style: normal;
@@ -22,7 +22,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="qi-"].fill, [class*=" qi-"].fill {
+[class^="qi-"].fill, [class*=" qi-"].fill, .qweather-icons.fill {
   font-family: 'qweather-icons-fill' !important;
 }
 

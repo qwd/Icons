@@ -273,7 +273,9 @@ exports.createCSS = (options, cssString) => {
     fontname: options.fontName,
     cssString: cssString.join(""),
     timestamp: new Date().getTime(),
-    prefix: options.classNamePrefix || options.fontName
+    prefix: options.classNamePrefix || options.fontName,
+    iconsClassName: options.QweatherIconsClassName || 'qweather-icons',
+    suffix: options.suffix || 'fill'
   }, DIST_PATH, reNamePath);
 };
 

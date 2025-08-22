@@ -10,7 +10,7 @@
   url("./fonts/{{fontname}}-fill.woff?t={{timestamp}}") format("woff");
 }
 
-[class^="{{prefix}}-"], [class*=" {{prefix}}-"] {
+[class^="{{prefix}}-"], [class*=" {{prefix}}-"], .{{iconsClassName}} {
   display: inline-block;
   font-family: '{{fontname}}' !important;
   font-style: normal;
@@ -22,8 +22,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="{{prefix}}-"].fill, [class*=" {{prefix}}-"].fill {
-  font-family: '{{fontname}}-fill' !important;
+[class^="{{prefix}}-"].{{suffix}}, [class*=" {{prefix}}-"].{{suffix}}, .{{iconsClassName}}.{{suffix}} {
+  font-family: '{{fontname}}-{{suffix}}' !important;
 }
 
 
