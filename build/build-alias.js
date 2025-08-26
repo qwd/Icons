@@ -1,5 +1,5 @@
-const path = require('path');
-const svgtofont = require("../utils/index");
+import SvgToFont from  '../utils/index.js'
+import path from "path";
 
 const options = {
   src: path.resolve(process.cwd(), "icons"),
@@ -10,8 +10,6 @@ const options = {
   classNamePrefix: 'qi'
 }
 
-svgtofont(options).then(() => {
+SvgToFont(options).then(() => {
   console.log("done!");
 });
-
-console.log('process.cwd()', process.cwd())

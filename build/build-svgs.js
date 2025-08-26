@@ -1,17 +1,14 @@
-#!/usr/bin/env node
-
-'use strict'
+import chalk from 'chalk';
+import { load } from 'cheerio'
+import { loadConfig, optimize } from 'svgo'
+import path from 'path'
+import fs from 'fs/promises'
 
 // When usePathColor is true, the build svg will retain the fill attribute on the original file path
 const usePathColor = false
-const fs = require('fs').promises
-const path = require('path')
-const chalk = require('chalk')
-const cheerio = require('cheerio')
-const { loadConfig, optimize } = require('svgo')
-
+const __dirname = import.meta.dirname;
+const __filename = import.meta.filename;
 const iconsDir = path.join(__dirname, '../icons/')
-
 const VERBOSE = process.argv.includes('--verbose')
 
 const svgAttributes = {
@@ -28,7 +25,7 @@ async function processFile(file, config) {
   const basename = path.basename(file, '.svg')
 
   const originalSvg = await fs.readFile(filepath, 'utf8')
-  const $original = cheerio.load(originalSvg, {xmlMode: true})
+  const $original = load(originalSvg, {xmlMode: true})
   const originalViewBox = $original('svg').attr('viewBox')
   svgAttributes.viewBox = originalViewBox ? originalViewBox : '0 0 16 16'
   const originalPathFillList = []
@@ -43,7 +40,7 @@ async function processFile(file, config) {
     ...config
   })
 
-  const $ = await cheerio.load(optimizedSvg.data, {
+  const $ = await load(optimizedSvg.data, {
     xml: {
       xmlMode: true
     }

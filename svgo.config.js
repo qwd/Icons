@@ -1,6 +1,6 @@
-const path = require('path')
+import path from 'path'
 
-module.exports = {
+export default {
   multipass: true,
   js2svg: {
     pretty: true,
@@ -8,19 +8,8 @@ module.exports = {
     eol: 'lf'
   },
   plugins: [
-    {
-      name: 'preset-default',
-      params: {
-        overrides: {
-          removeUnknownsAndDefaults: {
-            keepRoleAttr: true
-          },
-          removeViewBox: false
-        }
-      }
-    },
-    // The next plugins are included in svgo but are not part of preset-default,
-    // so we need to enable them separately
+    'removeUnknownsAndDefaults',
+    'removeViewBox',
     'cleanupListOfValues',
     'sortAttrs',
     {
@@ -33,7 +22,6 @@ module.exports = {
         ]
       }
     },
-    // Custom plugin which resets the SVG attributes to explicit values
     {
       name: 'explicitAttrs',
       type: 'visitor',
@@ -43,7 +31,7 @@ module.exports = {
           width: '16',
           height: '16',
           fill: 'currentColor',
-          class: '', // We replace the class with the correct one based on filename later
+          class: '',
           viewBox: '0 0 16 16'
         }
       },

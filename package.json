@@ -1,6 +1,7 @@
 {
   "name": "qweather-icons",
   "version": "2.0.0",
+  "type": "module",
   "description": "Open source weather SVG icons and fonts, for QWeather and all developers",
   "author": "QWeather",
   "license": "MIT",
@@ -35,12 +36,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
-    "chalk": "^4.1.2",
-    "cheerio": "^1.0.0-rc.10",
-    "colors-cli": "^1.0.26",
-    "copy-template-dir": "^1.4.0",
     "cross-env": "^7.0.3",
-    "fs-extra": "^8.1.0",
     "hugo-bin": "^0.102.0",
     "linkinator": "^4.1.2",
     "lockfile-lint": "^4.10.0",
@@ -49,14 +45,20 @@
     "postcss-cli": "^10.1.0",
     "purgecss": "^4.0.3",
     "stylelint": "^14.16.1",
-    "svg-sprite": "^3.0.0-alpha1",
-    "svg2ttf": "^6.0.3",
-    "svgicons2svgfont": "^9.1.1",
-    "svgo": "^2.8.0",
     "tailwindcss": "^3.3.2",
-    "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^5.0.0",
-    "vnu-jar": "21.6.11"
+    "vnu-jar": "21.6.11",
+    "chalk": "^5.6.0",
+    "cheerio": "^1.1.2",
+    "colors": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.8",
+    "path": "^0.12.7",
+    "svg-sprite": "^2.0.4",
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^15.0.1",
+    "svgo": "^4.0.0",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^8.0.0"
   },
   "engines": {
     "node": ">=20"

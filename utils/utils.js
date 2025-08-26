@@ -1,294 +1,285 @@
-const fs = require("fs");
-const path = require("path");
-const SVGIcons2SVGFont = require("svgicons2svgfont");
-const copy = require("copy-template-dir");
-const svg2ttf = require("svg2ttf");
-const ttf2woff = require("ttf2woff");
-const ttf2woff2 = require("ttf2woff2");
-require("colors-cli/toxic");
+import fs from 'fs'
+import path from "path";
+import {SVGIcons2SVGFontStream} from 'svgicons2svgfont'
+import Handlebars from 'handlebars';
+import svg2ttf from 'svg2ttf'
+import ttf2woff from 'ttf2woff'
+import ttf2woff2 from 'ttf2woff2'
+import 'colors'
 
-let unicodeList = [];
-let unicodeSelfList = []
-let startUnicode = 0xea60;
-let fileSuffix = ''
+const globalTtf = {}
+const __dirname = import.meta.dirname;
 
-
-function _getSvgFileName (name) {
-  let list = name.split('-')
-  return list[list.length - 1] === fileSuffix ? (list[0] + '-' + list[list.length - 1]) : list[0]
-}
-
-function _getListCode (isSelf, code) {
-  let list = isSelf ? unicodeSelfList : unicodeList
-  return list.find(item => item.code === code).unicode
-}
-
-function _createCodeAlias (name) {
-  if (name.includes('-')) {
-    let _nameList = name.split('-')
-    if (isNaN(Number(_nameList[0]))) {
-      return name
-    } else {
-      return _nameList.slice(1).join('-')
-    }
-  } else {
-    return name
-  }
-}
-
-function getIconUnicode(name, toGet, isUnicode) {
-  // toGet means "fill" file
-  // isUnicode is itself as unicode
-  let unicode
-  let _name = name.includes('-') ? _getSvgFileName(name) : name
-  let code = _name.includes('-') ? _name.split('-')[0] : _name
-  if (isUnicode) {
-    unicode = toGet ? _getListCode(true, code) : code
-  } else {
-    unicode = toGet ? _getListCode(false, code) : String.fromCharCode((isNaN(Number(code)) ? startUnicode++ : '0x' + Number(code).toString(16)));
+export const readAllFilesSync = (dirPath, fileType) => {
+  if (!fileType || !dirPath) {
+    return []
   }
 
-  let item = {
-    code: _name,
-    name: _createCodeAlias(name),
-    unicode: unicode
-  }
-  if (isUnicode) {
-    unicodeSelfList.push(item)
-  } else {
-    unicodeList.push(item)
-  }
-
-  return [unicode];
-}
-
-exports.filterSvgFiles = (svgFolderPath) => {
-  let files = fs.readdirSync(svgFolderPath, 'utf-8');
-  let svgArr = [];
-  if (!files) {
-    throw new Error(`Error! Svg folder is empty.${svgFolderPath}`);
-  }
-
-  for (let i in files) {
-    if (typeof files[i] !== 'string' || path.extname(files[i]) !== '.svg') continue;
-    if (!~svgArr.indexOf(files[i])) {
-      svgArr.push(path.join(svgFolderPath, files[i]));
+  const files = [];
+  const direntList = fs.readdirSync(dirPath, {withFileTypes: true});
+  for (const dirent of direntList) {
+    const fullPath = path.join(dirPath, dirent.name);
+    if (dirent.isFile()) {
+      if (path.extname(fullPath).toLowerCase() === `.${fileType}`) {
+        files.push(fullPath);
+      }
+    } else if (dirent.isDirectory()) {
+      const subDirFiles = readAllFilesSync(fullPath);
+      files.push(...subDirFiles);
     }
   }
-  return svgArr;
+
+  return files;
 }
+
 /**
  * SVG to SVG font
  */
-exports.createSVG = (options, toSuffix) => {
-  fileSuffix = options.suffix
-  unicodeList = toSuffix ? unicodeList : []
-  unicodeSelfList = toSuffix ? unicodeSelfList : []
-  return new Promise((resolve, reject) => {
-    const fontStream = new SVGIcons2SVGFont({
-      ...options.svgicons2svgfont
-    });
 
-    function writeFontStream(svgPath) {
-      let _name = path.basename(svgPath, ".svg");
-      if ((toSuffix && _name.includes(options.suffix)) || (!toSuffix && !_name.includes(options.suffix))) {
-        let _glyphName = _name.includes('-') ? _getSvgFileName(_name) : _name
-        const glyph = fs.createReadStream(svgPath);
-        glyph.metadata = {
-          unicode: getIconUnicode(_name, toSuffix),
-          name: _glyphName
-        };
-        fontStream.write(glyph);
-        const glyphSelf = fs.createReadStream(svgPath);
-        glyphSelf.metadata = {
-          unicode: getIconUnicode(_name, toSuffix, true),
-          name: _glyphName + '-self'
-        };
-        fontStream.write(glyphSelf);
-      }
+export const createSVG = (options, allSvgFiles) => {
+  return new Promise((resolve, reject) => {
+    const normalFontList = allSvgFiles.filter(item => !item.fill)
+    const fillFontList = allSvgFiles.filter(item => item.fill || (!item.fill && !item.haveFill))
+    if (normalFontList.length === 0 && fillFontList.length === 0) {
+      reject()
     }
 
-    const DIST_PATH = path.join(options.dist, (options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".svg"));
+    const count = normalFontList.length !== 0 && fillFontList.length !== 0 ? 2 : 1
+    const promiseList = []
+    for (let i = 0; i < count; i++) {
+      let list = []
+      let DIST_PATH
+      if (normalFontList.length !== 0 && fillFontList.length !== 0) {
+        list = i === 0 ? normalFontList : fillFontList
+        DIST_PATH = i === 0 ? path.join(options.dist, `${options.fontName}.svg`) : path.join(options.dist, `${options.fontName}-${options.suffix}.svg`)
+      } else {
+        list = normalFontList.length !== 0 ? normalFontList : fillFontList
+        DIST_PATH = normalFontList.length !== 0 ? path.join(options.dist, `${options.fontName}.svg`) : path.join(options.dist, `${options.fontName}-${options.suffix}.svg`)
+      }
+      const promise = new Promise((resolve, reject) => {
+        const fontStream = new SVGIcons2SVGFontStream({
+          ...options.svgicons2svgfont
+        });
+        fontStream.pipe(fs.createWriteStream(DIST_PATH)).on("finish", resolve).on("error", reject);
 
-    // Setting the font destination
-    let self = this
-    fontStream.pipe(fs.createWriteStream(DIST_PATH)).on("finish", () => {
-      if (!toSuffix) {
-        self.createSVG(options, true).then((res) => {
-          resolve(res);
-        }).catch((e) => {
-          reject(e);
+        list.forEach(itemSvg => {
+          const glyph = fs.createReadStream(itemSvg.fullPath);
+          glyph.metadata = {
+            unicode: [String.fromCharCode(`0x${itemSvg.unicode}`)],
+            name: itemSvg.code
+          };
+          fontStream.write(glyph);
+          const glyphSelf = fs.createReadStream(itemSvg.fullPath);
+          glyphSelf.metadata = {
+            unicode: [`${itemSvg.code}`],
+            name: `${itemSvg.code}-self`
+          };
+          fontStream.write(glyphSelf);
         })
-      } else {
-        resolve(unicodeList);
-      }
-    }).on("error", (err) => {
-      if (err) {
-        reject(err);
-      }
-    });
 
-    this.filterSvgFiles(options.src).sort((a, b) => {
-      let name_a = path.basename(a, ".svg");
-      let name_b = path.basename(b, ".svg");
-      let code_a = Number(name_a.split('-')[0])
-      let code_b = Number(name_b.split('-')[0])
-      if (isNaN(code_a) || isNaN(code_b)) {
-        return 1
-      } else {
-        if (code_a === code_b) {
-          return name_a.length > name_b.length
-        } else {
-          return code_a - code_b
-        }
-      }
-    }).forEach(svg => {
-      writeFontStream(svg);
-    });
-
-    // Do not forget to end the stream
-    fontStream.end();
-  });
-};
+        fontStream.end();
+      })
+      promiseList.push(promise)
+    }
+    Promise.all(promiseList).then(resolve).catch(reject)
+  })
+}
 
 /**
  * SVG font to TTF
  */
-exports.createTTF = (options, toSuffix) => {
-  let self = this
+export const createTTF = (options) => {
   return new Promise((resolve, reject) => {
     if (!fs.existsSync(options.fontsUrl)) {
       fs.mkdirSync(options.fontsUrl);
     }
     options.svg2ttf = options.svg2ttf || {};
-    const DIST_PATH = path.join(options.fontsUrl, options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".ttf");
-    let ttf = svg2ttf(fs.readFileSync(path.join(options.dist, options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".svg"), "utf8"), options.svg2ttf);
-    ttf = this[('ttf' + (toSuffix ? ('_' + options.suffix) : ''))] = Buffer.from(ttf.buffer);
-    fs.writeFile(DIST_PATH, ttf, (err, data) => {
-      if (err) {
-        return reject(err);
-      }
 
-      console.log(`${"SUCCESS".green} ${"TTF".blue_bt} font successfully created! ${DIST_PATH}`);
-
-      if (!toSuffix) {
-        self.createTTF(options, true).then((res) => {
-          resolve(res);
-        }).catch((e) => {
-          reject(e);
-        })
-      } else {
-        resolve(data);
-      }
-    });
+    let haveNormalFile
+    let haveFillFile
+    try {
+      fs.readFileSync(path.join(options.dist, `${options.fontName}.svg`), "utf8")
+      haveNormalFile = true
+    } catch {
+      haveNormalFile = false
+    }
+    try {
+      fs.readFileSync(path.join(options.dist, `${options.fontName}-${options.suffix}.svg`), "utf8")
+      haveFillFile = true
+    } catch {
+      haveFillFile = false
+    }
+    if (!haveNormalFile && !haveFillFile) {
+      reject()
+    }
+    const count = haveNormalFile && haveFillFile ? 2 : 1
+    const promiseList = []
+    for (let i = 0; i < count; i++) {
+      const promise = new Promise((resolve, reject) => {
+        let targetFilePath
+        let keyName
+        let DIST_PATH
+        if (haveNormalFile && haveFillFile) {
+          targetFilePath = i === 0 ? path.join(options.dist, `${options.fontName}.svg`) : path.join(options.dist, `${options.fontName}-${options.suffix}.svg`)
+          keyName = `ttf${i === 0 ? '' : ('-' + options.suffix)}`
+          DIST_PATH = i === 0 ? path.join(options.fontsUrl, `${options.fontName}.ttf`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.ttf`)
+        } else {
+          targetFilePath = haveNormalFile ? path.join(options.dist, `${options.fontName}.svg`) : path.join(options.dist, `${options.fontName}-${options.suffix}.svg`)
+          keyName = haveNormalFile ? 'ttf' : `ttf-${options.suffix}`
+          DIST_PATH = haveNormalFile ? path.join(options.fontsUrl, `${options.fontName}.ttf`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.ttf`)
+        }
+        const targetFile = fs.readFileSync(targetFilePath, "utf8")
+        let ttf = svg2ttf(targetFile, options.svg2ttf)
+        ttf = globalTtf[keyName] = Buffer.from(ttf.buffer);
+        fs.writeFile(DIST_PATH, ttf, (err, data) => {
+          if (err) {
+            return reject(err);
+          }
+          console.log(`${"SUCCESS".green} ${"TTF".blue} font successfully created! ${DIST_PATH}`);
+          resolve(data)
+        });
+      })
+      promiseList.push(promise)
+    }
+    Promise.all(promiseList).then(resolve).catch(reject)
   });
 };
 
 /**
  * TTF font to WOFF
  */
-exports.createWOFF = (options, toSuffix) => {
-  let self = this
+export const createWOFF = (options) => {
   return new Promise((resolve, reject) => {
-    if (!fs.existsSync(options.fontsUrl)) {
-      fs.mkdirSync(options.fontsUrl);
+    if (!globalTtf[`ttf`] && !globalTtf[`ttf-${options.suffix}`]) {
+      reject()
     }
-    const DIST_PATH = path.join(options.fontsUrl, options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".woff");
-    if (!this[('ttf' + (toSuffix ? ('_' + options.suffix) : ''))]) {
-      let ttf = svg2ttf(fs.readFileSync(path.join(options.dist, options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".svg"), "utf8"), {});
-      self[('ttf' + (toSuffix ? ('_' + options.suffix) : ''))] = Buffer.from(ttf.buffer);
-    }
-    const woff = Buffer.from(ttf2woff(this[('ttf' + (toSuffix ? ('_' + options.suffix) : ''))]).buffer);
-    fs.writeFile(DIST_PATH, woff, (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      console.log(`${"SUCCESS".green} ${"WOFF".blue_bt} font successfully created! ${DIST_PATH}`);
 
-      if (!toSuffix) {
-        self.createWOFF(options, true).then((res) => {
-          resolve(res);
-        }).catch((e) => {
-          reject(e);
-        })
-      } else {
-        resolve(data);
-      }
-    });
+    let count = globalTtf[`ttf`] && globalTtf[`ttf-${options.suffix}`] ? 2 : 1
+    const promiseList = []
+    for (let i = 0; i < count; i++) {
+      const promise = new Promise((resolve, reject) => {
+        let ttf
+        let DIST_PATH
+        if (globalTtf[`ttf`] && globalTtf[`ttf-${options.suffix}`]) {
+          ttf = i === 0 ? globalTtf[`ttf`] : globalTtf[`ttf-${options.suffix}`]
+          DIST_PATH = i === 0 ? path.join(options.fontsUrl, `${options.fontName}.woff`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.woff`)
+        } else {
+          ttf = !!globalTtf[`ttf`] ? globalTtf[`ttf`] : globalTtf[`ttf-${options.suffix}`]
+          DIST_PATH = !!globalTtf[`ttf`] ? path.join(options.fontsUrl, `${options.fontName}.woff`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.woff`)
+        }
+        const woff = Buffer.from(ttf2woff(ttf).buffer);
+        fs.writeFile(DIST_PATH, woff, (err, data) => {
+          if (err) {
+            return reject(err);
+          }
+          console.log(`${"SUCCESS".green} ${"WOFF".blue} font successfully created! ${DIST_PATH}`);
+          resolve(data)
+        });
+      })
+      promiseList.push(promise)
+    }
+    Promise.all(promiseList).then(resolve).catch(reject)
   });
 };
 
 /**
  * TTF font to WOFF2
  */
-exports.createWOFF2 = (options, toSuffix) => {
-  let self = this
+export const createWOFF2 = (options, toSuffix) => {
   return new Promise((resolve, reject) => {
-    const DIST_PATH = path.join(options.fontsUrl, options.fontName + (toSuffix ? ("-" + options.suffix) : '') + ".woff2");
-    const woff2 = Buffer.from(ttf2woff2(this[('ttf' + (toSuffix ? ('_' + options.suffix) : ''))]).buffer);
-    fs.writeFile(DIST_PATH, woff2, (err, data) => {
-      if (err) {
-        return reject(err);
-      }
-      console.log(`${"SUCCESS".green} ${"WOFF2".blue_bt} font successfully created! ${DIST_PATH}`);
+    if (!globalTtf[`ttf`] && !globalTtf[`ttf-${options.suffix}`]) {
+      reject()
+    }
 
-      if (!toSuffix) {
-        self.createWOFF2(options, true).then((res) => {
-          resolve(res);
-        }).catch((e) => {
-          reject(e);
-        })
-      } else {
-        resolve(data);
-      }
-    });
+    let count = globalTtf[`ttf`] && globalTtf[`ttf-${options.suffix}`] ? 2 : 1
+    const promiseList = []
+    for (let i = 0; i < count; i++) {
+      const promise = new Promise((resolve, reject) => {
+        let ttf
+        let DIST_PATH
+        if (globalTtf[`ttf`] && globalTtf[`ttf-${options.suffix}`]) {
+          ttf = i === 0 ? globalTtf[`ttf`] : globalTtf[`ttf-${options.suffix}`]
+          DIST_PATH = i === 0 ? path.join(options.fontsUrl, `${options.fontName}.woff2`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.woff2`)
+        } else {
+          ttf = !!globalTtf[`ttf`] ? globalTtf[`ttf`] : globalTtf[`ttf-${options.suffix}`]
+          DIST_PATH = !!globalTtf[`ttf`] ? path.join(options.fontsUrl, `${options.fontName}.woff2`) : path.join(options.fontsUrl, `${options.fontName}-${options.suffix}.woff2`)
+        }
+        const woff2 = Buffer.from(ttf2woff2(ttf).buffer);
+        fs.writeFile(DIST_PATH, woff2, (err, data) => {
+          if (err) {
+            return reject(err);
+          }
+          console.log(`${"SUCCESS".green} ${"WOFF2".blue} font successfully created! ${DIST_PATH}`);
+          resolve(data)
+        });
+      })
+      promiseList.push(promise)
+    }
+    Promise.all(promiseList).then(resolve).catch(reject)
   });
 };
 
 /**
  * Copy template files
  */
-exports.copyTemplate = (inDir, outDir, vars, DIST_PATH, reNamePath) => {
-  return new Promise((resolve, reject) => {
-    copy(inDir, outDir, vars, (err, createdFiles) => {
-      if (err) reject(err);
-      fs.rename(reNamePath.old, reNamePath.new, (err) => {
-        if (err) reject(err);
-        console.log(`${"SUCCESS".green} ${"CSS".blue_bt} file successfully created! ${DIST_PATH}`);
-        resolve(createdFiles);
-      });
-    })
+export const copyTemplate = (TEMPLATE_PATH, Vars, DIST_DIR, DIST_PATH) => {
+  return new Promise(resolve => {
+    const templateSource = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
+    const template = Handlebars.compile(templateSource, {
+      noEscape: true
+    });
+    const content = template(Vars);
+    if (!fs.existsSync(DIST_DIR)) {
+      fs.mkdirSync(DIST_DIR, {recursive: true})
+    }
+    const fileType = DIST_PATH.split('.').pop().toUpperCase()
+    fs.writeFileSync(DIST_PATH, content, 'utf8');
+    console.log(`${"SUCCESS".green} ${fileType.blue} file successfully created! ${DIST_PATH}`);
+    resolve();
   });
 };
 
-exports.createCSS = (options, cssString) => {
-  const font_temp = path.resolve(__dirname, "template");
+export const createCSS = (options, allSvgFiles) => {
+  const font_temp = path.join(__dirname, 'templates/css', 'qweather-icons.hbs');
   const DIST_PATH = path.join(options.dist, options.fontName + ".css");
-  const reNamePath = {
-    old: path.join(options.dist, options.fontName + ".template"),
-    new: path.join(options.dist, options.fontName + ".css")
-  }
 
-  return this.copyTemplate(font_temp, options.dist, {
+  const classList = allSvgFiles.map(item => item.fill ? null : `.${options.classNamePrefix}-${item.code}::before { content: "\\${item.unicode}"; }`).filter(item => item)
+  return copyTemplate(font_temp, {
     fontname: options.fontName,
-    cssString: cssString.join(""),
+    classList: classList,
     timestamp: new Date().getTime(),
     prefix: options.classNamePrefix || options.fontName,
     iconsClassName: options.QweatherIconsClassName || 'qweather-icons',
     suffix: options.suffix || 'fill'
-  }, DIST_PATH, reNamePath);
+  }, options.dist, DIST_PATH);
+};
+
+export const createHTML = (options, allSvgFiles) => {
+  const font_temp = path.join(__dirname, 'templates/html', 'qweather-icons.hbs');
+  const DIST_PATH = path.join(options.dist, options.fontName + ".html");
+
+  const codeList = allSvgFiles.map(item => item.fill ? null : `${item.code}`).filter(item => item)
+  const unicodeList = allSvgFiles.map(item => item.fill ? null : `${item.unicode}`).filter(item => item)
+  return copyTemplate(font_temp, {
+    codeList: codeList,
+    unicodeList: unicodeList,
+    prefix: options.classNamePrefix || options.fontName,
+    iconsClassName: options.QweatherIconsClassName || 'qweather-icons',
+  }, options.dist, DIST_PATH);
 };
 
 /**
  * Create icons-code json
  */
-exports.createJSON = (options, jsonList) => {
+export const createJSON = (options, allSvgFiles) => {
   return new Promise((resolve, reject) => {
     let unicodeJsonPath = path.join(options.dist, `./${options.fontName}.json`)
-    jsonList.forEach(item => {
-      item.unicode = item.unicode.charCodeAt(0).toString(16)
-    })
-    // unicodeList[i] = parseInt(unicodeList[i].charCodeAt(0).toString(16), 16)
+
+    const jsonList = allSvgFiles.map(item => item.fill ? null : {
+      code: item.code,
+      name: item.abbreviation,
+      unicode: item.unicode
+    }).filter(item => item)
     fs.writeFile(unicodeJsonPath, JSON.stringify(jsonList), (err, data) => {
       if (err) {
         return reject(err);
@@ -301,7 +292,7 @@ exports.createJSON = (options, jsonList) => {
 /**
  * Process files
  */
-exports.processFiles = (options) => {
+export const processFiles = (options) => {
   return new Promise((resolve, reject) => {
     let svgFilePath = path.join(options.dist, `./${options.fontName}.svg`)
     fs.unlink(svgFilePath, (e) => {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qweather-icons</title>
+    <style>
+        .icons {
+            display: grid;
+            max-width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .icon {
+            background-color: transparent;
+            border-radius: .25rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            font-size: .625rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+    <link href="./{{iconsClassName}}.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<h1>{{iconsClassName}}</h1>
+<div class="icons">
+    {{#each codeList}}
+        <div class="icon">
+            <i class="{{../prefix}}-{{this}}"></i>
+            <i class="{{../prefix}}-{{this}} fill"></i>
+            <div class="label">{{this}}</div>
+        </div>
+    {{/each}}
+</div>
+<div class="icons">
+    {{#each codeList}}
+        <div class="icon">
+            <i class="{{../iconsClassName}}">{{this}}</i>
+            <i class="{{../iconsClassName}} fill">{{this}}</i>
+            <div class="label">{{this}}</div>
+        </div>
+    {{/each}}
+</div>
+<div class="icons">
+    {{#each unicodeList}}
+        <div class="icon">
+            <i class="{{../iconsClassName}}">&#x{{this}}</i>
+            <i class="{{../iconsClassName}} fill">&#x{{this}}</i>
+            <div class="label">{{this}}</div>
+        </div>
+    {{/each}}
+</div>
+</body>
+</html>
