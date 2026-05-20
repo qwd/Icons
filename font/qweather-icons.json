@@ -1,1 +1,3044 @@
-[{"code":"100","name":"sunny","unicode":"e064"},{"code":"101","name":"cloudy","unicode":"e065"},{"code":"102","name":"few-clouds","unicode":"e066"},{"code":"103","name":"partly-cloudy","unicode":"e067"},{"code":"104","name":"overcast","unicode":"e068"},{"code":"150","name":"clear-night","unicode":"e096"},{"code":"151","name":"cloudy-night","unicode":"e097"},{"code":"152","name":"few-clouds-night","unicode":"e098"},{"code":"153","name":"partly-cloudy-night","unicode":"e099"},{"code":"300","name":"shower-rain","unicode":"e12c"},{"code":"301","name":"heavy-shower-rain","unicode":"e12d"},{"code":"302","name":"thundershower","unicode":"e12e"},{"code":"303","name":"heavy-thunderstorm","unicode":"e12f"},{"code":"304","name":"thundershower-with-hail","unicode":"e130"},{"code":"305","name":"light-rain","unicode":"e131"},{"code":"306","name":"moderate-rain","unicode":"e132"},{"code":"307","name":"heavy-rain","unicode":"e133"},{"code":"308","name":"extreme-rain","unicode":"e134"},{"code":"309","name":"drizzle-rain","unicode":"e135"},{"code":"310","name":"storm","unicode":"e136"},{"code":"311","name":"heavy-storm","unicode":"e137"},{"code":"312","name":"severe-storm","unicode":"e138"},{"code":"313","name":"freezing-rain","unicode":"e139"},{"code":"314","name":"light-to-moderate-rain","unicode":"e13a"},{"code":"315","name":"moderate-to-heavy-rain","unicode":"e13b"},{"code":"316","name":"heavy-rain-to-storm","unicode":"e13c"},{"code":"317","name":"storm-to-heavy-storm","unicode":"e13d"},{"code":"318","name":"heavy-to-severe-storm","unicode":"e13e"},{"code":"350","name":"shower-rain-night","unicode":"e15e"},{"code":"351","name":"heavy-shower-rain-night","unicode":"e15f"},{"code":"399","name":"rain","unicode":"e18f"},{"code":"400","name":"light-snow","unicode":"e190"},{"code":"401","name":"moderate-snow","unicode":"e191"},{"code":"402","name":"heavy-snow","unicode":"e192"},{"code":"403","name":"snowstorm","unicode":"e193"},{"code":"404","name":"sleet","unicode":"e194"},{"code":"405","name":"rain-and-snow","unicode":"e195"},{"code":"406","name":"shower-snow","unicode":"e196"},{"code":"407","name":"snow-flurry","unicode":"e197"},{"code":"408","name":"light-to-moderate-snow","unicode":"e198"},{"code":"409","name":"moderate-to-heavy-snow","unicode":"e199"},{"code":"410","name":"heavy-snow-to-snowstorm","unicode":"e19a"},{"code":"456","name":"shower-snow-night","unicode":"e1c8"},{"code":"457","name":"snow-flurry-night","unicode":"e1c9"},{"code":"499","name":"snow","unicode":"e1f3"},{"code":"500","name":"mist","unicode":"e1f4"},{"code":"501","name":"foggy","unicode":"e1f5"},{"code":"502","name":"haze","unicode":"e1f6"},{"code":"503","name":"sand","unicode":"e1f7"},{"code":"504","name":"dust","unicode":"e1f8"},{"code":"507","name":"duststorm","unicode":"e1fb"},{"code":"508","name":"sandstorm","unicode":"e1fc"},{"code":"509","name":"dense-fog","unicode":"e1fd"},{"code":"510","name":"strong-fog","unicode":"e1fe"},{"code":"511","name":"moderate-haze","unicode":"e1ff"},{"code":"512","name":"heavy-haze","unicode":"e200"},{"code":"513","name":"severe-haze","unicode":"e201"},{"code":"514","name":"heavy-fog","unicode":"e202"},{"code":"515","name":"extra-heavy-fog","unicode":"e203"},{"code":"800","name":"new-moon","unicode":"e320"},{"code":"801","name":"waxing-crescent","unicode":"e321"},{"code":"802","name":"first-quarter","unicode":"e322"},{"code":"803","name":"waxing-gibbous","unicode":"e323"},{"code":"804","name":"full-moon","unicode":"e324"},{"code":"805","name":"waning-gibbous","unicode":"e325"},{"code":"806","name":"last-quarter","unicode":"e326"},{"code":"807","name":"waning-crescent","unicode":"e327"},{"code":"900","name":"hot","unicode":"e384"},{"code":"901","name":"cold","unicode":"e385"},{"code":"999","name":"unknown","unicode":"e3e7"},{"code":"1001","name":"typhoon","unicode":"e3e9"},{"code":"1002","name":"tornado","unicode":"e3ea"},{"code":"1003","name":"rainstorm","unicode":"e3eb"},{"code":"1004","name":"snow-storm","unicode":"e3ec"},{"code":"1005","name":"cold-wave","unicode":"e3ed"},{"code":"1006","name":"gale","unicode":"e3ee"},{"code":"1007","name":"sandstorm-warning","unicode":"e3ef"},{"code":"1008","name":"low-temperature-freeze","unicode":"e3f0"},{"code":"1009","name":"high-temperature","unicode":"e3f1"},{"code":"1010","name":"heat-wave","unicode":"e3f2"},{"code":"1011","name":"dry-hot-wind","unicode":"e3f3"},{"code":"1012","name":"downburst","unicode":"e3f4"},{"code":"1013","name":"avalanche","unicode":"e3f5"},{"code":"1014","name":"lightning","unicode":"e3f6"},{"code":"1015","name":"hail","unicode":"e3f7"},{"code":"1016","name":"frost","unicode":"e3f8"},{"code":"1017","name":"heavy-fog-warning","unicode":"e3f9"},{"code":"1018","name":"low-level-wind-shearl","unicode":"e3fa"},{"code":"1019","name":"haze-warning","unicode":"e3fb"},{"code":"1020","name":"thunder-gust","unicode":"e3fc"},{"code":"1021","name":"road-icing","unicode":"e3fd"},{"code":"1022","name":"drought","unicode":"e3fe"},{"code":"1023","name":"gale-at-sea","unicode":"e3ff"},{"code":"1024","name":"heat-stroke","unicode":"e400"},{"code":"1025","name":"wildfire","unicode":"e401"},{"code":"1026","name":"grassland-fire","unicode":"e402"},{"code":"1027","name":"freeze","unicode":"e403"},{"code":"1028","name":"space-weather","unicode":"e404"},{"code":"1029","name":"heavy-air-pollution","unicode":"e405"},{"code":"1030","name":"low-temperature-rain-and-snow","unicode":"e406"},{"code":"1031","name":"strong-convection","unicode":"e407"},{"code":"1032","name":"ozone","unicode":"e408"},{"code":"1033","name":"heavy-snow-warning","unicode":"e409"},{"code":"1034","name":"cold-warning","unicode":"e40a"},{"code":"1035","name":"continuous-rain","unicode":"e40b"},{"code":"1036","name":"waterlogging","unicode":"e40c"},{"code":"1037","name":"geological-hazard","unicode":"e40d"},{"code":"1038","name":"heavy-rainfall","unicode":"e40e"},{"code":"1039","name":"severely-falling-temperature","unicode":"e40f"},{"code":"1040","name":"snow-disaster","unicode":"e410"},{"code":"1041","name":"wildfire-grassland","unicode":"e411"},{"code":"1042","name":"medical-meteorology","unicode":"e412"},{"code":"1043","name":"thunderstorm","unicode":"e413"},{"code":"1044","name":"school-closure","unicode":"e414"},{"code":"1045","name":"factory-closure","unicode":"e415"},{"code":"1046","name":"maritime-risk","unicode":"e416"},{"code":"1047","name":"spring-dust","unicode":"e417"},{"code":"1048","name":"falling-temperature","unicode":"e418"},{"code":"1049","name":"typhoon-and-rainstorm","unicode":"e419"},{"code":"1050","name":"severe-cold","unicode":"e41a"},{"code":"1051","name":"sand-dust","unicode":"e41b"},{"code":"1052","name":"sea-thunderstorms","unicode":"e41c"},{"code":"1053","name":"sea-fog","unicode":"e41d"},{"code":"1054","name":"sea-thunder","unicode":"e41e"},{"code":"1055","name":"sea-typhoon","unicode":"e41f"},{"code":"1056","name":"low-temperature","unicode":"e420"},{"code":"1057","name":"road-ice-and-snow","unicode":"e421"},{"code":"1058","name":"thunderstorm-and-gale","unicode":"e422"},{"code":"1059","name":"continuous-low-temperature","unicode":"e423"},{"code":"1060","name":"low-visibility","unicode":"e424"},{"code":"1061","name":"strong-dust","unicode":"e425"},{"code":"1062","name":"gale-in-sea-area","unicode":"e426"},{"code":"1063","name":"short-duration-heavy-shower-rain","unicode":"e427"},{"code":"1064","name":"short-lived-heavy-shower-rain","unicode":"e428"},{"code":"1065","name":"sea-area-fog","unicode":"e429"},{"code":"1066","name":"heat-stroke-conditions","unicode":"e42a"},{"code":"1067","name":"heavy-pollution-weather","unicode":"e42b"},{"code":"1068","name":"co-poisoning-weather-conditions","unicode":"e42c"},{"code":"1069","name":"respiratory-disease-weather-wonditions","unicode":"e42d"},{"code":"1071","name":"intestinal-disease-weather-wonditions","unicode":"e42f"},{"code":"1072","name":"cardiovascular-disease-weather-wonditions","unicode":"e430"},{"code":"1073","name":"flooding-weather-risk","unicode":"e431"},{"code":"1074","name":"heavy-pollution-weather-conditions","unicode":"e432"},{"code":"1075","name":"urban-flooding-weather-risk","unicode":"e433"},{"code":"1076","name":"flooding-weather-risk-2","unicode":"e434"},{"code":"1077","name":"wildfire-weather-risk","unicode":"e435"},{"code":"1078","name":"meteorological-drought","unicode":"e436"},{"code":"1079","name":"agricultural-weather-risk","unicode":"e437"},{"code":"1080","name":"strong-monsoon","unicode":"e438"},{"code":"1081","name":"ice-accretion-on-wire","unicode":"e439"},{"code":"1082","name":"stroke-weather-risk","unicode":"e43a"},{"code":"1084","name":"wildfire-grassland-risk","unicode":"e43c"},{"code":"1085","name":"thunderstorm-and-strong-winds","unicode":"e43d"},{"code":"1086","name":"low-temperature-freeze2","unicode":"e43e"},{"code":"1087","name":"low-temperature-damage","unicode":"e43f"},{"code":"1088","name":"national-agricultural-meteorological-risk","unicode":"e440"},{"code":"1089","name":"dry-hot-wind-risk-for-winter-wheat","unicode":"e441"},{"code":"1201","name":"flood","unicode":"e4b1"},{"code":"1202","name":"urban-flooding","unicode":"e4b2"},{"code":"1203","name":"reservoir-danger","unicode":"e4b3"},{"code":"1204","name":"dike-danger","unicode":"e4b4"},{"code":"1205","name":"ice-flood","unicode":"e4b5"},{"code":"1206","name":"waterlogging2","unicode":"e4b6"},{"code":"1207","name":"flood-and-waterlogging","unicode":"e4b7"},{"code":"1208","name":"dry-water","unicode":"e4b8"},{"code":"1209","name":"flood-and-flash-flood-in-small-and-medium-rivers","unicode":"e4b9"},{"code":"1210","name":"difficulty-drinking-water-for-rural-people-and-animals","unicode":"e4ba"},{"code":"1211","name":"flood-in-small-and-medium-rivers","unicode":"e4bb"},{"code":"1212","name":"flood-and-drought-advisory","unicode":"e4bc"},{"code":"1213","name":"urban-flood-risk","unicode":"e4bd"},{"code":"1214","name":"flash-flood","unicode":"e4be"},{"code":"1215","name":"agricultural-drought","unicode":"e4bf"},{"code":"1216","name":"urban-water-shortage","unicode":"e4c0"},{"code":"1217","name":"ecological-drought","unicode":"e4c1"},{"code":"1218","name":"disaster-risk-early-warning","unicode":"e4c2"},{"code":"1219","name":"flash-flood-weather-risk","unicode":"e4c3"},{"code":"1221","name":"water-conservancy-and-drought","unicode":"e4c5"},{"code":"1241","name":"landslide","unicode":"e4d9"},{"code":"1242","name":"debris-flows","unicode":"e4da"},{"code":"1243","name":"landslide-event","unicode":"e4db"},{"code":"1244","name":"ground-collapses","unicode":"e4dc"},{"code":"1245","name":"ground-fissure","unicode":"e4dd"},{"code":"1246","name":"land-subsidence","unicode":"e4de"},{"code":"1247","name":"volcanic-eruption","unicode":"e4df"},{"code":"1248","name":"geological-hazard-weather-risk","unicode":"e4e0"},{"code":"1249","name":"geological-hazard-weather","unicode":"e4e1"},{"code":"1250","name":"geological-hazard2","unicode":"e4e2"},{"code":"1251","name":"geological-hazard-risk","unicode":"e4e3"},{"code":"1601","name":"very-hot-weather","unicode":"e641"},{"code":"1602","name":"strong-monsoon-signal","unicode":"e642"},{"code":"1603","name":"landslip","unicode":"e643"},{"code":"1604","name":"tropical-cyclone","unicode":"e644"},{"code":"1605","name":"fire-danger","unicode":"e645"},{"code":"1606","name":"flooding-in-the-northern-new-territories","unicode":"e646"},{"code":"1607","name":"cold-weather","unicode":"e647"},{"code":"1608","name":"thunderstorm2","unicode":"e648"},{"code":"1609","name":"rainstorm2","unicode":"e649"},{"code":"1610","name":"frost2","unicode":"e64a"},{"code":"1701","name":"cold-surge-advisory","unicode":"e6a5"},{"code":"1702","name":"strong-wind-advisory","unicode":"e6a6"},{"code":"1703","name":"rainfall-advisory","unicode":"e6a7"},{"code":"1801","name":"strong-monsoon-signal2","unicode":"e709"},{"code":"1802","name":"storm-surge2","unicode":"e70a"},{"code":"1803","name":"tropical-cyclone2","unicode":"e70b"},{"code":"1804","name":"rainstorm3","unicode":"e70c"},{"code":"1805","name":"thunderstorm3","unicode":"e70d"},{"code":"2001","name":"wind-warning","unicode":"e7d1"},{"code":"2002","name":"snow-ice","unicode":"e7d2"},{"code":"2003","name":"fog","unicode":"e7d3"},{"code":"2004","name":"coastal-event","unicode":"e7d4"},{"code":"2005","name":"forest-fire","unicode":"e7d5"},{"code":"2006","name":"rain-warning","unicode":"e7d6"},{"code":"2007","name":"rain-flood","unicode":"e7d7"},{"code":"2029","name":"thunderstorm4","unicode":"e7ed"},{"code":"2030","name":"high-temperature2","unicode":"e7ee"},{"code":"2031","name":"low-temperature2","unicode":"e7ef"},{"code":"2032","name":"avalanches","unicode":"e7f0"},{"code":"2033","name":"flooding","unicode":"e7f1"},{"code":"2050","name":"rain-warning2","unicode":"e802"},{"code":"2051","name":"wind","unicode":"e803"},{"code":"2052","name":"snow-warning","unicode":"e804"},{"code":"2053","name":"zonda-wind","unicode":"e805"},{"code":"2054","name":"storm-warning","unicode":"e806"},{"code":"2070","name":"dust-raising-winds2","unicode":"e816"},{"code":"2071","name":"strong-surface-winds2","unicode":"e817"},{"code":"2072","name":"hot-day2","unicode":"e818"},{"code":"2073","name":"warm-night2","unicode":"e819"},{"code":"2074","name":"cold-day2","unicode":"e81a"},{"code":"2075","name":"thunderstorm-and-lightning2","unicode":"e81b"},{"code":"2076","name":"hailstorm2","unicode":"e81c"},{"code":"2077","name":"sea-area-warning2","unicode":"e81d"},{"code":"2078","name":"fishermen-warning2","unicode":"e81e"},{"code":"2079","name":"heavy-snow-warning2","unicode":"e81f"},{"code":"2080","name":"dust-storm","unicode":"e820"},{"code":"2081","name":"heat-wave2","unicode":"e821"},{"code":"2082","name":"cold-wave2","unicode":"e822"},{"code":"2083","name":"fog2","unicode":"e823"},{"code":"2084","name":"heavy-rain-warning","unicode":"e824"},{"code":"2085","name":"ground-frost2","unicode":"e825"},{"code":"2100","name":"fog3","unicode":"e834"},{"code":"2101","name":"thunder-rain2","unicode":"e835"},{"code":"2102","name":"thunder-storm","unicode":"e836"},{"code":"2103","name":"light-rain-warning","unicode":"e837"},{"code":"2104","name":"heavy-rain-warning2","unicode":"e838"},{"code":"2105","name":"fresh-wind","unicode":"e839"},{"code":"2106","name":"thunderstorm-and-dust","unicode":"e83a"},{"code":"2107","name":"dust-warning","unicode":"e83b"},{"code":"2108","name":"high-wave","unicode":"e83c"},{"code":"2109","name":"frost3","unicode":"e83d"},{"code":"2111","name":"drop-in-visibility","unicode":"e83f"},{"code":"2120","name":"low-humidity2","unicode":"e848"},{"code":"2121","name":"accumulated-rain2","unicode":"e849"},{"code":"2122","name":"cold-wave3","unicode":"e84a"},{"code":"2123","name":"tornado2","unicode":"e84b"},{"code":"2124","name":"thunderstorm5","unicode":"e84c"},{"code":"2125","name":"hail2","unicode":"e84d"},{"code":"2126","name":"heavy-rainfall2","unicode":"e84e"},{"code":"2127","name":"gale2","unicode":"e84f"},{"code":"2128","name":"heat-wave3","unicode":"e850"},{"code":"2129","name":"cold-warning2","unicode":"e851"},{"code":"2130","name":"frost4","unicode":"e852"},{"code":"2131","name":"drought2","unicode":"e853"},{"code":"2132","name":"forest-fire2","unicode":"e854"},{"code":"2133","name":"heavy-snow-warning2","unicode":"e855"},{"code":"2134","name":"severely-falling-temperature2","unicode":"e856"},{"code":"2135","name":"rainstorm4","unicode":"e857"},{"code":"2150","name":"wind2","unicode":"e866"},{"code":"2151","name":"snow-ice2","unicode":"e867"},{"code":"2152","name":"freeze2","unicode":"e868"},{"code":"2153","name":"thunderstorms","unicode":"e869"},{"code":"2154","name":"fog4","unicode":"e86a"},{"code":"2155","name":"high-temperature3","unicode":"e86b"},{"code":"2156","name":"low-temperature3","unicode":"e86c"},{"code":"2157","name":"coastal-event2","unicode":"e86d"},{"code":"2158","name":"forest-fire3","unicode":"e86e"},{"code":"2159","name":"avalanches2","unicode":"e86f"},{"code":"2160","name":"rain-warning2","unicode":"e870"},{"code":"2161","name":"flood2","unicode":"e871"},{"code":"2162","name":"rain-flood2","unicode":"e872"},{"code":"2163","name":"mudflow2","unicode":"e873"},{"code":"2164","name":"duststorm-warning","unicode":"e874"},{"code":"2165","name":"freezing-rain-and-icing","unicode":"e875"},{"code":"2166","name":"other-dangers","unicode":"e876"},{"code":"2190","name":"severe-thunderstorms","unicode":"e88e"},{"code":"2191","name":"damaging-winds2","unicode":"e88f"},{"code":"2192","name":"veld-fire-conditions2","unicode":"e890"},{"code":"2193","name":"weather-advisory2","unicode":"e891"},{"code":"2200","name":"thunderstorm6","unicode":"e898"},{"code":"2201","name":"squall","unicode":"e899"},{"code":"2202","name":"air-quality","unicode":"e89a"},{"code":"2203","name":"rainfall","unicode":"e89b"},{"code":"2204","name":"fog5","unicode":"e89c"},{"code":"2205","name":"heat","unicode":"e89d"},{"code":"2207","name":"wildfire2","unicode":"e89f"},{"code":"2208","name":"wind3","unicode":"e8a0"},{"code":"2209","name":"freezing-rain-warning","unicode":"e8a1"},{"code":"2210","name":"tornado3","unicode":"e8a2"},{"code":"2211","name":"blizzard","unicode":"e8a3"},{"code":"2212","name":"weather-warning","unicode":"e8a4"},{"code":"2213","name":"winter-storm","unicode":"e8a5"},{"code":"2214","name":"freezing-drizzle","unicode":"e8a6"},{"code":"2215","name":"snowfall","unicode":"e8a7"},{"code":"2216","name":"blowing-snow","unicode":"e8a8"},{"code":"2217","name":"extreme-cold","unicode":"e8a9"},{"code":"2218","name":"frost5","unicode":"e8aa"},{"code":"2300","name":"hazardous-seas-warning","unicode":"e8fc"},{"code":"2301","name":"heavy-freezing-spray-warning","unicode":"e8fd"},{"code":"2302","name":"red-flag-warning","unicode":"e8fe"},{"code":"2303","name":"freeze-warning","unicode":"e8ff"},{"code":"2304","name":"hard-freeze-warning","unicode":"e900"},{"code":"2305","name":"extreme-cold-warning","unicode":"e901"},{"code":"2306","name":"wind-chill-warning","unicode":"e902"},{"code":"2307","name":"gale-warning","unicode":"e903"},{"code":"2308","name":"excessive-heat-warning","unicode":"e904"},{"code":"2309","name":"lake-effect-snow-warning","unicode":"e905"},{"code":"2311","name":"blowing-dust-warning","unicode":"e907"},{"code":"2312","name":"dust-storm-warning","unicode":"e908"},{"code":"2313","name":"storm-warning2","unicode":"e909"},{"code":"2314","name":"tropical-storm-warning","unicode":"e90a"},{"code":"2315","name":"high-wind-warning","unicode":"e90b"},{"code":"2316","name":"high-surf-warning","unicode":"e90c"},{"code":"2317","name":"flood-warning","unicode":"e90d"},{"code":"2318","name":"lakeshore-flood-warning","unicode":"e90e"},{"code":"2319","name":"coastal-flood-warning","unicode":"e90f"},{"code":"2320","name":"ashfall-warning","unicode":"e910"},{"code":"2321","name":"volcano-warning","unicode":"e911"},{"code":"2322","name":"earthquake-warning","unicode":"e912"},{"code":"2323","name":"avalanche-warning","unicode":"e913"},{"code":"2324","name":"winter-storm-warning","unicode":"e914"},{"code":"2325","name":"ice-storm-warning","unicode":"e915"},{"code":"2326","name":"snow-squall-warning","unicode":"e916"},{"code":"2327","name":"blizzard-warning","unicode":"e917"},{"code":"2328","name":"special-marine-warning","unicode":"e918"},{"code":"2330","name":"typhoon-warning","unicode":"e91a"},{"code":"2331","name":"hurricane-warning","unicode":"e91b"},{"code":"2332","name":"hurricane-force-wind-warning","unicode":"e91c"},{"code":"2333","name":"storm-surge-warning","unicode":"e91d"},{"code":"2341","name":"flash-flood-warning","unicode":"e925"},{"code":"2343","name":"severe-thunderstorm-warning","unicode":"e927"},{"code":"2345","name":"extreme-wind-warning","unicode":"e929"},{"code":"2346","name":"tornado-warning","unicode":"e92a"},{"code":"2348","name":"tsunami-warning","unicode":"e92c"},{"code":"2349","name":"fire-weather-watch","unicode":"e92d"},{"code":"2350","name":"freeze-watch","unicode":"e92e"},{"code":"2351","name":"hard-freeze-watch","unicode":"e92f"},{"code":"2352","name":"wind-chill-watch","unicode":"e930"},{"code":"2353","name":"extreme-cold-watch","unicode":"e931"},{"code":"2354","name":"excessive-heat-watch","unicode":"e932"},{"code":"2355","name":"high-wind-watch","unicode":"e933"},{"code":"2356","name":"flood-watch","unicode":"e934"},{"code":"2357","name":"lakeshore-flood-watch","unicode":"e935"},{"code":"2358","name":"coastal-flood-watch","unicode":"e936"},{"code":"2359","name":"heavy-freezing-spray-watch","unicode":"e937"},{"code":"2360","name":"hazardous-seas-watch","unicode":"e938"},{"code":"2361","name":"winter-storm-watch","unicode":"e939"},{"code":"2362","name":"gale-watch","unicode":"e93a"},{"code":"2363","name":"avalanche-watch","unicode":"e93b"},{"code":"2364","name":"storm-watch","unicode":"e93c"},{"code":"2365","name":"tropical-storm-watch","unicode":"e93d"},{"code":"2366","name":"typhoon-watch","unicode":"e93e"},{"code":"2367","name":"hurricane-force-wind-watch","unicode":"e93f"},{"code":"2368","name":"hurricane-watch","unicode":"e940"},{"code":"2369","name":"storm-surge-watch","unicode":"e941"},{"code":"2370","name":"flash-flood-watch","unicode":"e942"},{"code":"2371","name":"severe-thunderstorm-watch","unicode":"e943"},{"code":"2372","name":"tornado-watch","unicode":"e944"},{"code":"2373","name":"tsunami-watch","unicode":"e945"},{"code":"2374","name":"air-stagnation-advisory","unicode":"e946"},{"code":"2375","name":"low-water-advisory","unicode":"e947"},{"code":"2376","name":"freezing-spray-advisory","unicode":"e948"},{"code":"2377","name":"freezing-fog-advisory","unicode":"e949"},{"code":"2378","name":"ashfall-advisory","unicode":"e94a"},{"code":"2379","name":"frost-advisory","unicode":"e94b"},{"code":"2380","name":"wind-advisory","unicode":"e94c"},{"code":"2381","name":"lake-wind-advisory","unicode":"e94d"},{"code":"2382","name":"blowing-dust-advisory","unicode":"e94e"},{"code":"2383","name":"dust-advisory","unicode":"e94f"},{"code":"2384","name":"brisk-wind-advisory","unicode":"e950"},{"code":"2385","name":"small-craft-advisory","unicode":"e951"},{"code":"2386","name":"small-craft-advisory-for-winds","unicode":"e952"},{"code":"2387","name":"small-craft-advisory-for-rough-bar","unicode":"e953"},{"code":"2388","name":"small-craft-advisory-for-hazardous-seas","unicode":"e954"},{"code":"2389","name":"dense-smoke-advisory","unicode":"e955"},{"code":"2390","name":"dense-fog-advisory","unicode":"e956"},{"code":"2391","name":"high-surf-advisory","unicode":"e957"},{"code":"2392","name":"coastal-flood-advisory","unicode":"e958"},{"code":"2393","name":"lakeshore-flood-advisory","unicode":"e959"},{"code":"2394","name":"hydrologic-advisory","unicode":"e95a"},{"code":"2395","name":"flood-advisory","unicode":"e95b"},{"code":"2396","name":"heat-advisory","unicode":"e95c"},{"code":"2397","name":"wind-chill-advisory","unicode":"e95d"},{"code":"2398","name":"winter-weather-advisory","unicode":"e95e"},{"code":"2399","name":"avalanche-advisory","unicode":"e95f"},{"code":"2400","name":"tsunami-advisory","unicode":"e960"},{"code":"2409","name":"flood-statement","unicode":"e969"},{"code":"2411","name":"hydrologic-outlook","unicode":"e96b"},{"code":"2412","name":"hazardous-weather-outlook","unicode":"e96c"},{"code":"2413","name":"air-quality-alert","unicode":"e96d"},{"code":"2414","name":"extreme-fire-danger","unicode":"e96e"},{"code":"2415","name":"marine-weather-statement","unicode":"e96f"},{"code":"2416","name":"special-weather-statement","unicode":"e970"},{"code":"2417","name":"lakeshore-flood-statement","unicode":"e971"},{"code":"2418","name":"coastal-flood-statement","unicode":"e972"},{"code":"2419","name":"beach-hazards-statement","unicode":"e973"},{"code":"2420","name":"rip-current-statement","unicode":"e974"},{"code":"2421","name":"tropical-depression-local-statement","unicode":"e975"},{"code":"2422","name":"tropical-storm-local-statement","unicode":"e976"},{"code":"2423","name":"typhoon-local-statement","unicode":"e977"},{"code":"2424","name":"hurricane-local-statement","unicode":"e978"},{"code":"2425","name":"severe-weather-statement","unicode":"e979"},{"code":"2426","name":"flash-flood-statement","unicode":"e97a"},{"code":"9998","name":"severe-weather-warning","unicode":"1070e"},{"code":"9999","name":"warning-default","unicode":"1070f"},{"code":"qweather","name":"qweather","unicode":"f8ff"}]
+{
+  "100-sunny": {
+    "code": "100",
+    "name": "sunny",
+    "unicode": "f101",
+    "fill": false
+  },
+  "101-cloudy": {
+    "code": "101",
+    "name": "cloudy",
+    "unicode": "f102",
+    "fill": false
+  },
+  "102-few-clouds": {
+    "code": "102",
+    "name": "few-clouds",
+    "unicode": "f103",
+    "fill": false
+  },
+  "103-partly-cloudy": {
+    "code": "103",
+    "name": "partly-cloudy",
+    "unicode": "f104",
+    "fill": false
+  },
+  "104-overcast": {
+    "code": "104",
+    "name": "overcast",
+    "unicode": "f105",
+    "fill": false
+  },
+  "150-clear-night": {
+    "code": "150",
+    "name": "clear-night",
+    "unicode": "f106",
+    "fill": false
+  },
+  "151-cloudy-night": {
+    "code": "151",
+    "name": "cloudy-night",
+    "unicode": "f107",
+    "fill": false
+  },
+  "152-few-clouds-night": {
+    "code": "152",
+    "name": "few-clouds-night",
+    "unicode": "f108",
+    "fill": false
+  },
+  "153-partly-cloudy-night": {
+    "code": "153",
+    "name": "partly-cloudy-night",
+    "unicode": "f109",
+    "fill": false
+  },
+  "300-shower-rain": {
+    "code": "300",
+    "name": "shower-rain",
+    "unicode": "f10a",
+    "fill": false
+  },
+  "301-heavy-shower-rain": {
+    "code": "301",
+    "name": "heavy-shower-rain",
+    "unicode": "f10b",
+    "fill": false
+  },
+  "302-thundershower": {
+    "code": "302",
+    "name": "thundershower",
+    "unicode": "f10c",
+    "fill": false
+  },
+  "303-heavy-thunderstorm": {
+    "code": "303",
+    "name": "heavy-thunderstorm",
+    "unicode": "f10d",
+    "fill": false
+  },
+  "304-thundershower-with-hail": {
+    "code": "304",
+    "name": "thundershower-with-hail",
+    "unicode": "f10e",
+    "fill": false
+  },
+  "305-light-rain": {
+    "code": "305",
+    "name": "light-rain",
+    "unicode": "f10f",
+    "fill": false
+  },
+  "306-moderate-rain": {
+    "code": "306",
+    "name": "moderate-rain",
+    "unicode": "f110",
+    "fill": false
+  },
+  "307-heavy-rain": {
+    "code": "307",
+    "name": "heavy-rain",
+    "unicode": "f111",
+    "fill": false
+  },
+  "308-extreme-rain": {
+    "code": "308",
+    "name": "extreme-rain",
+    "unicode": "f112",
+    "fill": false
+  },
+  "309-drizzle-rain": {
+    "code": "309",
+    "name": "drizzle-rain",
+    "unicode": "f113",
+    "fill": false
+  },
+  "310-storm": {
+    "code": "310",
+    "name": "storm",
+    "unicode": "f114",
+    "fill": false
+  },
+  "311-heavy-storm": {
+    "code": "311",
+    "name": "heavy-storm",
+    "unicode": "f115",
+    "fill": false
+  },
+  "312-severe-storm": {
+    "code": "312",
+    "name": "severe-storm",
+    "unicode": "f116",
+    "fill": false
+  },
+  "313-freezing-rain": {
+    "code": "313",
+    "name": "freezing-rain",
+    "unicode": "f117",
+    "fill": false
+  },
+  "314-light-to-moderate-rain": {
+    "code": "314",
+    "name": "light-to-moderate-rain",
+    "unicode": "f118",
+    "fill": false
+  },
+  "315-moderate-to-heavy-rain": {
+    "code": "315",
+    "name": "moderate-to-heavy-rain",
+    "unicode": "f119",
+    "fill": false
+  },
+  "316-heavy-rain-to-storm": {
+    "code": "316",
+    "name": "heavy-rain-to-storm",
+    "unicode": "f11a",
+    "fill": false
+  },
+  "317-storm-to-heavy-storm": {
+    "code": "317",
+    "name": "storm-to-heavy-storm",
+    "unicode": "f11b",
+    "fill": false
+  },
+  "318-heavy-to-severe-storm": {
+    "code": "318",
+    "name": "heavy-to-severe-storm",
+    "unicode": "f11c",
+    "fill": false
+  },
+  "350-shower-rain-night": {
+    "code": "350",
+    "name": "shower-rain-night",
+    "unicode": "f11d",
+    "fill": false
+  },
+  "351-heavy-shower-rain-night": {
+    "code": "351",
+    "name": "heavy-shower-rain-night",
+    "unicode": "f11e",
+    "fill": false
+  },
+  "399-rain": {
+    "code": "399",
+    "name": "rain",
+    "unicode": "f11f",
+    "fill": false
+  },
+  "400-light-snow": {
+    "code": "400",
+    "name": "light-snow",
+    "unicode": "f120",
+    "fill": false
+  },
+  "401-moderate-snow": {
+    "code": "401",
+    "name": "moderate-snow",
+    "unicode": "f121",
+    "fill": false
+  },
+  "402-heavy-snow": {
+    "code": "402",
+    "name": "heavy-snow",
+    "unicode": "f122",
+    "fill": false
+  },
+  "403-snowstorm": {
+    "code": "403",
+    "name": "snowstorm",
+    "unicode": "f123",
+    "fill": false
+  },
+  "404-sleet": {
+    "code": "404",
+    "name": "sleet",
+    "unicode": "f124",
+    "fill": false
+  },
+  "405-rain-and-snow": {
+    "code": "405",
+    "name": "rain-and-snow",
+    "unicode": "f125",
+    "fill": false
+  },
+  "406-shower-snow": {
+    "code": "406",
+    "name": "shower-snow",
+    "unicode": "f126",
+    "fill": false
+  },
+  "407-snow-flurry": {
+    "code": "407",
+    "name": "snow-flurry",
+    "unicode": "f127",
+    "fill": false
+  },
+  "408-light-to-moderate-snow": {
+    "code": "408",
+    "name": "light-to-moderate-snow",
+    "unicode": "f128",
+    "fill": false
+  },
+  "409-moderate-to-heavy-snow": {
+    "code": "409",
+    "name": "moderate-to-heavy-snow",
+    "unicode": "f129",
+    "fill": false
+  },
+  "410-heavy-snow-to-snowstorm": {
+    "code": "410",
+    "name": "heavy-snow-to-snowstorm",
+    "unicode": "f12a",
+    "fill": false
+  },
+  "456-shower-snow-night": {
+    "code": "456",
+    "name": "shower-snow-night",
+    "unicode": "f12b",
+    "fill": false
+  },
+  "457-snow-flurry-night": {
+    "code": "457",
+    "name": "snow-flurry-night",
+    "unicode": "f12c",
+    "fill": false
+  },
+  "499-snow": {
+    "code": "499",
+    "name": "snow",
+    "unicode": "f12d",
+    "fill": false
+  },
+  "500-mist": {
+    "code": "500",
+    "name": "mist",
+    "unicode": "f12e",
+    "fill": false
+  },
+  "501-foggy": {
+    "code": "501",
+    "name": "foggy",
+    "unicode": "f12f",
+    "fill": false
+  },
+  "502-haze": {
+    "code": "502",
+    "name": "haze",
+    "unicode": "f130",
+    "fill": false
+  },
+  "503-sand": {
+    "code": "503",
+    "name": "sand",
+    "unicode": "f131",
+    "fill": false
+  },
+  "504-dust": {
+    "code": "504",
+    "name": "dust",
+    "unicode": "f132",
+    "fill": false
+  },
+  "507-duststorm": {
+    "code": "507",
+    "name": "duststorm",
+    "unicode": "f133",
+    "fill": false
+  },
+  "508-sandstorm": {
+    "code": "508",
+    "name": "sandstorm",
+    "unicode": "f134",
+    "fill": false
+  },
+  "509-dense-fog": {
+    "code": "509",
+    "name": "dense-fog",
+    "unicode": "f135",
+    "fill": false
+  },
+  "510-strong-fog": {
+    "code": "510",
+    "name": "strong-fog",
+    "unicode": "f136",
+    "fill": false
+  },
+  "511-moderate-haze": {
+    "code": "511",
+    "name": "moderate-haze",
+    "unicode": "f137",
+    "fill": false
+  },
+  "512-heavy-haze": {
+    "code": "512",
+    "name": "heavy-haze",
+    "unicode": "f138",
+    "fill": false
+  },
+  "513-severe-haze": {
+    "code": "513",
+    "name": "severe-haze",
+    "unicode": "f139",
+    "fill": false
+  },
+  "514-heavy-fog": {
+    "code": "514",
+    "name": "heavy-fog",
+    "unicode": "f13a",
+    "fill": false
+  },
+  "515-extra-heavy-fog": {
+    "code": "515",
+    "name": "extra-heavy-fog",
+    "unicode": "f13b",
+    "fill": false
+  },
+  "800-new-moon": {
+    "code": "800",
+    "name": "new-moon",
+    "unicode": "f13c",
+    "fill": false
+  },
+  "801-waxing-crescent": {
+    "code": "801",
+    "name": "waxing-crescent",
+    "unicode": "f13d",
+    "fill": false
+  },
+  "802-first-quarter": {
+    "code": "802",
+    "name": "first-quarter",
+    "unicode": "f13e",
+    "fill": false
+  },
+  "803-waxing-gibbous": {
+    "code": "803",
+    "name": "waxing-gibbous",
+    "unicode": "f13f",
+    "fill": false
+  },
+  "804-full-moon": {
+    "code": "804",
+    "name": "full-moon",
+    "unicode": "f140",
+    "fill": false
+  },
+  "805-waning-gibbous": {
+    "code": "805",
+    "name": "waning-gibbous",
+    "unicode": "f141",
+    "fill": false
+  },
+  "806-last-quarter": {
+    "code": "806",
+    "name": "last-quarter",
+    "unicode": "f142",
+    "fill": false
+  },
+  "807-waning-crescent": {
+    "code": "807",
+    "name": "waning-crescent",
+    "unicode": "f143",
+    "fill": false
+  },
+  "900-hot": {
+    "code": "900",
+    "name": "hot",
+    "unicode": "f144",
+    "fill": false
+  },
+  "901-cold": {
+    "code": "901",
+    "name": "cold",
+    "unicode": "f145",
+    "fill": false
+  },
+  "999-unknown": {
+    "code": "999",
+    "name": "unknown",
+    "unicode": "f146",
+    "fill": false
+  },
+  "1001-typhoon": {
+    "code": "1001",
+    "name": "typhoon",
+    "unicode": "f147",
+    "fill": false
+  },
+  "1002-tornado": {
+    "code": "1002",
+    "name": "tornado",
+    "unicode": "f148",
+    "fill": false
+  },
+  "1003-rainstorm": {
+    "code": "1003",
+    "name": "rainstorm",
+    "unicode": "f149",
+    "fill": false
+  },
+  "1004-snow-storm": {
+    "code": "1004",
+    "name": "snow-storm",
+    "unicode": "f14a",
+    "fill": false
+  },
+  "1005-cold-wave": {
+    "code": "1005",
+    "name": "cold-wave",
+    "unicode": "f14b",
+    "fill": false
+  },
+  "1006-gale": {
+    "code": "1006",
+    "name": "gale",
+    "unicode": "f14c",
+    "fill": false
+  },
+  "1007-sandstorm-warning": {
+    "code": "1007",
+    "name": "sandstorm-warning",
+    "unicode": "f14d",
+    "fill": false
+  },
+  "1008-low-temperature-freeze": {
+    "code": "1008",
+    "name": "low-temperature-freeze",
+    "unicode": "f14e",
+    "fill": false
+  },
+  "1009-high-temperature": {
+    "code": "1009",
+    "name": "high-temperature",
+    "unicode": "f14f",
+    "fill": false
+  },
+  "1010-heat-wave": {
+    "code": "1010",
+    "name": "heat-wave",
+    "unicode": "f150",
+    "fill": false
+  },
+  "1011-dry-hot-wind": {
+    "code": "1011",
+    "name": "dry-hot-wind",
+    "unicode": "f151",
+    "fill": false
+  },
+  "1012-downburst": {
+    "code": "1012",
+    "name": "downburst",
+    "unicode": "f152",
+    "fill": false
+  },
+  "1013-avalanche": {
+    "code": "1013",
+    "name": "avalanche",
+    "unicode": "f153",
+    "fill": false
+  },
+  "1014-lightning": {
+    "code": "1014",
+    "name": "lightning",
+    "unicode": "f154",
+    "fill": false
+  },
+  "1015-hail": {
+    "code": "1015",
+    "name": "hail",
+    "unicode": "f155",
+    "fill": false
+  },
+  "1016-frost": {
+    "code": "1016",
+    "name": "frost",
+    "unicode": "f156",
+    "fill": false
+  },
+  "1017-heavy-fog-warning": {
+    "code": "1017",
+    "name": "heavy-fog-warning",
+    "unicode": "f157",
+    "fill": false
+  },
+  "1018-low-level-wind-shearl": {
+    "code": "1018",
+    "name": "low-level-wind-shearl",
+    "unicode": "f158",
+    "fill": false
+  },
+  "1019-haze-warning": {
+    "code": "1019",
+    "name": "haze-warning",
+    "unicode": "f159",
+    "fill": false
+  },
+  "1020-thunder-gust": {
+    "code": "1020",
+    "name": "thunder-gust",
+    "unicode": "f15a",
+    "fill": false
+  },
+  "1021-road-icing": {
+    "code": "1021",
+    "name": "road-icing",
+    "unicode": "f15b",
+    "fill": false
+  },
+  "1022-drought": {
+    "code": "1022",
+    "name": "drought",
+    "unicode": "f15c",
+    "fill": false
+  },
+  "1023-gale-at-sea": {
+    "code": "1023",
+    "name": "gale-at-sea",
+    "unicode": "f15d",
+    "fill": false
+  },
+  "1024-heat-stroke": {
+    "code": "1024",
+    "name": "heat-stroke",
+    "unicode": "f15e",
+    "fill": false
+  },
+  "1025-wildfire": {
+    "code": "1025",
+    "name": "wildfire",
+    "unicode": "f15f",
+    "fill": false
+  },
+  "1026-grassland-fire": {
+    "code": "1026",
+    "name": "grassland-fire",
+    "unicode": "f160",
+    "fill": false
+  },
+  "1027-freeze": {
+    "code": "1027",
+    "name": "freeze",
+    "unicode": "f161",
+    "fill": false
+  },
+  "1028-space-weather": {
+    "code": "1028",
+    "name": "space-weather",
+    "unicode": "f162",
+    "fill": false
+  },
+  "1029-heavy-air-pollution": {
+    "code": "1029",
+    "name": "heavy-air-pollution",
+    "unicode": "f163",
+    "fill": false
+  },
+  "1030-low-temperature-rain-and-snow": {
+    "code": "1030",
+    "name": "low-temperature-rain-and-snow",
+    "unicode": "f164",
+    "fill": false
+  },
+  "1031-strong-convection": {
+    "code": "1031",
+    "name": "strong-convection",
+    "unicode": "f165",
+    "fill": false
+  },
+  "1032-ozone": {
+    "code": "1032",
+    "name": "ozone",
+    "unicode": "f166",
+    "fill": false
+  },
+  "1033-heavy-snow-warning": {
+    "code": "1033",
+    "name": "heavy-snow-warning",
+    "unicode": "f167",
+    "fill": false
+  },
+  "1034-cold-warning": {
+    "code": "1034",
+    "name": "cold-warning",
+    "unicode": "f168",
+    "fill": false
+  },
+  "1035-continuous-rain": {
+    "code": "1035",
+    "name": "continuous-rain",
+    "unicode": "f169",
+    "fill": false
+  },
+  "1036-waterlogging": {
+    "code": "1036",
+    "name": "waterlogging",
+    "unicode": "f16a",
+    "fill": false
+  },
+  "1037-geological-hazard": {
+    "code": "1037",
+    "name": "geological-hazard",
+    "unicode": "f16b",
+    "fill": false
+  },
+  "1038-heavy-rainfall": {
+    "code": "1038",
+    "name": "heavy-rainfall",
+    "unicode": "f16c",
+    "fill": false
+  },
+  "1039-severely-falling-temperature": {
+    "code": "1039",
+    "name": "severely-falling-temperature",
+    "unicode": "f16d",
+    "fill": false
+  },
+  "1040-snow-disaster": {
+    "code": "1040",
+    "name": "snow-disaster",
+    "unicode": "f16e",
+    "fill": false
+  },
+  "1041-wildfire-grassland": {
+    "code": "1041",
+    "name": "wildfire-grassland",
+    "unicode": "f16f",
+    "fill": false
+  },
+  "1042-medical-meteorology": {
+    "code": "1042",
+    "name": "medical-meteorology",
+    "unicode": "f170",
+    "fill": false
+  },
+  "1043-thunderstorm": {
+    "code": "1043",
+    "name": "thunderstorm",
+    "unicode": "f171",
+    "fill": false
+  },
+  "1044-school-closure": {
+    "code": "1044",
+    "name": "school-closure",
+    "unicode": "f172",
+    "fill": false
+  },
+  "1045-factory-closure": {
+    "code": "1045",
+    "name": "factory-closure",
+    "unicode": "f173",
+    "fill": false
+  },
+  "1046-maritime-risk": {
+    "code": "1046",
+    "name": "maritime-risk",
+    "unicode": "f174",
+    "fill": false
+  },
+  "1047-spring-dust": {
+    "code": "1047",
+    "name": "spring-dust",
+    "unicode": "f175",
+    "fill": false
+  },
+  "1048-falling-temperature": {
+    "code": "1048",
+    "name": "falling-temperature",
+    "unicode": "f176",
+    "fill": false
+  },
+  "1049-typhoon-and-rainstorm": {
+    "code": "1049",
+    "name": "typhoon-and-rainstorm",
+    "unicode": "f177",
+    "fill": false
+  },
+  "1050-severe-cold": {
+    "code": "1050",
+    "name": "severe-cold",
+    "unicode": "f178",
+    "fill": false
+  },
+  "1051-sand-dust": {
+    "code": "1051",
+    "name": "sand-dust",
+    "unicode": "f179",
+    "fill": false
+  },
+  "1052-sea-thunderstorms": {
+    "code": "1052",
+    "name": "sea-thunderstorms",
+    "unicode": "f17a",
+    "fill": false
+  },
+  "1053-sea-fog": {
+    "code": "1053",
+    "name": "sea-fog",
+    "unicode": "f17b",
+    "fill": false
+  },
+  "1054-sea-thunder": {
+    "code": "1054",
+    "name": "sea-thunder",
+    "unicode": "f17c",
+    "fill": false
+  },
+  "1055-sea-typhoon": {
+    "code": "1055",
+    "name": "sea-typhoon",
+    "unicode": "f17d",
+    "fill": false
+  },
+  "1056-low-temperature": {
+    "code": "1056",
+    "name": "low-temperature",
+    "unicode": "f17e",
+    "fill": false
+  },
+  "1057-road-ice-and-snow": {
+    "code": "1057",
+    "name": "road-ice-and-snow",
+    "unicode": "f17f",
+    "fill": false
+  },
+  "1058-thunderstorm-and-gale": {
+    "code": "1058",
+    "name": "thunderstorm-and-gale",
+    "unicode": "f180",
+    "fill": false
+  },
+  "1059-continuous-low-temperature": {
+    "code": "1059",
+    "name": "continuous-low-temperature",
+    "unicode": "f181",
+    "fill": false
+  },
+  "1060-low-visibility": {
+    "code": "1060",
+    "name": "low-visibility",
+    "unicode": "f182",
+    "fill": false
+  },
+  "1061-strong-dust": {
+    "code": "1061",
+    "name": "strong-dust",
+    "unicode": "f183",
+    "fill": false
+  },
+  "1062-gale-in-sea-area": {
+    "code": "1062",
+    "name": "gale-in-sea-area",
+    "unicode": "f184",
+    "fill": false
+  },
+  "1063-short-duration-heavy-shower-rain": {
+    "code": "1063",
+    "name": "short-duration-heavy-shower-rain",
+    "unicode": "f185",
+    "fill": false
+  },
+  "1064-short-lived-heavy-shower-rain": {
+    "code": "1064",
+    "name": "short-lived-heavy-shower-rain",
+    "unicode": "f186",
+    "fill": false
+  },
+  "1065-sea-area-fog": {
+    "code": "1065",
+    "name": "sea-area-fog",
+    "unicode": "f187",
+    "fill": false
+  },
+  "1066-heat-stroke-conditions": {
+    "code": "1066",
+    "name": "heat-stroke-conditions",
+    "unicode": "f188",
+    "fill": false
+  },
+  "1067-heavy-pollution-weather": {
+    "code": "1067",
+    "name": "heavy-pollution-weather",
+    "unicode": "f189",
+    "fill": false
+  },
+  "1068-co-poisoning-weather-conditions": {
+    "code": "1068",
+    "name": "co-poisoning-weather-conditions",
+    "unicode": "f18a",
+    "fill": false
+  },
+  "1069-respiratory-disease-weather-wonditions": {
+    "code": "1069",
+    "name": "respiratory-disease-weather-wonditions",
+    "unicode": "f18b",
+    "fill": false
+  },
+  "1071-intestinal-disease-weather-wonditions": {
+    "code": "1071",
+    "name": "intestinal-disease-weather-wonditions",
+    "unicode": "f18c",
+    "fill": false
+  },
+  "1072-cardiovascular-disease-weather-wonditions": {
+    "code": "1072",
+    "name": "cardiovascular-disease-weather-wonditions",
+    "unicode": "f18d",
+    "fill": false
+  },
+  "1073-flooding-weather-risk": {
+    "code": "1073",
+    "name": "flooding-weather-risk",
+    "unicode": "f18e",
+    "fill": false
+  },
+  "1074-heavy-pollution-weather-conditions": {
+    "code": "1074",
+    "name": "heavy-pollution-weather-conditions",
+    "unicode": "f18f",
+    "fill": false
+  },
+  "1075-urban-flooding-weather-risk": {
+    "code": "1075",
+    "name": "urban-flooding-weather-risk",
+    "unicode": "f190",
+    "fill": false
+  },
+  "1076-flooding-weather-risk-2": {
+    "code": "1076",
+    "name": "flooding-weather-risk-2",
+    "unicode": "f191",
+    "fill": false
+  },
+  "1077-wildfire-weather-risk": {
+    "code": "1077",
+    "name": "wildfire-weather-risk",
+    "unicode": "f192",
+    "fill": false
+  },
+  "1078-meteorological-drought": {
+    "code": "1078",
+    "name": "meteorological-drought",
+    "unicode": "f193",
+    "fill": false
+  },
+  "1079-agricultural-weather-risk": {
+    "code": "1079",
+    "name": "agricultural-weather-risk",
+    "unicode": "f194",
+    "fill": false
+  },
+  "1080-strong-monsoon": {
+    "code": "1080",
+    "name": "strong-monsoon",
+    "unicode": "f195",
+    "fill": false
+  },
+  "1081-ice-accretion-on-wire": {
+    "code": "1081",
+    "name": "ice-accretion-on-wire",
+    "unicode": "f196",
+    "fill": false
+  },
+  "1082-stroke-weather-risk": {
+    "code": "1082",
+    "name": "stroke-weather-risk",
+    "unicode": "f197",
+    "fill": false
+  },
+  "1084-wildfire-grassland-risk": {
+    "code": "1084",
+    "name": "wildfire-grassland-risk",
+    "unicode": "f198",
+    "fill": false
+  },
+  "1085-thunderstorm-and-strong-winds": {
+    "code": "1085",
+    "name": "thunderstorm-and-strong-winds",
+    "unicode": "f199",
+    "fill": false
+  },
+  "1086-low-temperature-freeze2": {
+    "code": "1086",
+    "name": "low-temperature-freeze2",
+    "unicode": "f19a",
+    "fill": false
+  },
+  "1087-low-temperature-damage": {
+    "code": "1087",
+    "name": "low-temperature-damage",
+    "unicode": "f19b",
+    "fill": false
+  },
+  "1088-national-agricultural-meteorological-risk": {
+    "code": "1088",
+    "name": "national-agricultural-meteorological-risk",
+    "unicode": "f19c",
+    "fill": false
+  },
+  "1089-dry-hot-wind-risk-for-winter-wheat": {
+    "code": "1089",
+    "name": "dry-hot-wind-risk-for-winter-wheat",
+    "unicode": "f19d",
+    "fill": false
+  },
+  "1201-flood": {
+    "code": "1201",
+    "name": "flood",
+    "unicode": "f2c5",
+    "fill": false
+  },
+  "1202-urban-flooding": {
+    "code": "1202",
+    "name": "urban-flooding",
+    "unicode": "f2c6",
+    "fill": false
+  },
+  "1203-reservoir-danger": {
+    "code": "1203",
+    "name": "reservoir-danger",
+    "unicode": "f2c7",
+    "fill": false
+  },
+  "1204-dike-danger": {
+    "code": "1204",
+    "name": "dike-danger",
+    "unicode": "f2c8",
+    "fill": false
+  },
+  "1205-ice-flood": {
+    "code": "1205",
+    "name": "ice-flood",
+    "unicode": "f2c9",
+    "fill": false
+  },
+  "1206-waterlogging2": {
+    "code": "1206",
+    "name": "waterlogging2",
+    "unicode": "f2ca",
+    "fill": false
+  },
+  "1207-flood-and-waterlogging": {
+    "code": "1207",
+    "name": "flood-and-waterlogging",
+    "unicode": "f2cb",
+    "fill": false
+  },
+  "1208-dry-water": {
+    "code": "1208",
+    "name": "dry-water",
+    "unicode": "f2cc",
+    "fill": false
+  },
+  "1209-flood-and-flash-flood-in-small-and-medium-rivers": {
+    "code": "1209",
+    "name": "flood-and-flash-flood-in-small-and-medium-rivers",
+    "unicode": "f2cd",
+    "fill": false
+  },
+  "1210-difficulty-drinking-water-for-rural-people-and-animals": {
+    "code": "1210",
+    "name": "difficulty-drinking-water-for-rural-people-and-animals",
+    "unicode": "f2ce",
+    "fill": false
+  },
+  "1211-flood-in-small-and-medium-rivers": {
+    "code": "1211",
+    "name": "flood-in-small-and-medium-rivers",
+    "unicode": "f2cf",
+    "fill": false
+  },
+  "1212-flood-and-drought-advisory": {
+    "code": "1212",
+    "name": "flood-and-drought-advisory",
+    "unicode": "f2d0",
+    "fill": false
+  },
+  "1213-urban-flood-risk": {
+    "code": "1213",
+    "name": "urban-flood-risk",
+    "unicode": "f2d1",
+    "fill": false
+  },
+  "1214-flash-flood": {
+    "code": "1214",
+    "name": "flash-flood",
+    "unicode": "f2d2",
+    "fill": false
+  },
+  "1215-agricultural-drought": {
+    "code": "1215",
+    "name": "agricultural-drought",
+    "unicode": "f2d3",
+    "fill": false
+  },
+  "1216-urban-water-shortage": {
+    "code": "1216",
+    "name": "urban-water-shortage",
+    "unicode": "f2d4",
+    "fill": false
+  },
+  "1217-ecological-drought": {
+    "code": "1217",
+    "name": "ecological-drought",
+    "unicode": "f2d5",
+    "fill": false
+  },
+  "1218-disaster-risk-early-warning": {
+    "code": "1218",
+    "name": "disaster-risk-early-warning",
+    "unicode": "f2d6",
+    "fill": false
+  },
+  "1219-flash-flood-weather-risk": {
+    "code": "1219",
+    "name": "flash-flood-weather-risk",
+    "unicode": "f2d7",
+    "fill": false
+  },
+  "1221-water-conservancy-and-drought": {
+    "code": "1221",
+    "name": "water-conservancy-and-drought",
+    "unicode": "f2d8",
+    "fill": false
+  },
+  "1241-landslide": {
+    "code": "1241",
+    "name": "landslide",
+    "unicode": "f2d9",
+    "fill": false
+  },
+  "1242-debris-flows": {
+    "code": "1242",
+    "name": "debris-flows",
+    "unicode": "f2da",
+    "fill": false
+  },
+  "1243-landslide-event": {
+    "code": "1243",
+    "name": "landslide-event",
+    "unicode": "f2db",
+    "fill": false
+  },
+  "1244-ground-collapses": {
+    "code": "1244",
+    "name": "ground-collapses",
+    "unicode": "f2dc",
+    "fill": false
+  },
+  "1245-ground-fissure": {
+    "code": "1245",
+    "name": "ground-fissure",
+    "unicode": "f2dd",
+    "fill": false
+  },
+  "1246-land-subsidence": {
+    "code": "1246",
+    "name": "land-subsidence",
+    "unicode": "f2de",
+    "fill": false
+  },
+  "1247-volcanic-eruption": {
+    "code": "1247",
+    "name": "volcanic-eruption",
+    "unicode": "f2df",
+    "fill": false
+  },
+  "1248-geological-hazard-weather-risk": {
+    "code": "1248",
+    "name": "geological-hazard-weather-risk",
+    "unicode": "f2e0",
+    "fill": false
+  },
+  "1249-geological-hazard-weather": {
+    "code": "1249",
+    "name": "geological-hazard-weather",
+    "unicode": "f2e1",
+    "fill": false
+  },
+  "1250-geological-hazard2": {
+    "code": "1250",
+    "name": "geological-hazard2",
+    "unicode": "f2e2",
+    "fill": false
+  },
+  "1251-geological-hazard-risk": {
+    "code": "1251",
+    "name": "geological-hazard-risk",
+    "unicode": "f2e3",
+    "fill": false
+  },
+  "1271-air-pollution-incident": {
+    "code": "1271",
+    "name": "air-pollution-incident",
+    "unicode": "f2f6",
+    "fill": false
+  },
+  "1272-heavy-air-pollution-2": {
+    "code": "1272",
+    "name": "heavy-air-pollution-2",
+    "unicode": "f2f7",
+    "fill": false
+  },
+  "1273-air-pollution": {
+    "code": "1273",
+    "name": "air-pollution",
+    "unicode": "f2f8",
+    "fill": false
+  },
+  "1274-heavy-pollution-weather-2": {
+    "code": "1274",
+    "name": "heavy-pollution-weather-2",
+    "unicode": "f2f9",
+    "fill": false
+  },
+  "1601-very-hot-weather": {
+    "code": "1601",
+    "name": "very-hot-weather",
+    "unicode": "f1a1",
+    "fill": false
+  },
+  "1602-strong-monsoon-signal": {
+    "code": "1602",
+    "name": "strong-monsoon-signal",
+    "unicode": "f1a2",
+    "fill": false
+  },
+  "1603-landslip": {
+    "code": "1603",
+    "name": "landslip",
+    "unicode": "f1a3",
+    "fill": false
+  },
+  "1604-tropical-cyclone": {
+    "code": "1604",
+    "name": "tropical-cyclone",
+    "unicode": "f1a4",
+    "fill": false
+  },
+  "1605-fire-danger": {
+    "code": "1605",
+    "name": "fire-danger",
+    "unicode": "f1a5",
+    "fill": false
+  },
+  "1606-flooding-in-the-northern-new-territories": {
+    "code": "1606",
+    "name": "flooding-in-the-northern-new-territories",
+    "unicode": "f1a6",
+    "fill": false
+  },
+  "1607-cold-weather": {
+    "code": "1607",
+    "name": "cold-weather",
+    "unicode": "f1a7",
+    "fill": false
+  },
+  "1608-thunderstorm2": {
+    "code": "1608",
+    "name": "thunderstorm2",
+    "unicode": "f20c",
+    "fill": false
+  },
+  "1609-rainstorm2": {
+    "code": "1609",
+    "name": "rainstorm2",
+    "unicode": "f20d",
+    "fill": false
+  },
+  "1610-frost2": {
+    "code": "1610",
+    "name": "frost2",
+    "unicode": "f20e",
+    "fill": false
+  },
+  "1701-cold-surge-advisory": {
+    "code": "1701",
+    "name": "cold-surge-advisory",
+    "unicode": "f1a8",
+    "fill": false
+  },
+  "1702-strong-wind-advisory": {
+    "code": "1702",
+    "name": "strong-wind-advisory",
+    "unicode": "f1a9",
+    "fill": false
+  },
+  "1703-rainfall-advisory": {
+    "code": "1703",
+    "name": "rainfall-advisory",
+    "unicode": "f1aa",
+    "fill": false
+  },
+  "1704-typhoon2": {
+    "code": "1704",
+    "name": "typhoon2",
+    "unicode": "f30d",
+    "fill": false
+  },
+  "1705-dense-fog2": {
+    "code": "1705",
+    "name": "dense-fog2",
+    "unicode": "f30e",
+    "fill": false
+  },
+  "1706-thunderstorm7": {
+    "code": "1706",
+    "name": "thunderstorm7",
+    "unicode": "f30f",
+    "fill": false
+  },
+  "1707-heat2": {
+    "code": "1707",
+    "name": "heat2",
+    "unicode": "f310",
+    "fill": false
+  },
+  "1708-flood3": {
+    "code": "1708",
+    "name": "flood3",
+    "unicode": "f311",
+    "fill": false
+  },
+  "1709-high-water": {
+    "code": "1709",
+    "name": "high-water",
+    "unicode": "f312",
+    "fill": false
+  },
+  "1710-drought3": {
+    "code": "1710",
+    "name": "drought3",
+    "unicode": "f313",
+    "fill": false
+  },
+  "1801-strong-monsoon-signal2": {
+    "code": "1801",
+    "name": "strong-monsoon-signal2",
+    "unicode": "f20f",
+    "fill": false
+  },
+  "1802-storm-surge2": {
+    "code": "1802",
+    "name": "storm-surge2",
+    "unicode": "f210",
+    "fill": false
+  },
+  "1803-tropical-cyclone2": {
+    "code": "1803",
+    "name": "tropical-cyclone2",
+    "unicode": "f211",
+    "fill": false
+  },
+  "1804-rainstorm3": {
+    "code": "1804",
+    "name": "rainstorm3",
+    "unicode": "f212",
+    "fill": false
+  },
+  "1805-thunderstorm3": {
+    "code": "1805",
+    "name": "thunderstorm3",
+    "unicode": "f213",
+    "fill": false
+  },
+  "2001-wind-warning": {
+    "code": "2001",
+    "name": "wind-warning",
+    "unicode": "f1ab",
+    "fill": false
+  },
+  "2002-snow-ice": {
+    "code": "2002",
+    "name": "snow-ice",
+    "unicode": "f1ac",
+    "fill": false
+  },
+  "2003-fog": {
+    "code": "2003",
+    "name": "fog",
+    "unicode": "f1ad",
+    "fill": false
+  },
+  "2004-coastal-event": {
+    "code": "2004",
+    "name": "coastal-event",
+    "unicode": "f1ae",
+    "fill": false
+  },
+  "2005-forest-fire": {
+    "code": "2005",
+    "name": "forest-fire",
+    "unicode": "f1af",
+    "fill": false
+  },
+  "2006-rain-warning": {
+    "code": "2006",
+    "name": "rain-warning",
+    "unicode": "f1b0",
+    "fill": false
+  },
+  "2007-rain-flood": {
+    "code": "2007",
+    "name": "rain-flood",
+    "unicode": "f1b1",
+    "fill": false
+  },
+  "2029-thunderstorm4": {
+    "code": "2029",
+    "name": "thunderstorm4",
+    "unicode": "f214",
+    "fill": false
+  },
+  "2030-high-temperature2": {
+    "code": "2030",
+    "name": "high-temperature2",
+    "unicode": "f215",
+    "fill": false
+  },
+  "2031-low-temperature2": {
+    "code": "2031",
+    "name": "low-temperature2",
+    "unicode": "f216",
+    "fill": false
+  },
+  "2032-avalanches": {
+    "code": "2032",
+    "name": "avalanches",
+    "unicode": "f217",
+    "fill": false
+  },
+  "2033-flooding": {
+    "code": "2033",
+    "name": "flooding",
+    "unicode": "f218",
+    "fill": false
+  },
+  "2050-rain-warning2": {
+    "code": "2050",
+    "name": "rain-warning2",
+    "unicode": "f219",
+    "fill": false
+  },
+  "2051-wind": {
+    "code": "2051",
+    "name": "wind",
+    "unicode": "f21a",
+    "fill": false
+  },
+  "2052-snow-warning": {
+    "code": "2052",
+    "name": "snow-warning",
+    "unicode": "f1c7",
+    "fill": false
+  },
+  "2053-zonda-wind": {
+    "code": "2053",
+    "name": "zonda-wind",
+    "unicode": "f1c8",
+    "fill": false
+  },
+  "2054-storm-warning": {
+    "code": "2054",
+    "name": "storm-warning",
+    "unicode": "f1c9",
+    "fill": false
+  },
+  "2070-dust-raising-winds2": {
+    "code": "2070",
+    "name": "dust-raising-winds2",
+    "unicode": "f21b",
+    "fill": false
+  },
+  "2071-strong-surface-winds2": {
+    "code": "2071",
+    "name": "strong-surface-winds2",
+    "unicode": "f21c",
+    "fill": false
+  },
+  "2072-hot-day2": {
+    "code": "2072",
+    "name": "hot-day2",
+    "unicode": "f21d",
+    "fill": false
+  },
+  "2073-warm-night2": {
+    "code": "2073",
+    "name": "warm-night2",
+    "unicode": "f21e",
+    "fill": false
+  },
+  "2074-cold-day2": {
+    "code": "2074",
+    "name": "cold-day2",
+    "unicode": "f21f",
+    "fill": false
+  },
+  "2075-thunderstorm-and-lightning2": {
+    "code": "2075",
+    "name": "thunderstorm-and-lightning2",
+    "unicode": "f220",
+    "fill": false
+  },
+  "2076-hailstorm2": {
+    "code": "2076",
+    "name": "hailstorm2",
+    "unicode": "f221",
+    "fill": false
+  },
+  "2077-sea-area-warning2": {
+    "code": "2077",
+    "name": "sea-area-warning2",
+    "unicode": "f222",
+    "fill": false
+  },
+  "2078-fishermen-warning2": {
+    "code": "2078",
+    "name": "fishermen-warning2",
+    "unicode": "f223",
+    "fill": false
+  },
+  "2079-heavy-snow-warning2": {
+    "code": "2079",
+    "name": "heavy-snow-warning2",
+    "unicode": "f224",
+    "fill": false
+  },
+  "2080-dust-storm": {
+    "code": "2080",
+    "name": "dust-storm",
+    "unicode": "f225",
+    "fill": false
+  },
+  "2081-heat-wave2": {
+    "code": "2081",
+    "name": "heat-wave2",
+    "unicode": "f226",
+    "fill": false
+  },
+  "2082-cold-wave2": {
+    "code": "2082",
+    "name": "cold-wave2",
+    "unicode": "f227",
+    "fill": false
+  },
+  "2083-fog2": {
+    "code": "2083",
+    "name": "fog2",
+    "unicode": "f228",
+    "fill": false
+  },
+  "2084-heavy-rain-warning": {
+    "code": "2084",
+    "name": "heavy-rain-warning",
+    "unicode": "f229",
+    "fill": false
+  },
+  "2085-ground-frost2": {
+    "code": "2085",
+    "name": "ground-frost2",
+    "unicode": "f22a",
+    "fill": false
+  },
+  "2100-fog3": {
+    "code": "2100",
+    "name": "fog3",
+    "unicode": "f22b",
+    "fill": false
+  },
+  "2101-thunder-rain2": {
+    "code": "2101",
+    "name": "thunder-rain2",
+    "unicode": "f22c",
+    "fill": false
+  },
+  "2102-thunder-storm": {
+    "code": "2102",
+    "name": "thunder-storm",
+    "unicode": "f22d",
+    "fill": false
+  },
+  "2103-light-rain-warning": {
+    "code": "2103",
+    "name": "light-rain-warning",
+    "unicode": "f22e",
+    "fill": false
+  },
+  "2104-heavy-rain-warning2": {
+    "code": "2104",
+    "name": "heavy-rain-warning2",
+    "unicode": "f22f",
+    "fill": false
+  },
+  "2105-fresh-wind": {
+    "code": "2105",
+    "name": "fresh-wind",
+    "unicode": "f230",
+    "fill": false
+  },
+  "2106-thunderstorm-and-dust": {
+    "code": "2106",
+    "name": "thunderstorm-and-dust",
+    "unicode": "f231",
+    "fill": false
+  },
+  "2107-dust-warning": {
+    "code": "2107",
+    "name": "dust-warning",
+    "unicode": "f232",
+    "fill": false
+  },
+  "2108-high-wave": {
+    "code": "2108",
+    "name": "high-wave",
+    "unicode": "f233",
+    "fill": false
+  },
+  "2109-frost3": {
+    "code": "2109",
+    "name": "frost3",
+    "unicode": "f234",
+    "fill": false
+  },
+  "2111-drop-in-visibility": {
+    "code": "2111",
+    "name": "drop-in-visibility",
+    "unicode": "f235",
+    "fill": false
+  },
+  "2120-low-humidity2": {
+    "code": "2120",
+    "name": "low-humidity2",
+    "unicode": "f236",
+    "fill": false
+  },
+  "2121-accumulated-rain2": {
+    "code": "2121",
+    "name": "accumulated-rain2",
+    "unicode": "f237",
+    "fill": false
+  },
+  "2122-cold-wave3": {
+    "code": "2122",
+    "name": "cold-wave3",
+    "unicode": "f238",
+    "fill": false
+  },
+  "2123-tornado2": {
+    "code": "2123",
+    "name": "tornado2",
+    "unicode": "f239",
+    "fill": false
+  },
+  "2124-thunderstorm5": {
+    "code": "2124",
+    "name": "thunderstorm5",
+    "unicode": "f23a",
+    "fill": false
+  },
+  "2125-hail2": {
+    "code": "2125",
+    "name": "hail2",
+    "unicode": "f23b",
+    "fill": false
+  },
+  "2126-heavy-rainfall2": {
+    "code": "2126",
+    "name": "heavy-rainfall2",
+    "unicode": "f23c",
+    "fill": false
+  },
+  "2127-gale2": {
+    "code": "2127",
+    "name": "gale2",
+    "unicode": "f23d",
+    "fill": false
+  },
+  "2128-heat-wave3": {
+    "code": "2128",
+    "name": "heat-wave3",
+    "unicode": "f23e",
+    "fill": false
+  },
+  "2129-cold-warning2": {
+    "code": "2129",
+    "name": "cold-warning2",
+    "unicode": "f23f",
+    "fill": false
+  },
+  "2130-frost4": {
+    "code": "2130",
+    "name": "frost4",
+    "unicode": "f240",
+    "fill": false
+  },
+  "2131-drought2": {
+    "code": "2131",
+    "name": "drought2",
+    "unicode": "f241",
+    "fill": false
+  },
+  "2132-forest-fire2": {
+    "code": "2132",
+    "name": "forest-fire2",
+    "unicode": "f242",
+    "fill": false
+  },
+  "2133-heavy-snow-warning2": {
+    "code": "2133",
+    "name": "heavy-snow-warning2",
+    "unicode": "f243",
+    "fill": false
+  },
+  "2134-severely-falling-temperature2": {
+    "code": "2134",
+    "name": "severely-falling-temperature2",
+    "unicode": "f244",
+    "fill": false
+  },
+  "2135-rainstorm4": {
+    "code": "2135",
+    "name": "rainstorm4",
+    "unicode": "f245",
+    "fill": false
+  },
+  "2150-wind2": {
+    "code": "2150",
+    "name": "wind2",
+    "unicode": "f246",
+    "fill": false
+  },
+  "2151-snow-ice2": {
+    "code": "2151",
+    "name": "snow-ice2",
+    "unicode": "f247",
+    "fill": false
+  },
+  "2152-freeze2": {
+    "code": "2152",
+    "name": "freeze2",
+    "unicode": "f248",
+    "fill": false
+  },
+  "2153-thunderstorms": {
+    "code": "2153",
+    "name": "thunderstorms",
+    "unicode": "f249",
+    "fill": false
+  },
+  "2154-fog4": {
+    "code": "2154",
+    "name": "fog4",
+    "unicode": "f24a",
+    "fill": false
+  },
+  "2155-high-temperature3": {
+    "code": "2155",
+    "name": "high-temperature3",
+    "unicode": "f24b",
+    "fill": false
+  },
+  "2156-low-temperature3": {
+    "code": "2156",
+    "name": "low-temperature3",
+    "unicode": "f24c",
+    "fill": false
+  },
+  "2157-coastal-event2": {
+    "code": "2157",
+    "name": "coastal-event2",
+    "unicode": "f24d",
+    "fill": false
+  },
+  "2158-forest-fire3": {
+    "code": "2158",
+    "name": "forest-fire3",
+    "unicode": "f24e",
+    "fill": false
+  },
+  "2159-avalanches2": {
+    "code": "2159",
+    "name": "avalanches2",
+    "unicode": "f24f",
+    "fill": false
+  },
+  "2160-rain-warning2": {
+    "code": "2160",
+    "name": "rain-warning2",
+    "unicode": "f250",
+    "fill": false
+  },
+  "2161-flood2": {
+    "code": "2161",
+    "name": "flood2",
+    "unicode": "f251",
+    "fill": false
+  },
+  "2162-rain-flood2": {
+    "code": "2162",
+    "name": "rain-flood2",
+    "unicode": "f252",
+    "fill": false
+  },
+  "2163-mudflow2": {
+    "code": "2163",
+    "name": "mudflow2",
+    "unicode": "f253",
+    "fill": false
+  },
+  "2164-duststorm-warning": {
+    "code": "2164",
+    "name": "duststorm-warning",
+    "unicode": "f254",
+    "fill": false
+  },
+  "2165-freezing-rain-and-icing": {
+    "code": "2165",
+    "name": "freezing-rain-and-icing",
+    "unicode": "f255",
+    "fill": false
+  },
+  "2166-other-dangers": {
+    "code": "2166",
+    "name": "other-dangers",
+    "unicode": "f256",
+    "fill": false
+  },
+  "2167-low-water": {
+    "code": "2167",
+    "name": "low-water",
+    "unicode": "f314",
+    "fill": false
+  },
+  "2190-severe-thunderstorms": {
+    "code": "2190",
+    "name": "severe-thunderstorms",
+    "unicode": "f257",
+    "fill": false
+  },
+  "2191-damaging-winds2": {
+    "code": "2191",
+    "name": "damaging-winds2",
+    "unicode": "f258",
+    "fill": false
+  },
+  "2192-veld-fire-conditions2": {
+    "code": "2192",
+    "name": "veld-fire-conditions2",
+    "unicode": "f259",
+    "fill": false
+  },
+  "2193-weather-advisory2": {
+    "code": "2193",
+    "name": "weather-advisory2",
+    "unicode": "f25a",
+    "fill": false
+  },
+  "2200-thunderstorm6": {
+    "code": "2200",
+    "name": "thunderstorm6",
+    "unicode": "f2e4",
+    "fill": false
+  },
+  "2201-squall": {
+    "code": "2201",
+    "name": "squall",
+    "unicode": "f2e5",
+    "fill": false
+  },
+  "2202-air-quality": {
+    "code": "2202",
+    "name": "air-quality",
+    "unicode": "f2e6",
+    "fill": false
+  },
+  "2203-rainfall": {
+    "code": "2203",
+    "name": "rainfall",
+    "unicode": "f2e7",
+    "fill": false
+  },
+  "2204-fog5": {
+    "code": "2204",
+    "name": "fog5",
+    "unicode": "f2e8",
+    "fill": false
+  },
+  "2205-heat": {
+    "code": "2205",
+    "name": "heat",
+    "unicode": "f2e9",
+    "fill": false
+  },
+  "2207-wildfire2": {
+    "code": "2207",
+    "name": "wildfire2",
+    "unicode": "f2ea",
+    "fill": false
+  },
+  "2208-wind3": {
+    "code": "2208",
+    "name": "wind3",
+    "unicode": "f2eb",
+    "fill": false
+  },
+  "2209-freezing-rain-warning": {
+    "code": "2209",
+    "name": "freezing-rain-warning",
+    "unicode": "f2ec",
+    "fill": false
+  },
+  "2210-tornado3": {
+    "code": "2210",
+    "name": "tornado3",
+    "unicode": "f2ed",
+    "fill": false
+  },
+  "2211-blizzard": {
+    "code": "2211",
+    "name": "blizzard",
+    "unicode": "f2ee",
+    "fill": false
+  },
+  "2212-weather-warning": {
+    "code": "2212",
+    "name": "weather-warning",
+    "unicode": "f2ef",
+    "fill": false
+  },
+  "2213-winter-storm": {
+    "code": "2213",
+    "name": "winter-storm",
+    "unicode": "f2f0",
+    "fill": false
+  },
+  "2214-freezing-drizzle": {
+    "code": "2214",
+    "name": "freezing-drizzle",
+    "unicode": "f2f1",
+    "fill": false
+  },
+  "2215-snowfall": {
+    "code": "2215",
+    "name": "snowfall",
+    "unicode": "f2f2",
+    "fill": false
+  },
+  "2216-blowing-snow": {
+    "code": "2216",
+    "name": "blowing-snow",
+    "unicode": "f2f3",
+    "fill": false
+  },
+  "2217-extreme-cold": {
+    "code": "2217",
+    "name": "extreme-cold",
+    "unicode": "f2f4",
+    "fill": false
+  },
+  "2218-frost5": {
+    "code": "2218",
+    "name": "frost5",
+    "unicode": "f2f5",
+    "fill": false
+  },
+  "2300-hazardous-seas-warning": {
+    "code": "2300",
+    "name": "hazardous-seas-warning",
+    "unicode": "f25b",
+    "fill": false
+  },
+  "2301-heavy-freezing-spray-warning": {
+    "code": "2301",
+    "name": "heavy-freezing-spray-warning",
+    "unicode": "f25c",
+    "fill": false
+  },
+  "2302-red-flag-warning": {
+    "code": "2302",
+    "name": "red-flag-warning",
+    "unicode": "f25d",
+    "fill": false
+  },
+  "2303-freeze-warning": {
+    "code": "2303",
+    "name": "freeze-warning",
+    "unicode": "f25e",
+    "fill": false
+  },
+  "2304-hard-freeze-warning": {
+    "code": "2304",
+    "name": "hard-freeze-warning",
+    "unicode": "f25f",
+    "fill": false
+  },
+  "2305-extreme-cold-warning": {
+    "code": "2305",
+    "name": "extreme-cold-warning",
+    "unicode": "f260",
+    "fill": false
+  },
+  "2306-wind-chill-warning": {
+    "code": "2306",
+    "name": "wind-chill-warning",
+    "unicode": "f261",
+    "fill": false
+  },
+  "2307-gale-warning": {
+    "code": "2307",
+    "name": "gale-warning",
+    "unicode": "f262",
+    "fill": false
+  },
+  "2308-excessive-heat-warning": {
+    "code": "2308",
+    "name": "excessive-heat-warning",
+    "unicode": "f263",
+    "fill": false
+  },
+  "2309-lake-effect-snow-warning": {
+    "code": "2309",
+    "name": "lake-effect-snow-warning",
+    "unicode": "f264",
+    "fill": false
+  },
+  "2311-blowing-dust-warning": {
+    "code": "2311",
+    "name": "blowing-dust-warning",
+    "unicode": "f265",
+    "fill": false
+  },
+  "2312-dust-storm-warning": {
+    "code": "2312",
+    "name": "dust-storm-warning",
+    "unicode": "f266",
+    "fill": false
+  },
+  "2313-storm-warning2": {
+    "code": "2313",
+    "name": "storm-warning2",
+    "unicode": "f267",
+    "fill": false
+  },
+  "2314-tropical-storm-warning": {
+    "code": "2314",
+    "name": "tropical-storm-warning",
+    "unicode": "f268",
+    "fill": false
+  },
+  "2315-high-wind-warning": {
+    "code": "2315",
+    "name": "high-wind-warning",
+    "unicode": "f269",
+    "fill": false
+  },
+  "2316-high-surf-warning": {
+    "code": "2316",
+    "name": "high-surf-warning",
+    "unicode": "f26a",
+    "fill": false
+  },
+  "2317-flood-warning": {
+    "code": "2317",
+    "name": "flood-warning",
+    "unicode": "f26b",
+    "fill": false
+  },
+  "2318-lakeshore-flood-warning": {
+    "code": "2318",
+    "name": "lakeshore-flood-warning",
+    "unicode": "f26c",
+    "fill": false
+  },
+  "2319-coastal-flood-warning": {
+    "code": "2319",
+    "name": "coastal-flood-warning",
+    "unicode": "f26d",
+    "fill": false
+  },
+  "2320-ashfall-warning": {
+    "code": "2320",
+    "name": "ashfall-warning",
+    "unicode": "f26e",
+    "fill": false
+  },
+  "2321-volcano-warning": {
+    "code": "2321",
+    "name": "volcano-warning",
+    "unicode": "f26f",
+    "fill": false
+  },
+  "2322-earthquake-warning": {
+    "code": "2322",
+    "name": "earthquake-warning",
+    "unicode": "f270",
+    "fill": false
+  },
+  "2323-avalanche-warning": {
+    "code": "2323",
+    "name": "avalanche-warning",
+    "unicode": "f271",
+    "fill": false
+  },
+  "2324-winter-storm-warning": {
+    "code": "2324",
+    "name": "winter-storm-warning",
+    "unicode": "f272",
+    "fill": false
+  },
+  "2325-ice-storm-warning": {
+    "code": "2325",
+    "name": "ice-storm-warning",
+    "unicode": "f273",
+    "fill": false
+  },
+  "2326-snow-squall-warning": {
+    "code": "2326",
+    "name": "snow-squall-warning",
+    "unicode": "f274",
+    "fill": false
+  },
+  "2327-blizzard-warning": {
+    "code": "2327",
+    "name": "blizzard-warning",
+    "unicode": "f275",
+    "fill": false
+  },
+  "2328-special-marine-warning": {
+    "code": "2328",
+    "name": "special-marine-warning",
+    "unicode": "f276",
+    "fill": false
+  },
+  "2330-typhoon-warning": {
+    "code": "2330",
+    "name": "typhoon-warning",
+    "unicode": "f277",
+    "fill": false
+  },
+  "2331-hurricane-warning": {
+    "code": "2331",
+    "name": "hurricane-warning",
+    "unicode": "f278",
+    "fill": false
+  },
+  "2332-hurricane-force-wind-warning": {
+    "code": "2332",
+    "name": "hurricane-force-wind-warning",
+    "unicode": "f279",
+    "fill": false
+  },
+  "2333-storm-surge-warning": {
+    "code": "2333",
+    "name": "storm-surge-warning",
+    "unicode": "f27a",
+    "fill": false
+  },
+  "2341-flash-flood-warning": {
+    "code": "2341",
+    "name": "flash-flood-warning",
+    "unicode": "f27b",
+    "fill": false
+  },
+  "2343-severe-thunderstorm-warning": {
+    "code": "2343",
+    "name": "severe-thunderstorm-warning",
+    "unicode": "f27c",
+    "fill": false
+  },
+  "2345-extreme-wind-warning": {
+    "code": "2345",
+    "name": "extreme-wind-warning",
+    "unicode": "f27d",
+    "fill": false
+  },
+  "2346-tornado-warning": {
+    "code": "2346",
+    "name": "tornado-warning",
+    "unicode": "f27e",
+    "fill": false
+  },
+  "2348-tsunami-warning": {
+    "code": "2348",
+    "name": "tsunami-warning",
+    "unicode": "f27f",
+    "fill": false
+  },
+  "2349-fire-weather-watch": {
+    "code": "2349",
+    "name": "fire-weather-watch",
+    "unicode": "f280",
+    "fill": false
+  },
+  "2350-freeze-watch": {
+    "code": "2350",
+    "name": "freeze-watch",
+    "unicode": "f281",
+    "fill": false
+  },
+  "2351-hard-freeze-watch": {
+    "code": "2351",
+    "name": "hard-freeze-watch",
+    "unicode": "f282",
+    "fill": false
+  },
+  "2352-wind-chill-watch": {
+    "code": "2352",
+    "name": "wind-chill-watch",
+    "unicode": "f283",
+    "fill": false
+  },
+  "2353-extreme-cold-watch": {
+    "code": "2353",
+    "name": "extreme-cold-watch",
+    "unicode": "f284",
+    "fill": false
+  },
+  "2354-excessive-heat-watch": {
+    "code": "2354",
+    "name": "excessive-heat-watch",
+    "unicode": "f285",
+    "fill": false
+  },
+  "2355-high-wind-watch": {
+    "code": "2355",
+    "name": "high-wind-watch",
+    "unicode": "f286",
+    "fill": false
+  },
+  "2356-flood-watch": {
+    "code": "2356",
+    "name": "flood-watch",
+    "unicode": "f287",
+    "fill": false
+  },
+  "2357-lakeshore-flood-watch": {
+    "code": "2357",
+    "name": "lakeshore-flood-watch",
+    "unicode": "f288",
+    "fill": false
+  },
+  "2358-coastal-flood-watch": {
+    "code": "2358",
+    "name": "coastal-flood-watch",
+    "unicode": "f289",
+    "fill": false
+  },
+  "2359-heavy-freezing-spray-watch": {
+    "code": "2359",
+    "name": "heavy-freezing-spray-watch",
+    "unicode": "f28a",
+    "fill": false
+  },
+  "2360-hazardous-seas-watch": {
+    "code": "2360",
+    "name": "hazardous-seas-watch",
+    "unicode": "f28b",
+    "fill": false
+  },
+  "2361-winter-storm-watch": {
+    "code": "2361",
+    "name": "winter-storm-watch",
+    "unicode": "f28c",
+    "fill": false
+  },
+  "2362-gale-watch": {
+    "code": "2362",
+    "name": "gale-watch",
+    "unicode": "f28d",
+    "fill": false
+  },
+  "2363-avalanche-watch": {
+    "code": "2363",
+    "name": "avalanche-watch",
+    "unicode": "f28e",
+    "fill": false
+  },
+  "2364-storm-watch": {
+    "code": "2364",
+    "name": "storm-watch",
+    "unicode": "f28f",
+    "fill": false
+  },
+  "2365-tropical-storm-watch": {
+    "code": "2365",
+    "name": "tropical-storm-watch",
+    "unicode": "f290",
+    "fill": false
+  },
+  "2366-typhoon-watch": {
+    "code": "2366",
+    "name": "typhoon-watch",
+    "unicode": "f291",
+    "fill": false
+  },
+  "2367-hurricane-force-wind-watch": {
+    "code": "2367",
+    "name": "hurricane-force-wind-watch",
+    "unicode": "f292",
+    "fill": false
+  },
+  "2368-hurricane-watch": {
+    "code": "2368",
+    "name": "hurricane-watch",
+    "unicode": "f293",
+    "fill": false
+  },
+  "2369-storm-surge-watch": {
+    "code": "2369",
+    "name": "storm-surge-watch",
+    "unicode": "f294",
+    "fill": false
+  },
+  "2370-flash-flood-watch": {
+    "code": "2370",
+    "name": "flash-flood-watch",
+    "unicode": "f295",
+    "fill": false
+  },
+  "2371-severe-thunderstorm-watch": {
+    "code": "2371",
+    "name": "severe-thunderstorm-watch",
+    "unicode": "f296",
+    "fill": false
+  },
+  "2372-tornado-watch": {
+    "code": "2372",
+    "name": "tornado-watch",
+    "unicode": "f297",
+    "fill": false
+  },
+  "2373-tsunami-watch": {
+    "code": "2373",
+    "name": "tsunami-watch",
+    "unicode": "f298",
+    "fill": false
+  },
+  "2374-air-stagnation-advisory": {
+    "code": "2374",
+    "name": "air-stagnation-advisory",
+    "unicode": "f299",
+    "fill": false
+  },
+  "2375-low-water-advisory": {
+    "code": "2375",
+    "name": "low-water-advisory",
+    "unicode": "f29a",
+    "fill": false
+  },
+  "2376-freezing-spray-advisory": {
+    "code": "2376",
+    "name": "freezing-spray-advisory",
+    "unicode": "f29b",
+    "fill": false
+  },
+  "2377-freezing-fog-advisory": {
+    "code": "2377",
+    "name": "freezing-fog-advisory",
+    "unicode": "f29c",
+    "fill": false
+  },
+  "2378-ashfall-advisory": {
+    "code": "2378",
+    "name": "ashfall-advisory",
+    "unicode": "f29d",
+    "fill": false
+  },
+  "2379-frost-advisory": {
+    "code": "2379",
+    "name": "frost-advisory",
+    "unicode": "f29e",
+    "fill": false
+  },
+  "2380-wind-advisory": {
+    "code": "2380",
+    "name": "wind-advisory",
+    "unicode": "f29f",
+    "fill": false
+  },
+  "2381-lake-wind-advisory": {
+    "code": "2381",
+    "name": "lake-wind-advisory",
+    "unicode": "f2a0",
+    "fill": false
+  },
+  "2382-blowing-dust-advisory": {
+    "code": "2382",
+    "name": "blowing-dust-advisory",
+    "unicode": "f2a1",
+    "fill": false
+  },
+  "2383-dust-advisory": {
+    "code": "2383",
+    "name": "dust-advisory",
+    "unicode": "f2a2",
+    "fill": false
+  },
+  "2384-brisk-wind-advisory": {
+    "code": "2384",
+    "name": "brisk-wind-advisory",
+    "unicode": "f2a3",
+    "fill": false
+  },
+  "2385-small-craft-advisory": {
+    "code": "2385",
+    "name": "small-craft-advisory",
+    "unicode": "f2a4",
+    "fill": false
+  },
+  "2386-small-craft-advisory-for-winds": {
+    "code": "2386",
+    "name": "small-craft-advisory-for-winds",
+    "unicode": "f2a5",
+    "fill": false
+  },
+  "2387-small-craft-advisory-for-rough-bar": {
+    "code": "2387",
+    "name": "small-craft-advisory-for-rough-bar",
+    "unicode": "f2a6",
+    "fill": false
+  },
+  "2388-small-craft-advisory-for-hazardous-seas": {
+    "code": "2388",
+    "name": "small-craft-advisory-for-hazardous-seas",
+    "unicode": "f2a7",
+    "fill": false
+  },
+  "2389-dense-smoke-advisory": {
+    "code": "2389",
+    "name": "dense-smoke-advisory",
+    "unicode": "f2a8",
+    "fill": false
+  },
+  "2390-dense-fog-advisory": {
+    "code": "2390",
+    "name": "dense-fog-advisory",
+    "unicode": "f2a9",
+    "fill": false
+  },
+  "2391-high-surf-advisory": {
+    "code": "2391",
+    "name": "high-surf-advisory",
+    "unicode": "f2aa",
+    "fill": false
+  },
+  "2392-coastal-flood-advisory": {
+    "code": "2392",
+    "name": "coastal-flood-advisory",
+    "unicode": "f2ab",
+    "fill": false
+  },
+  "2393-lakeshore-flood-advisory": {
+    "code": "2393",
+    "name": "lakeshore-flood-advisory",
+    "unicode": "f2ac",
+    "fill": false
+  },
+  "2394-hydrologic-advisory": {
+    "code": "2394",
+    "name": "hydrologic-advisory",
+    "unicode": "f2ad",
+    "fill": false
+  },
+  "2395-flood-advisory": {
+    "code": "2395",
+    "name": "flood-advisory",
+    "unicode": "f2ae",
+    "fill": false
+  },
+  "2396-heat-advisory": {
+    "code": "2396",
+    "name": "heat-advisory",
+    "unicode": "f2af",
+    "fill": false
+  },
+  "2397-wind-chill-advisory": {
+    "code": "2397",
+    "name": "wind-chill-advisory",
+    "unicode": "f2b0",
+    "fill": false
+  },
+  "2398-winter-weather-advisory": {
+    "code": "2398",
+    "name": "winter-weather-advisory",
+    "unicode": "f2b1",
+    "fill": false
+  },
+  "2399-avalanche-advisory": {
+    "code": "2399",
+    "name": "avalanche-advisory",
+    "unicode": "f2b2",
+    "fill": false
+  },
+  "2400-tsunami-advisory": {
+    "code": "2400",
+    "name": "tsunami-advisory",
+    "unicode": "f2b3",
+    "fill": false
+  },
+  "2409-flood-statement": {
+    "code": "2409",
+    "name": "flood-statement",
+    "unicode": "f2b4",
+    "fill": false
+  },
+  "2411-hydrologic-outlook": {
+    "code": "2411",
+    "name": "hydrologic-outlook",
+    "unicode": "f2b5",
+    "fill": false
+  },
+  "2412-hazardous-weather-outlook": {
+    "code": "2412",
+    "name": "hazardous-weather-outlook",
+    "unicode": "f2b6",
+    "fill": false
+  },
+  "2413-air-quality-alert": {
+    "code": "2413",
+    "name": "air-quality-alert",
+    "unicode": "f2b7",
+    "fill": false
+  },
+  "2414-extreme-fire-danger": {
+    "code": "2414",
+    "name": "extreme-fire-danger",
+    "unicode": "f2b8",
+    "fill": false
+  },
+  "2415-marine-weather-statement": {
+    "code": "2415",
+    "name": "marine-weather-statement",
+    "unicode": "f2b9",
+    "fill": false
+  },
+  "2416-special-weather-statement": {
+    "code": "2416",
+    "name": "special-weather-statement",
+    "unicode": "f2ba",
+    "fill": false
+  },
+  "2417-lakeshore-flood-statement": {
+    "code": "2417",
+    "name": "lakeshore-flood-statement",
+    "unicode": "f2bb",
+    "fill": false
+  },
+  "2418-coastal-flood-statement": {
+    "code": "2418",
+    "name": "coastal-flood-statement",
+    "unicode": "f2bc",
+    "fill": false
+  },
+  "2419-beach-hazards-statement": {
+    "code": "2419",
+    "name": "beach-hazards-statement",
+    "unicode": "f2bd",
+    "fill": false
+  },
+  "2420-rip-current-statement": {
+    "code": "2420",
+    "name": "rip-current-statement",
+    "unicode": "f2be",
+    "fill": false
+  },
+  "2421-tropical-depression-local-statement": {
+    "code": "2421",
+    "name": "tropical-depression-local-statement",
+    "unicode": "f2bf",
+    "fill": false
+  },
+  "2422-tropical-storm-local-statement": {
+    "code": "2422",
+    "name": "tropical-storm-local-statement",
+    "unicode": "f2c0",
+    "fill": false
+  },
+  "2423-typhoon-local-statement": {
+    "code": "2423",
+    "name": "typhoon-local-statement",
+    "unicode": "f2c1",
+    "fill": false
+  },
+  "2424-hurricane-local-statement": {
+    "code": "2424",
+    "name": "hurricane-local-statement",
+    "unicode": "f2c2",
+    "fill": false
+  },
+  "2425-severe-weather-statement": {
+    "code": "2425",
+    "name": "severe-weather-statement",
+    "unicode": "f2c3",
+    "fill": false
+  },
+  "2426-flash-flood-statement": {
+    "code": "2426",
+    "name": "flash-flood-statement",
+    "unicode": "f2c4",
+    "fill": false
+  },
+  "2501-heavy-rain2": {
+    "code": "2501",
+    "name": "heavy-rain2",
+    "unicode": "f2fa",
+    "fill": false
+  },
+  "2502-very-heavy-rain": {
+    "code": "2502",
+    "name": "very-heavy-rain",
+    "unicode": "f2fb",
+    "fill": false
+  },
+  "2521-moderate-rain2": {
+    "code": "2521",
+    "name": "moderate-rain2",
+    "unicode": "f2fc",
+    "fill": false
+  },
+  "2522-light-rain2": {
+    "code": "2522",
+    "name": "light-rain2",
+    "unicode": "f2fd",
+    "fill": false
+  },
+  "2523-heavy-rain3": {
+    "code": "2523",
+    "name": "heavy-rain3",
+    "unicode": "f2fe",
+    "fill": false
+  },
+  "2524-light-mist": {
+    "code": "2524",
+    "name": "light-mist",
+    "unicode": "f2ff",
+    "fill": false
+  },
+  "2525-raised-dust": {
+    "code": "2525",
+    "name": "raised-dust",
+    "unicode": "f300",
+    "fill": false
+  },
+  "2526-high-winds": {
+    "code": "2526",
+    "name": "high-winds",
+    "unicode": "f301",
+    "fill": false
+  },
+  "2527-dusty-plankton": {
+    "code": "2527",
+    "name": "dusty-plankton",
+    "unicode": "f302",
+    "fill": false
+  },
+  "2528-active-winds": {
+    "code": "2528",
+    "name": "active-winds",
+    "unicode": "f303",
+    "fill": false
+  },
+  "2529-heat-wave2": {
+    "code": "2529",
+    "name": "heat-wave2",
+    "unicode": "f304",
+    "fill": false
+  },
+  "2530-cold-wave2": {
+    "code": "2530",
+    "name": "cold-wave2",
+    "unicode": "f305",
+    "fill": false
+  },
+  "2531-fog6": {
+    "code": "2531",
+    "name": "fog6",
+    "unicode": "f306",
+    "fill": false
+  },
+  "2532-light-fog": {
+    "code": "2532",
+    "name": "light-fog",
+    "unicode": "f307",
+    "fill": false
+  },
+  "2550-heavy-rain4": {
+    "code": "2550",
+    "name": "heavy-rain4",
+    "unicode": "f308",
+    "fill": false
+  },
+  "2551-strong-wind": {
+    "code": "2551",
+    "name": "strong-wind",
+    "unicode": "f309",
+    "fill": false
+  },
+  "2552-heavy-snow2": {
+    "code": "2552",
+    "name": "heavy-snow2",
+    "unicode": "f30a",
+    "fill": false
+  },
+  "2553-thunderstorms": {
+    "code": "2553",
+    "name": "thunderstorms",
+    "unicode": "f30b",
+    "fill": false
+  },
+  "2554-road-snowfall": {
+    "code": "2554",
+    "name": "road-snowfall",
+    "unicode": "f30c",
+    "fill": false
+  },
+  "9999-warning-default": {
+    "code": "9999",
+    "name": "warning-default",
+    "unicode": "f1cb",
+    "fill": false
+  },
+  "100-sunny-fill": {
+    "code": "100",
+    "name": "sunny",
+    "unicode": "f1cc",
+    "fill": true
+  },
+  "101-cloudy-fill": {
+    "code": "101",
+    "name": "cloudy",
+    "unicode": "f1cd",
+    "fill": true
+  },
+  "102-few-clouds-fill": {
+    "code": "102",
+    "name": "few-clouds",
+    "unicode": "f1ce",
+    "fill": true
+  },
+  "103-partly-cloudy-fill": {
+    "code": "103",
+    "name": "partly-cloudy",
+    "unicode": "f1cf",
+    "fill": true
+  },
+  "104-overcast-fill": {
+    "code": "104",
+    "name": "overcast",
+    "unicode": "f1d0",
+    "fill": true
+  },
+  "150-clear-night-fill": {
+    "code": "150",
+    "name": "clear-night",
+    "unicode": "f1d1",
+    "fill": true
+  },
+  "151-cloudy-night-fill": {
+    "code": "151",
+    "name": "cloudy-night",
+    "unicode": "f1d2",
+    "fill": true
+  },
+  "152-few-clouds-night-fill": {
+    "code": "152",
+    "name": "few-clouds-night",
+    "unicode": "f1d3",
+    "fill": true
+  },
+  "153-partly-cloudy-night-fill": {
+    "code": "153",
+    "name": "partly-cloudy-night",
+    "unicode": "f1d4",
+    "fill": true
+  },
+  "300-shower-rain-fill": {
+    "code": "300",
+    "name": "shower-rain",
+    "unicode": "f1d5",
+    "fill": true
+  },
+  "301-heavy-shower-rain-fill": {
+    "code": "301",
+    "name": "heavy-shower-rain",
+    "unicode": "f1d6",
+    "fill": true
+  },
+  "302-thundershower-fill": {
+    "code": "302",
+    "name": "thundershower",
+    "unicode": "f1d7",
+    "fill": true
+  },
+  "303-heavy-thunderstorm-fill": {
+    "code": "303",
+    "name": "heavy-thunderstorm",
+    "unicode": "f1d8",
+    "fill": true
+  },
+  "304-thundershower-with-hail-fill": {
+    "code": "304",
+    "name": "thundershower-with-hail",
+    "unicode": "f1d9",
+    "fill": true
+  },
+  "305-light-rain-fill": {
+    "code": "305",
+    "name": "light-rain",
+    "unicode": "f1da",
+    "fill": true
+  },
+  "306-moderate-rain-fill": {
+    "code": "306",
+    "name": "moderate-rain",
+    "unicode": "f1db",
+    "fill": true
+  },
+  "307-heavy-rain-fill": {
+    "code": "307",
+    "name": "heavy-rain",
+    "unicode": "f1dc",
+    "fill": true
+  },
+  "308-extreme-rain-fill": {
+    "code": "308",
+    "name": "extreme-rain",
+    "unicode": "f1dd",
+    "fill": true
+  },
+  "309-drizzle-rain-fill": {
+    "code": "309",
+    "name": "drizzle-rain",
+    "unicode": "f1de",
+    "fill": true
+  },
+  "310-storm-fill": {
+    "code": "310",
+    "name": "storm",
+    "unicode": "f1df",
+    "fill": true
+  },
+  "311-heavy-storm-fill": {
+    "code": "311",
+    "name": "heavy-storm",
+    "unicode": "f1e0",
+    "fill": true
+  },
+  "312-severe-storm-fill": {
+    "code": "312",
+    "name": "severe-storm",
+    "unicode": "f1e1",
+    "fill": true
+  },
+  "313-freezing-rain-fill": {
+    "code": "313",
+    "name": "freezing-rain",
+    "unicode": "f1e2",
+    "fill": true
+  },
+  "314-light-to-moderate-rain-fill": {
+    "code": "314",
+    "name": "light-to-moderate-rain",
+    "unicode": "f1e3",
+    "fill": true
+  },
+  "315-moderate-to-heavy-rain-fill": {
+    "code": "315",
+    "name": "moderate-to-heavy-rain",
+    "unicode": "f1e4",
+    "fill": true
+  },
+  "316-heavy-rain-to-storm-fill": {
+    "code": "316",
+    "name": "heavy-rain-to-storm",
+    "unicode": "f1e5",
+    "fill": true
+  },
+  "317-storm-to-heavy-storm-fill": {
+    "code": "317",
+    "name": "storm-to-heavy-storm",
+    "unicode": "f1e6",
+    "fill": true
+  },
+  "318-heavy-to-severe-storm-fill": {
+    "code": "318",
+    "name": "heavy-to-severe-storm",
+    "unicode": "f1e7",
+    "fill": true
+  },
+  "350-shower-rain-night-fill": {
+    "code": "350",
+    "name": "shower-rain-night",
+    "unicode": "f1e8",
+    "fill": true
+  },
+  "351-heavy-shower-rain-night-fill": {
+    "code": "351",
+    "name": "heavy-shower-rain-night",
+    "unicode": "f1e9",
+    "fill": true
+  },
+  "399-rain-fill": {
+    "code": "399",
+    "name": "rain",
+    "unicode": "f1ea",
+    "fill": true
+  },
+  "400-light-snow-fill": {
+    "code": "400",
+    "name": "light-snow",
+    "unicode": "f1eb",
+    "fill": true
+  },
+  "401-moderate-snow-fill": {
+    "code": "401",
+    "name": "moderate-snow",
+    "unicode": "f1ec",
+    "fill": true
+  },
+  "402-heavy-snow-fill": {
+    "code": "402",
+    "name": "heavy-snow",
+    "unicode": "f1ed",
+    "fill": true
+  },
+  "403-snowstorm-fill": {
+    "code": "403",
+    "name": "snowstorm",
+    "unicode": "f1ee",
+    "fill": true
+  },
+  "404-sleet-fill": {
+    "code": "404",
+    "name": "sleet",
+    "unicode": "f1ef",
+    "fill": true
+  },
+  "405-rain-and-snow-fill": {
+    "code": "405",
+    "name": "rain-and-snow",
+    "unicode": "f1f0",
+    "fill": true
+  },
+  "406-shower-snow-fill": {
+    "code": "406",
+    "name": "shower-snow",
+    "unicode": "f1f1",
+    "fill": true
+  },
+  "407-snow-flurry-fill": {
+    "code": "407",
+    "name": "snow-flurry",
+    "unicode": "f1f2",
+    "fill": true
+  },
+  "408-light-to-moderate-snow-fill": {
+    "code": "408",
+    "name": "light-to-moderate-snow",
+    "unicode": "f1f3",
+    "fill": true
+  },
+  "409-moderate-to-heavy-snow-fill": {
+    "code": "409",
+    "name": "moderate-to-heavy-snow",
+    "unicode": "f1f4",
+    "fill": true
+  },
+  "410-heavy-snow-to-snowstorm-fill": {
+    "code": "410",
+    "name": "heavy-snow-to-snowstorm",
+    "unicode": "f1f5",
+    "fill": true
+  },
+  "456-shower-snow-night-fill": {
+    "code": "456",
+    "name": "shower-snow-night",
+    "unicode": "f1f6",
+    "fill": true
+  },
+  "457-snow-flurry-night-fill": {
+    "code": "457",
+    "name": "snow-flurry-night",
+    "unicode": "f1f7",
+    "fill": true
+  },
+  "499-snow-fill": {
+    "code": "499",
+    "name": "snow",
+    "unicode": "f1f8",
+    "fill": true
+  },
+  "500-mist-fill": {
+    "code": "500",
+    "name": "mist",
+    "unicode": "f1f9",
+    "fill": true
+  },
+  "501-foggy-fill": {
+    "code": "501",
+    "name": "foggy",
+    "unicode": "f1fa",
+    "fill": true
+  },
+  "502-haze-fill": {
+    "code": "502",
+    "name": "haze",
+    "unicode": "f1fb",
+    "fill": true
+  },
+  "503-sand-fill": {
+    "code": "503",
+    "name": "sand",
+    "unicode": "f1fc",
+    "fill": true
+  },
+  "504-dust-fill": {
+    "code": "504",
+    "name": "dust",
+    "unicode": "f1fd",
+    "fill": true
+  },
+  "507-duststorm-fill": {
+    "code": "507",
+    "name": "duststorm",
+    "unicode": "f1fe",
+    "fill": true
+  },
+  "508-sandstorm-fill": {
+    "code": "508",
+    "name": "sandstorm",
+    "unicode": "f1ff",
+    "fill": true
+  },
+  "509-dense-fog-fill": {
+    "code": "509",
+    "name": "dense-fog",
+    "unicode": "f200",
+    "fill": true
+  },
+  "510-strong-fog-fill": {
+    "code": "510",
+    "name": "strong-fog",
+    "unicode": "f201",
+    "fill": true
+  },
+  "511-moderate-haze-fill": {
+    "code": "511",
+    "name": "moderate-haze",
+    "unicode": "f202",
+    "fill": true
+  },
+  "512-heavy-haze-fill": {
+    "code": "512",
+    "name": "heavy-haze",
+    "unicode": "f203",
+    "fill": true
+  },
+  "513-severe-haze-fill": {
+    "code": "513",
+    "name": "severe-haze",
+    "unicode": "f204",
+    "fill": true
+  },
+  "514-heavy-fog-fill": {
+    "code": "514",
+    "name": "heavy-fog",
+    "unicode": "f205",
+    "fill": true
+  },
+  "515-extra-heavy-fog-fill": {
+    "code": "515",
+    "name": "extra-heavy-fog",
+    "unicode": "f206",
+    "fill": true
+  },
+  "900-hot-fill": {
+    "code": "900",
+    "name": "hot",
+    "unicode": "f207",
+    "fill": true
+  },
+  "901-cold-fill": {
+    "code": "901",
+    "name": "cold",
+    "unicode": "f208",
+    "fill": true
+  },
+  "999-unknown-fill": {
+    "code": "999",
+    "name": "unknown",
+    "unicode": "f209",
+    "fill": true
+  },
+  "qweather-fill": {
+    "code": "qweather",
+    "name": "qweather",
+    "unicode": "f20a",
+    "fill": true
+  },
+  "qweather": {
+    "code": "qweather",
+    "name": "qweather",
+    "unicode": "f20b",
+    "fill": false
+  }
+}
