@@ -10,7 +10,7 @@ const keepFill = arg === 'keep-fill';
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentFilename = path.basename(currentFilePath);
 const currentFolderPath = path.dirname(currentFilePath);
-const SvgFolderPath = path.join(currentFolderPath, '../icons/');
+const SvgFolderPath = path.resolve(currentFolderPath, '../icons/');
 
 const SvgConfig:Config = {
   multipass: true,
@@ -55,7 +55,7 @@ const processFile = (fileName:string) => {
   if (path.extname(fileName) !== '.svg') {
     return;
   }
-  const filepath = path.join(SvgFolderPath, fileName);
+  const filepath = path.resolve(SvgFolderPath, fileName);
   const originalSvg = fs.readFileSync(filepath, 'utf-8');
   const optimizedSvg = optimize(originalSvg, {...SvgConfig, path: filepath});
   writeFile(filepath, optimizedSvg.data);
