@@ -72,7 +72,7 @@ export default [
 
   {
     name: 'app/config-files',
-    files: ['eslint.config.js', 'svgo.config.js'],
+    files: ['eslint.config.js'],
     languageOptions: {
       globals: {
         ...globals.node
