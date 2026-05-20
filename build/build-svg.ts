@@ -63,6 +63,10 @@ const processFile = (fileName:string) => {
 
 const run = async () => {
   try {
+    if (!fs.existsSync(SvgFolderPath)) {
+      console.error(`❌ 输入目录不存在: ${SvgFolderPath}`);
+      process.exit(1);
+    }
     console.log(chalk.cyan(`[${currentFilename}] started`));
     const timeLabel = chalk.cyan(`[${currentFilename}] finished`);
     console.time(timeLabel);
