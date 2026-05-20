@@ -71,7 +71,7 @@ const run = async () => {
 
     files.forEach(processFile);
 
-    console.log(chalk.green('\nSuccess, %s icon%s prepared!'), files.length, files.length !== 1 ? 's' : '');
+    console.log(chalk.green('Success, %s icon%s prepared!'), files.length, files.length !== 1 ? 's' : '');
     console.timeEnd(timeLabel);
   } catch (error) {
     console.error(error);
