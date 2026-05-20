@@ -64,7 +64,7 @@ const processFile = (fileName:string) => {
 const run = async () => {
   try {
     if (!fs.existsSync(SvgFolderPath)) {
-      console.error(`❌ 输入目录不存在: ${SvgFolderPath}`);
+      console.error(`❌ The input directory does not exist: ${SvgFolderPath}`);
       process.exit(1);
     }
     console.log(chalk.cyan(`[${currentFilename}] started`));
