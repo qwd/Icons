@@ -3,7 +3,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import chalk from 'chalk';
 import {optimize, type Config, type XastElement, type XastParent} from 'svgo';
-import {writeFile} from '../utils/utils';
+import {readAllFilesSync, writeFile} from '../utils/utils';
 
 const [, , arg] = process.argv;
 const keepFill = arg === 'keep-fill';
@@ -51,11 +51,7 @@ const SvgConfig:Config = {
   ]
 };
 
-const processFile = (fileName:string) => {
-  if (path.extname(fileName) !== '.svg') {
-    return;
-  }
-  const filepath = path.resolve(SvgFolderPath, fileName);
+const processFile = (filepath:string) => {
   const originalSvg = fs.readFileSync(filepath, 'utf-8');
   const optimizedSvg = optimize(originalSvg, {...SvgConfig, path: filepath});
   writeFile(filepath, optimizedSvg.data);
@@ -71,9 +67,8 @@ const run = async () => {
     const timeLabel = chalk.cyan(`[${currentFilename}] finished`);
     console.time(timeLabel);
 
-    const files = fs.readdirSync(SvgFolderPath);
-
-    files.forEach(processFile);
+    const files = readAllFilesSync(SvgFolderPath, 'svg');
+    files.forEach(file => processFile(file.path));
 
     console.log(chalk.green('Success, %s icon%s prepared!'), files.length, files.length !== 1 ? 's' : '');
     console.timeEnd(timeLabel);
