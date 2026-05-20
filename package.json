@@ -20,7 +20,7 @@
   "scripts": {
     "icons": "npm run build:svg && npm run build:svg-sprite && npm run build:font",
     "build:svg": "tsx build/build-svg.ts",
-    "build:svg-sprite": "svg-sprite --config svg-sprite.json --log=info \"icons/*.svg\"",
+    "build:svg-sprite": "tsx build/build-svg-sprite.ts",
     "build:font": "tsx build/build-font.ts",
     "icons-zip": "cross-env-shell \"rm -rf QWeather-Icons-$npm_package_version && mkdir QWeather-Icons-$npm_package_version &&  cp -r icons/ QWeather-Icons-$npm_package_version/icons && cp -r font/ QWeather-Icons-$npm_package_version/font && cp LICENSE QWeather-Icons-$npm_package_version && cp README.md QWeather-Icons-$npm_package_version && zip -r9 QWeather-Icons-$npm_package_version.zip QWeather-Icons-$npm_package_version && rm -rf QWeather-Icons-$npm_package_version\"",
     "docs-build:docs": "hugo --cleanDestinationDir",
@@ -39,6 +39,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tsconfig/node20": "^20.1.9",
     "@types/node": "^25.7.0",
+    "@types/svg-sprite": "^0.0.39",
     "autoprefixer": "^10.4.12",
     "chalk": "^5.6.2",
     "colors": "^1.4.0",
