@@ -3,14 +3,13 @@ import path from 'node:path';
 import fs from 'node:fs';
 import chalk from 'chalk';
 import {optimize, type Config, type XastElement, type XastParent} from 'svgo';
-import {readAllFilesSync, writeFile} from '../utils/utils';
+import {readAllFilesSync, ROOT_DIR, writeFile} from '../utils/utils';
 
 const [, , arg] = process.argv;
 const keepFill = arg === 'keep-fill';
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentFilename = path.basename(currentFilePath);
-const currentFolderPath = path.dirname(currentFilePath);
-const SvgFolderPath = path.resolve(currentFolderPath, '../icons/');
+const SvgFolderPath = path.resolve(ROOT_DIR, './icons/');
 
 const SvgConfig:Config = {
   multipass: true,
