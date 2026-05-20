@@ -8,7 +8,7 @@ import tseslint from 'typescript-eslint';
 export default [
   {
     name: 'app/ignores',
-    ignores: ['dist/**', 'node_modules/**', 'icons/**', 'fonts/']
+    ignores: ['dist/**', 'node_modules/**', 'icons/**', 'font/']
   },
 
   js.configs.recommended,
