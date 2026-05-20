@@ -65,8 +65,7 @@
     "ttf2woff": "^3.0.0",
     "ttf2woff2": "^8.0.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.3",
-    "vnu-jar": "21.6.11"
+    "typescript-eslint": "^8.59.3"
   },
   "engines": {
     "node": ">=20"
@@ -75,9 +74,5 @@
     "icons/*.svg",
     "font",
     "!.DS_Store"
-  ],
-  "dependencies": {
-    "cheerio": "^1.2.0",
-    "D": "^1.0.0"
-  }
+  ]
 }
