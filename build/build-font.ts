@@ -1,6 +1,5 @@
 import path from 'node:path';
 import fs from 'node:fs';
-import {fileURLToPath} from 'node:url';
 import chalk from 'chalk';
 import {getValidCodePoint, readAllFilesSync, ROOT_DIR, writeFile} from '../utils/utils';
 import {SVGIcons2SVGFontStream} from 'svgicons2svgfont';
@@ -8,9 +7,6 @@ import svg2ttf from 'svg2ttf';
 import ttf2woff from 'ttf2woff';
 import ttf2woff2 from 'ttf2woff2';
 import Handlebars from 'handlebars';
-
-const currentFilePath = fileURLToPath(import.meta.url);
-const currentFilename = path.basename(currentFilePath);
 
 interface QweatherIconsJson {
   [key: string]: {
@@ -219,9 +215,6 @@ const SvgToFont = async () => {
       console.error(`❌ The input directory does not exist: ${SvgToFontOptions.entry}`);
       process.exit(1);
     }
-    console.log(chalk.cyan(`[${currentFilename}] started`));
-    const timeLabel = chalk.cyan(`[${currentFilename}] finished`);
-    console.time(timeLabel);
 
     resetQweatherIconsJson();
     console.log(chalk.green(`📦 Successfully generated ${SvgToFontOptions.fontName}.json.`));
@@ -234,8 +227,6 @@ const SvgToFont = async () => {
 
     createDemoHTML();
     console.log(chalk.green(`📦 Successfully ${SvgToFontOptions.fontName}.html.`));
-
-    console.timeEnd(timeLabel);
   } catch (error) {
     console.error(error);
     process.exit(1);

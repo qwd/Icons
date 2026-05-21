@@ -1,13 +1,10 @@
 
-import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import fs from 'node:fs';
 import chalk from 'chalk';
 import {readAllFilesSync, ROOT_DIR, writeFile} from '../utils/utils';
 import SVGSpriter from 'svg-sprite';
 
-const currentFilePath = fileURLToPath(import.meta.url);
-const currentFilename = path.basename(currentFilePath);
 const INPUT_DIR = path.resolve(ROOT_DIR, './icons/');
 const OUTPUT_DIR = ROOT_DIR;
 
@@ -38,10 +35,6 @@ const run = async () => {
       console.error(`❌ The input directory does not exist: ${INPUT_DIR}`);
       process.exit(1);
     }
-    console.log(chalk.cyan(`[${currentFilename}] started`));
-    const timeLabel = chalk.cyan(`[${currentFilename}] finished`);
-    console.time(timeLabel);
-
     const files = readAllFilesSync(INPUT_DIR, 'svg');
 
     files.forEach(file => addSvgFileToSprite(file.path, `${file.code}${file.fill ? '-fill' : ''}`));
@@ -50,9 +43,7 @@ const run = async () => {
     const {result} = await spriter.compileAsync();
     const resultFile = result.symbol.sprite;
     writeFile(resultFile.path, resultFile.contents);
-    console.log(chalk.green(`✨ 成功生成: ${spriteSvgName}`));
-
-    console.timeEnd(timeLabel);
+    console.log(chalk.green(`📦 Successfully generated: ${spriteSvgName}`));
   } catch (error) {
     console.error(error);
     process.exit(1);

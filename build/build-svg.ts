@@ -1,4 +1,3 @@
-import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import fs from 'node:fs';
 import chalk from 'chalk';
@@ -7,8 +6,6 @@ import {readAllFilesSync, ROOT_DIR, writeFile} from '../utils/utils';
 
 const [, , arg] = process.argv;
 const keepFill = arg === 'keep-fill';
-const currentFilePath = fileURLToPath(import.meta.url);
-const currentFilename = path.basename(currentFilePath);
 const INPUT_DIR = path.resolve(ROOT_DIR, './icons/');
 
 const SvgConfig:Config = {
@@ -62,15 +59,11 @@ const run = async () => {
       console.error(`❌ The input directory does not exist: ${INPUT_DIR}`);
       process.exit(1);
     }
-    console.log(chalk.cyan(`[${currentFilename}] started`));
-    const timeLabel = chalk.cyan(`[${currentFilename}] finished`);
-    console.time(timeLabel);
 
     const files = readAllFilesSync(INPUT_DIR, 'svg');
     files.forEach(file => processFile(file.path));
 
     console.log(chalk.green('Success, %s icon%s prepared!'), files.length, files.length !== 1 ? 's' : '');
-    console.timeEnd(timeLabel);
   } catch (error) {
     console.error(error);
     process.exit(1);
