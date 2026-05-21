@@ -46,6 +46,9 @@ export const readAllFilesSync = (dirPath:string, fileType:string):{name: string,
       const newArray = basenameSplit.slice(1, endIndex);
       name = newArray.join('-');
     }
+    if (code === '' || name === '') {
+      return null;
+    }
     return {code: code, name: name, basename: basename, path: fullPath, fill: isFill};
 
   }).filter(item => item !== null);
