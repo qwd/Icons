@@ -27,34 +27,31 @@
             white-space: nowrap;
         }
     </style>
-    <link href="./{{iconsClassName}}.css" rel="stylesheet">
+    <link href="./{{fontName}}.css" rel="stylesheet">
 </head>
 <body class="text-center">
-<h1>{{iconsClassName}}</h1>
+<h1>{{fontName}}</h1>
 <div class="icons">
-    {{#each codeList}}
+    {{#each iconsList}}
         <div class="icon">
-            <i class="{{../prefix}}-{{this}}"></i>
-            <i class="{{../prefix}}-{{this}} fill"></i>
-            <div class="label">{{this}}</div>
+            <i class="{{className}}"></i>
+            <div class="label">{{label}}</div>
         </div>
     {{/each}}
 </div>
 <div class="icons">
-    {{#each codeList}}
+    {{#each iconsList}}
         <div class="icon">
-            <i class="{{../iconsClassName}}">{{this}}</i>
-            <i class="{{../iconsClassName}} fill">{{this}}</i>
-            <div class="label">{{this}}</div>
+            <i class="{{../fontName}}">{{code}}</i>
+            <div class="label">{{label}}</div>
         </div>
     {{/each}}
 </div>
 <div class="icons">
-    {{#each unicodeList}}
+    {{#each iconsList}}
         <div class="icon">
-            <i class="{{../iconsClassName}}">&#x{{this}}</i>
-            <i class="{{../iconsClassName}} fill">&#x{{this}}</i>
-            <div class="label">{{this}}</div>
+            <i class="{{../fontName}}">&#x{{unicode}}</i>
+            <div class="label">{{label}}</div>
         </div>
     {{/each}}
 </div>
