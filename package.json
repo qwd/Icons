@@ -40,6 +40,8 @@
     "@tsconfig/node20": "^20.1.9",
     "@types/node": "^25.7.0",
     "@types/svg-sprite": "^0.0.39",
+    "@types/svg2ttf": "^5.0.3",
+    "@types/ttf2woff": "^2.0.4",
     "autoprefixer": "^10.4.12",
     "chalk": "^5.6.2",
     "colors": "^1.4.0",
