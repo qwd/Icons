@@ -1,44 +1,87 @@
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
 import fs from 'node:fs';
-import {clearFolder, createFolder, readAllFilesSync} from '../utils/utils';
-
-//  npm run icons -- keep-fill true
+import {getValidCodePoint, readAllFilesSync, ROOT_DIR, writeFile} from '../utils/utils';
 interface QweatherIconsJson {
   [key: string]: {
     code: string,
     name: string,
     unicode: string,
+    fill: boolean,
     deprecated?: boolean
   }
 }
 
-const currentFilePath = fileURLToPath(import.meta.url);
-const currentFolderPath = path.dirname(currentFilePath);
-
-const codePointRanges = [[57344, 63743], [983040, 1048573], [1048576, 1114109]] as const;// Unicode 安全的三个专用区
 const SvgToFontOptions = {
-  entry: path.join(currentFolderPath, '../icons'), // Entry directory for SVG source files: Specifies the folder path where all icons (.svg) are stored.
-  output: path.join(currentFolderPath, '../font'), // Output Directory: The generated font files (.ttf, .woff, .woff2, .css, .html, etc.) will be stored here.
-  cssTemplates: path.join(currentFolderPath, '../templates/css/qweather-icons.hbs'), // CSS Generation Template: Use Handlebars (.hbs) templates to define the format of the final generated CSS/SCSS style files.
-  htmlTemplates: path.join(currentFolderPath, '../templates/html/qweather-icons.hbs'), // HTML Preview Page Template: Generates a sample page, allowing developers to easily view all converted icons and their corresponding class names.
-  fontName: 'qweather-icons', // Font Family Name: The font-family name defined in CSS.
-  classNamePrefix: 'qi', // Style Class Name Prefix: The prefix used when generating CSS class names.
-  fillSuffix: 'fill' // Solid Suffix: Used to identify which icons feature a solid style, enabling differentiation during class name generation or processing.
+  entry: path.resolve(ROOT_DIR, './icons'),
+  output: path.resolve(ROOT_DIR, './font'),
+  cssTemplates: path.resolve(ROOT_DIR, './templates/css/qweather-icons.hbs'),
+  htmlTemplates: path.resolve(ROOT_DIR, './templates/html/qweather-icons.hbs'),
+  fontName: 'qweather-icons',
+  classNamePrefix: 'qi'
 } as const;
+
+const resetQweatherIconsJson = () => {
+  const qweatherIconsJsonPath = path.resolve(SvgToFontOptions.output, `./${SvgToFontOptions.fontName}.json`);
+  let qweatherIconsJson:QweatherIconsJson;
+  if (fs.existsSync(qweatherIconsJsonPath)) {
+    qweatherIconsJson = JSON.parse(fs.readFileSync(qweatherIconsJsonPath, 'utf-8'));
+  } else {
+    qweatherIconsJson = {};
+  }
+  const qweatherIconsList = Object.values(qweatherIconsJson);
+  const svgFiles = readAllFilesSync(SvgToFontOptions.entry, 'svg');
+  const svgFilesMap = new Map<string, {name: string, basename: string, path: string, code: string, fill: boolean}>();
+  for (const svgFile of svgFiles) {
+    svgFilesMap.set(`${svgFile.code}-${svgFile.fill}`, svgFile);
+  }
+  const matchedSvgKeysSet = new Set<string>();
+
+  for (const itemIcon of qweatherIconsList) {
+    const key = `${itemIcon.code}-${itemIcon.fill}`;
+    const matched = svgFilesMap.get(key);
+
+    if (!matched) {
+      itemIcon.deprecated = true;
+    } else {
+      if ('deprecated' in itemIcon) {
+        delete itemIcon.deprecated;
+      }
+      itemIcon.name = matched.name;
+      matchedSvgKeysSet.add(key);
+    }
+  }
+  const onlyInSvgFiles = svgFiles.filter(svgFile => matchedSvgKeysSet.has(`${svgFile.code}-${svgFile.fill}`) === false);
+  for (const itemSvgFile of onlyInSvgFiles) {
+    const unicode = getValidCodePoint(qweatherIconsList.map(item => parseInt(item.unicode, 16)));
+    if (unicode === -1) {
+      console.error('❌ no unicode');
+      process.exit(1);
+    }
+    qweatherIconsList.push({
+      code: itemSvgFile.code,
+      name: itemSvgFile.name,
+      unicode: unicode.toString(16),
+      fill: itemSvgFile.fill
+    });
+  }
+  const newQWeatherJson:QweatherIconsJson = {};
+  for (const item of qweatherIconsList) {
+    const key = `${item.code}${item.code !== item.name ? `-${item.name}` : ''}${item.fill ? '-fill' : ''}`;
+    newQWeatherJson[key] = item;
+  }
+  writeFile(qweatherIconsJsonPath, JSON.stringify(newQWeatherJson, null, 2));
+};
 
 const SvgToFont = () => {
   try {
-    if (fs.existsSync(SvgToFontOptions.entry) === false) {
-      return;
+    if (!fs.existsSync(SvgToFontOptions.entry)) {
+      console.error(`❌ The input directory does not exist: ${SvgToFontOptions.entry}`);
+      process.exit(1);
     }
-    const qweatherIconsJsonPath = path.join(currentFolderPath, `../${SvgToFontOptions.fontName}.json`);
-    let qweatherIconsJson:QweatherIconsJson | undefined;
-    if (fs.existsSync(qweatherIconsJsonPath)) {
-      qweatherIconsJson = JSON.parse(fs.readFileSync(qweatherIconsJsonPath, 'utf-8'));
-    }
-    const allSvgFileList = readAllFilesSync(SvgToFontOptions.entry, 'svg');
-    console.log('allSvgFileList', allSvgFileList);
+    resetQweatherIconsJson();
+
+    // const allSvgFileList = readAllFilesSync(SvgToFontOptions.entry, 'svg');
+    // console.log('allSvgFileList', allSvgFileList);
   // clearFolder(SvgToFontOptions.output);
   // createFolder(SvgToFontOptions.output);
   } catch (error) {
@@ -47,4 +90,4 @@ const SvgToFont = () => {
   }
 };
 
-// SvgToFont();
+SvgToFont();
