@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "{{fontname}}";
-    src: url("./fonts/{{fontname}}.woff2?t={{timestamp}}") format("woff2"),
-    url("./fonts/{{fontname}}.woff?t={{timestamp}}") format("woff");
+    font-family: "{{fontName}}";
+    src: url("./fonts/{{fontName}}.woff2?t={{timestamp}}") format("woff2"),
+    url("./fonts/{{fontName}}.woff?t={{timestamp}}") format("woff");
 }
 
 @font-face {
-    font-family: "{{fontname}}-fill";
-    src: url("./fonts/{{fontname}}-fill.woff2?t={{timestamp}}") format("woff2"),
-    url("./fonts/{{fontname}}-fill.woff?t={{timestamp}}") format("woff");
+    font-family: "{{fontName}}-fill";
+    src: url("./fonts/{{fontName}}-fill.woff2?t={{timestamp}}") format("woff2"),
+    url("./fonts/{{fontName}}-fill.woff?t={{timestamp}}") format("woff");
 }
 
-[class^="{{prefix}}-"], [class*=" {{prefix}}-"], .{{iconsClassName}} {
+[class^="{{prefix}}-"], [class*=" {{prefix}}-"], .{{fontName}} {
     display: inline-block;
-    font-family: '{{fontname}}' !important;
+    font-family: '{{fontName}}' !important;
     font-style: normal;
-    font-weight: normal !important;
+    font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -22,10 +22,6 @@
     -moz-osx-font-smoothing: grayscale;
     font-variant-ligatures: discretionary-ligatures;
     text-rendering: optimizeLegibility;
-}
-
-[class^="{{prefix}}-"].{{suffix}}, [class*=" {{prefix}}-"].{{suffix}}, .{{iconsClassName}}.{{suffix}} {
-    font-family: '{{fontname}}-{{suffix}}' !important;
 }
 
 {{#each classList}}
