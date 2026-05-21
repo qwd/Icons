@@ -19,6 +19,7 @@
   },
   "scripts": {
     "icons": "npm run build:svg && npm run build:svg-sprite && npm run build:font",
+    "icons:keep": "npm run build:svg -- keep-fill && npm run build:svg-sprite && npm run build:font",
     "build:svg": "tsx build/build-svg.ts",
     "build:svg-sprite": "tsx build/build-svg-sprite.ts",
     "build:font": "tsx build/build-font.ts",
