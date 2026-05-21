@@ -200,13 +200,15 @@ const createDemoHTML = () => {
 
   const templateSource = fs.readFileSync(SvgToFontOptions.htmlTemplates, 'utf-8');
   const template = Handlebars.compile(templateSource, {noEscape: true});
-  const content = template({
-    classList: convertSvgList.map(item => item.fill ? `${item.code} ${SvgToFontOptions.classNamePrefix}-fill` : item.code),
-    codeList: convertSvgList.map(item => item.fill ? `${item.code}-fill` : item.code),
-    unicodeList: convertSvgList.map(item => item.unicode),
-    prefix: SvgToFontOptions.classNamePrefix,
-    fontName: SvgToFontOptions.fontName
+  const iconsList = convertSvgList.map(item => {
+    return {
+      className: `${SvgToFontOptions.classNamePrefix}-${item.code}${item.fill ? ` ${SvgToFontOptions.classNamePrefix}-fill` : ''}`,
+      code: item.fill ? `${item.code}-fill` : item.code,
+      label: item.code,
+      unicode: item.unicode
+    };
   });
+  const content = template({iconsList, fontName: SvgToFontOptions.fontName});
 
   writeFile(path.join(SvgToFontOptions.output, `${SvgToFontOptions.fontName}.html`), content);
 };
